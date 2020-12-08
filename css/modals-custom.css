@@ -1,0 +1,41 @@
+/*Mysteries of Depths*/
+#mysteries-one, #mysteries-two, #mysteries-three{
+    width: 42vw;
+}
+
+#enlarged-great-lakes-superior, #enlarged-great-lakes-michigan, #enlarged-great-lakes-huron, #enlarged-great-lakes-ontario, #enlarged-great-lakes-erie{
+    max-width: 50vw;
+}
+
+#enlarged-great-lakes-location-madeira, #enlarged-great-lakes-location-monarch, #enlarged-great-lakes-location-hesper, #enlarged-great-lakes-location-kamloops, #enlarged-great-lakes-location-alvinclark, #enlarged-great-lakes-location-frankoconnor, #enlarged-great-lakes-location-carldbradley{
+    max-width: 60vw;
+}
+
+/*Explorer Charts*/
+#enlarged-great-lakes-superior[class*="-map-location-modal"], #enlarged-great-lakes-superior[class*="-slider-content"] {
+    padding-bottom: 1.5vh!important;
+}
+
+#enlarged-kingston-kph, #enlarged-kingston-effie, #enlarged-kingston-lawrence, #enlarged-kingston-aloha, #enlarged-kingston-comet, #enlarged-kingston-george, #enlarged-kingston-taber, #enlarged-kingston-prince, #enlarged-kingston-wolfe,
+#enlarged-great-lakes-location-danieljmorrell, #enlarged-great-lakes-location-waubuno, #enlarged-great-lakes-location-charlesprice,
+#enlarged-great-lakes-location-admiral, #enlarged-great-lakes-location-argo, #enlarged-great-lakes-location-colgate,#enlarged-great-lakes-location-gpgriffith,
+#enlarged-great-lakes-location-hmsontario,#enlarged-great-lakes-location-brothers, #enlarged-great-lakes-location-milan, #enlarged-great-lakes-location-roberval{
+    max-width: 60vw;
+}
+
+/*HMS*/
+#page--exploring-hms-one, #page--exploring-hms-two, #page--exploring-hms-three, #page--exploring-hms-four, #page--exploring-hms-five, #page--exploring-hms-six, #page--exploring-hms-seven{
+    max-width: 65vw;
+}
+
+#page--exploring-video-player{
+    max-width: 40vw!important;
+    height: 90%;
+    max-height: 760px;
+}
+
+@media (max-width: 1366px) {
+    #mysteries-one, #mysteries-two, #mysteries-three {
+        width: 60vw;
+    }
+}

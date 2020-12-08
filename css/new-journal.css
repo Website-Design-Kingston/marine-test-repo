@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css?family=Amiri%7COpen+Sans:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Amiri:400,700");
+/*added by WDK*/
+
+	/* Journal */
+.journal-nojs .book {
+    font-family: Kalam-Regular;
+}
+
+.log-book-page:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.journal-nojs .main-side {
+    width: 100%;
+    height: 100%;
+    background: url(../img/wreck-diver/journal-bg.jpg) no-repeat center center;
+    background-size: cover;
+    bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 9px;
+    position: relative;
+    z-index: 30;
+    box-shadow: 2px 1px 1px rgba(0,0,0,0.15);
+}
+
+.paper {
+	position: relative;
+	max-width: 60vw;
+	margin: 0 auto;
+	height: 68vh;
+    z-index: 1;
+}
+.paper:before,
+.paper:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #d8d3b1;
+	border-radius: 9px;
+}
+
+/* Second sheet of paper */
+.paper:before {
+	left: 3px;
+	top: 2px;
+	z-index: 2;
+	box-shadow: 2px 1px 1px rgba(0,0,0,0.15)
+}
+
+/* Third sheet of paper */
+.paper:after {
+	left: 6px;
+    top: 4px;
+    z-index: 1;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.journal-nojs .book .lb-title {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.journal-nojs .book .lb-title h4, .journal-nojs .book .lb-title h5 {font: inherit;}
+
+.journal-nojs .book .left-page {
+    width: 47%;
+    height: 100%;
+    float: left;
+    padding: 0vh 4vw 0vh 4vw;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.journal-nojs .title-note:before {
+    content: url("../img/wreck-diver/paper-clip.png");
+    position: absolute;
+    display: block;
+    top: -37px;
+    left: 0;
+    transform: scale(.75);
+}
+
+.journal-nojs .title-note {
+	max-width: 400px;
+    position: relative;
+    height: auto;
+    top: -14px;
+    left: -37px;
+    padding: 3vh 1vw 1vh 1.5vw;
+    background: #fff8b6;
+    -ms-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+    -webkit-box-shadow: -1px 7px 9px 1px rgba(15,15,15,0.6);
+    box-shadow: -1px 7px 9px 1px rgba(15,15,15,0.6);
+    z-index: 99;
+    margin-bottom: 25px;
+}
+
+.journal-nojs .title-note:after {
+    content: url("../img/wreck-diver/paper-rip.png");
+    position: absolute;
+    display: block;
+    bottom: -47px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.journal-nojs .title-note > .item-detail {
+    -ms-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    transform: rotate(2deg);
+}
+
+.journal-nojs .title-note .item-detail-label {margin-left: 40px;}
+
+.journal-nojs .book .left-page .conditions-text {margin-bottom: 10px;}
+
+.journal-nojs .book .left-page .location {
+    background-image: url(../img/wreck-diver/discovery-position.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 25vh;
+	max-height: 150px;
+    position: relative;
+}
+
+.journal-nojs .book .left-page .location .location-point {
+    width: 2vh;
+    height: 2vh;
+    background: #ffbe00;
+    border-radius: 1vh;
+    position: absolute;
+}
+
+.journal-nojs .book .left-page .location-footer {
+    font-family: "opensans", "sans-serif", Arial, Tahoma;
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+}
+
+.journal-nojs .book .right-page {
+    display: block;
+    width: 48%;
+    height: 100%;
+    float: right;
+    padding: 4vh 4vw 0vh 4vw;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.journal-nojs .book h5 {
+    font-family: Kalam-Regular;
+}
+
+.journal-nojs .book .right-page .item-title {position:relative;}
+
+.item-sketch img {
+    height: 55px;
+    width: auto;
+}
+
+.journal-nojs .book .right-page .item-title .item-sketch {
+	position: absolute;
+    right: -25px;
+    top: -32px;
+    padding: 20px 15px;
+    background: #fbf9e9;
+    max-height: 100px;
+    transform: rotate(5deg);
+    box-shadow: 1px 2px 2px 0px rgba(15,15,15,0.2)
+}
+
+.journal-nojs .book .right-page .item-title .item-sketch:before {
+    content: url(../img/wreck-diver/staple.png);
+    position: absolute;
+    display: block;
+    top: 5px;
+    left: 0;
+    transform: scale(0.4);
+    z-index: 9999;
+}
+
+.journal-nojs .book .right-page .item-title .item-sketch.sm:before {
+    left: -15px;
+    top: -3px;
+}
+
+.journal-nojs .book .right-page .item-title .item-sketch:after {
+    content: url(../img/wreck-diver/staple.png);
+    position: absolute;
+    display: block;
+	bottom: -8px;
+    right: -11px;
+    transform: scale(0.4) rotate(18deg);
+    z-index: 9999;
+}
+
+.journal-nojs .book .right-page .item-image {
+    text-align: center;
+	margin-top:15px;
+	margin-bottom: 20px;
+}
+
+.journal-nojs .book .right-page .item-image img {
+    max-height: 200px;
+    width: auto;
+}
+
+.journal-nojs span.fi-anchor {margin: 2vw auto 0;}
+
+@media (max-width: 1022px) {
+	.block--no-js-content .container {display:block;}
+}
+
+@media (max-width: 610px) {
+	
+	.journal-nojs .main-side {
+		background: none;
+		background-color: #dcd8bc;
+		padding: 15px;
+	}
+	
+	.journal-nojs .book .left-page, .journal-nojs .book .right-page {
+		float:none; 
+		width: 100%;
+	}
+	
+	
+	.journal-nojs .book .left-page {
+		padding-bottom: 15px;
+		margin-bottom: 15px;
+		border-bottom: 1px dotted;
+	}
+	
+	.journal-nojs .title-note:before {
+    	top: -37px;
+    	left: -15px;
+	}
+	
+	.journal-nojs .title-note {
+		top: -16px;
+		left: -44px;
+	}
+	
+	.item-detail-label {margin-left: 25px;}
+	
+	.journal-nojs .book .left-page .location {margin-bottom: 10px;}
+	
+	.journal-nojs .book .left-page .location-footer {bottom: -20px;}
+	
+	.journal-nojs .book .right-page .item-title .item-sketch {
+    	right: 0px;
+    	top: -32px;
+		transform: rotate(2deg);
+	}
+}
+
+@media (max-width: 480px) {
+	.journal-nojs .book .right-page .item-title .item-sketch {
+		position: relative;
+		top: -15px;
+		text-align: center;
+	}
+}
+

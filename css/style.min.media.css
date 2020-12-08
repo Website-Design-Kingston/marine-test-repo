@@ -1,0 +1,1086 @@
+@charset "utf-8";
+/* CSS Document */
+@media (min-width: 2000px) {
+    .landscape .page--exploring-hms-lawrence .one {
+        left: 5.6%;
+        top: 11%;
+        width: 86.2vh;
+        height: 78.88vh
+    }
+    .landscape .page--exploring-hms-lawrence .two {
+        left: 23.5%;
+        width: 78.18vh;
+        height: 30.63vh
+    }
+    .landscape .page--exploring-hms-lawrence .three {
+        left: 29%;
+        top: 35%;
+        width: 32.45vh;
+        height: 29vh
+    }
+    .landscape .page--exploring-hms-lawrence .four {
+        left: 10%;
+        bottom: 10%;
+        width: 54.63vh;
+        height: 37.82vh
+    }
+    .landscape .page--exploring-hms-lawrence .six {
+        top: auto;
+        bottom: -15%;
+        width: 58.27vh;
+        height: 39.45vh
+    }
+    .landscape .page--exploring-hms-lawrence .seven {
+        top: 15%;
+        right: 12%;
+        width: 31.63vh;
+        height: 68.27vh
+    }
+    .landscape .page--exploring-hms-lawrence .eight {
+        top: 49%;
+        right: 16.5%;
+        width: 28.09vh;
+        height: 44.09vh
+    }
+    .body--index:after {
+        background-color: #093116;
+        content: '';
+        display: block;
+        height: 40px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10
+    }
+	
+	/* Mobile-Menu Sub */
+	
+	ul.sub-menu li {margin-bottom: 15px!important;}
+	ul.sub-menu li:last-child {margin-bottom: 0px!important;}
+	
+    .page--custom--container {
+        max-width: 1920px;
+        margin: auto;
+        position: relative
+    }
+
+    .page--custom--container .content.credits,
+    .page--custom--container .content.contact-us,
+    .page--custom--container .content.sitemap {
+        background-color: #fff
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1366px) {
+    header .sub-header .menu a {
+        font-size: 18px;
+    }
+	.sub-header .lang {
+		width: 160px;
+	}
+}
+
+@media (min-width: 1200.01px) {
+    .internet-explorer header .sub-header .menu>ul>li {
+        display: inline
+    }
+    .internet-explorer header .sub-header .menu>ul>li>a {
+        position: relative
+    }
+    .internet-explorer header .sub-header .menu>ul>li>a:hover:after,
+    .internet-explorer header .sub-header .menu>ul>li>a:focus:after {
+        content: "";
+        background: #0b391a 26%;
+        width: 60%;
+        height: 1px;
+        position: absolute;
+        left: 20%;
+        bottom: 10%;
+        z-index: 20
+    }
+    .internet-explorer header .header .left-logo,
+    .internet-explorer header .header .right-logo {
+        position: relative;
+        top: -1vh
+    }
+    .ms-edge header .sub-header .menu>ul>li {
+        display: inline
+    }
+    .ms-edge header .sub-header .menu>ul>li>a {
+        position: relative
+    }
+    .ms-edge header .sub-header .menu>ul>li>a:hover:after,
+    .ms-edge header .sub-header .menu>ul>li>a:focus:after {
+        content: "";
+        background: #0b391a 26%;
+        width: 60%;
+        height: 1px;
+        position: absolute;
+        left: 20%;
+        bottom: 10%;
+        z-index: 20
+    }
+	header .sub-header .menu {display:none;}
+	
+    header .sub-header .menu ul {
+        text-align: center
+    }
+    header .sub-header .menu>ul>li {
+        display: inline-block;
+        float: none;
+        height: auto
+    }
+    header .sub-header .menu>ul>li.hover>a:after,
+    header .sub-header .menu>ul>li:hover>a:after,
+    header .sub-header .menu>ul>li:focus-within>a:after,
+    header .sub-header .menu>ul>li>a:hover:after,
+    header .sub-header .menu>ul>li>a:focus:after {
+        bottom: 10%
+    }
+
+    header .sub-header .menu>ul>li+li {
+        position: relative
+    }
+    header .sub-header .menu>ul>li+li a {
+        border: none
+    }
+    header .sub-header .menu>ul>li+li:before {
+        content: '';
+        border-left: 1px solid #0b391a;
+        position: absolute;
+        left: 0;
+        bottom: 25%;
+        top: 25%
+    }
+	
+    header .header {
+        display: flex;
+        position: relative
+    }
+    header .header .page--title a {
+        -o-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+header .sub-header .home-menu {
+
+    padding-left: 0.5%;
+    flex: initial;
+}
+    header .sub-header .lang {
+        z-index: 6
+    }
+    header .sub-header>.menu {
+		flex: inherit;
+		align-content: center;
+    }
+	 .page--exploring-hms-lawrence .three {
+        top: 32vh;
+        left: 29.12vw;
+        width: 19.1vw;
+        height: 17.1vw
+    }
+	.page--exploring-hms-lawrence .four {
+        top: 40vh;
+        left: 7.84vw;
+        width: 30.6vw;
+        height: 21.2vw
+    } 
+	.page--exploring-hms-lawrence .six {
+        top: 40vh;
+        left: 39.84vw;
+        width: 30.6vw;
+        height: 21.2vw
+    } 
+	.page--exploring-hms-lawrence .two {
+        top: 0vh;
+        left: 23.52vw;
+        width: 43.78vw;
+        height: 17.15vw
+    }
+	
+	/*WDK Add-on*/
+	/*mobile button*/
+	nav span {display: none;}
+	.page--exploring-hms-lawrence .one {
+        left: 5.6%;
+        top: 11%;
+        width: 23.94vw;
+        height: 21.654vw
+	}
+/****  END min 1201 px ****/
+}
+
+@media (max-width: 1200px) {
+	
+    .navi-area__wreck-dive .tooltip {
+        right: 60%
+    }
+    .navi-area__hms .tooltip {
+        top: 27%;
+        right: 16%
+    }
+    .navi-area__explore .tooltip {
+        right: 20%
+    }
+    .content {
+        padding-bottom: 0
+	}
+    
+    .col-6 {float:none; width: 100%; max-width: none;}
+    
+    .contact-us .col-6:first-child {float:none; width: 100%; max-width: none;}
+ 
+    header .header {
+        display: flex;
+        justify-content: space-between
+    }
+
+	header .header  .left-logo a img, header .header .right-logo a img {
+    width: auto;
+}
+    header .header .title a {
+        font-size: 30px
+    }
+	.page--exploring-hms-lawrence .three {
+    }
+	.page--exploring-hms-lawrence .four {
+        left: 5vh;
+		top: 45vh;
+    }
+    .page--exploring-hms-lawrence .six {
+        right: 22vh
+    }
+    .page--exploring-hms-lawrence .seven {
+        right: 2vh
+    }
+    #page--exploring-hms-seven .sp-slides-container {
+        padding-bottom: 7.5vh
+    }
+    .page--exploring-hms-lawrence .eight {
+        right: 15vh
+    }
+    .portrait .sub-header .sub-title {
+        font-size: 30px;
+    }
+    .body--explore-charts .mysteries-depths--slider-information .explore-charts--header .explore-charts--header-right {
+        vertical-align: top
+    }
+    .body--explore-charts .mysteries-depths--slider-information .explore-charts--header .explore-charts--header-left {
+        vertical-align: top
+    }
+    .mysteries-depths--slider-information .mysteries-depths--slider-title {
+        padding-right: 20px
+    }
+    .contact-us .container {
+        padding-left: 11vw
+    }
+    #page--exploring-hms-seven .sp-thumbnail-container:after {
+        border: none
+    }
+    .body--index {
+        background: url("../img/HomeBG-mobile.jpg") no-repeat center;
+        background-size: cover
+    }
+    header {
+        z-index: 20
+    }
+    header .sub-header .home-menu {
+        margin-left: 1%;
+        padding: 0;
+        width: 55px;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+	header .sub-header .menu {display:none;}
+
+	header .sub-header .menu {
+        width: 55px;
+        text-align: center;
+	}
+    
+    header .sub-header .menu span {
+    border: 4px solid transparent;
+    padding: 0 4px 8px;
+}
+	
+    header .sub-header .menu ul {
+        height: auto;
+        width: max-content;
+        margin: 0;
+        position: absolute;
+        background: #fff;
+        padding: 2vh
+    }
+    header .sub-header .menu > ul { max-width: 350px;}
+    
+    header .sub-header .menu>ul {
+        display: none
+    }
+    header .sub-header .menu>ul.active {
+        display: block
+    }
+    header .sub-header .menu a {
+        text-align: left;
+        font-size: 25px
+    }
+    header .sub-header .menu>ul>li {
+        float: none
+    }
+    header .sub-header .menu>ul>li>a {
+        padding: 1vh 0
+    }
+    header .sub-header .menu ul li+li>a {
+        border: none
+    }
+    header .sub-header .menu>ul>li ul {
+        display: block;
+        position: relative;
+        top: 0;
+        padding: 0
+    }
+    header .sub-header .menu>ul>li ul>li {
+        height: auto;
+        position: relative
+    }
+    header .sub-header .menu>ul>li ul>li:before {
+        content: '-';
+        position: absolute;
+        left: -2vh;
+        top: 0
+    }
+    header .sub-header .menu>ul>li ul>li a {
+        padding: 0
+    }
+    header .sub-header .menu>ul>li:last-child:after {
+        display: none
+    }
+    header .sub-header .menu ul li a:hover,
+    header .sub-header .menu ul li a:focus {
+        font-weight: bold
+    }
+    header .sub-header .menu>ul>li:hover>a:after,
+    header .sub-header .menu>ul>li:focus-within>a:after {
+        display: none
+    }
+    .sidebar--popup.learn-popup,
+    .sidebar--popup.help-popup {
+        width: 72vw;
+        max-width: 100vh
+    }
+    .body--wreck-driver .sidebar--popup.learn-popup {
+        top: 14vh
+    }
+    .sidebar--popup.learn-popup h2,
+    .sidebar--popup.help-popup .h-1 {
+        font-size: 22px;
+        padding: 2vh 2vh 2vh 8vh
+    }
+	.sidebar--popup.help-popup h3 {
+		background: url(../img/img_icon_help_small.png) no-repeat 2vh 1.25vh;
+		background-size: 36px;
+	}
+    .sidebar--popup.learn-popup .table .td,
+    .sidebar--popup.help-popup .table .td {
+        float: none;
+        width: 100%;
+        padding: 2vh 2vh 0 2vh
+    }
+    .sidebar--popup.learn-popup .table .td+.td,
+    .sidebar--popup.help-popup .table .td+.td {
+        padding: 0 2vh 0 2vh
+    }
+    .sitemap .container {
+        padding-left: 5%;
+    }
+	
+    .content.credits .container {
+        margin-left: 10%
+    }
+    .page--exploring-hms-lawrence .seven {
+        right: 2vh
+    }
+    #page--exploring-hms-seven .sp-slides-container {
+        padding-bottom: 7.5vh
+    }
+    .page--exploring-hms-lawrence .eight {
+        right: 15vh
+    }
+
+    .body--index .sidebar--popup.learn-popup:after {
+        height: 84vh
+    }
+    header .header {
+        display: flex;
+        justify-content: space-between
+    }
+    .learn,
+    .sidebar--popup.learn-popup {
+        top: 40px !important;
+    }
+
+	.help, .sidebar--popup.help-popup {
+    	top: 43vh;
+	}
+    .mysteries-depths--link.first {
+        height: calc(100vw * 0.1533);
+        width: 100vw
+    }
+    .mysteries-depths--link.second {
+        height: calc(100vw * 0.0939);
+        width: 100vw
+    }
+    .mysteries-depths--link.third {
+        height: calc(100vw * 0.14355);
+        width: 100vw
+    }
+    .mysteries-depths--link.four {
+        height: calc(100vw * 0.201125);
+        width: 100vw
+    }
+		
+	nav span:focus, nav span:focus-within { border: 4px solid #FFBE00; }
+	
+	.menu .menu-toggle {
+		border: none;
+		width: 34px;
+		height: 44px;
+		text-indent: 100%;
+		font-size: 0;
+		line-height: 0;
+		overflow: hidden;
+		position: relative;
+		cursor: pointer;
+		outline: none;
+		background: transparent;
+		padding: 0;
+		margin: 0 auto;
+	}
+
+	.menu .menu-toggle:after {
+    	content: '';
+    	position: absolute;
+    	width: 100%;
+    	height: 4px;
+    	top: 10px;
+    	left: 0;
+    	-moz-border-radius: 2px;
+    	-webkit-border-radius: 2px;
+		border-radius: 2px;
+	}
+		
+	.menu .menu-toggle:after {
+    	background: #0b391a;
+    	box-shadow: 0 10px 0 0 #0b391a, 0 20px 0 0 #0b391a;
+	}
+}
+
+@media (min-width: 1023px) {
+    .item-list a {
+        display: inline-block;
+        position: relative
+    }
+    .item-list a:hover:after {
+        border-color: #fff
+    }
+    .item-list a:after {
+        -o-transition: .3s all;
+        -ms-transition: .3s all;
+        -moz-transition: .3s all;
+        -webkit-transition: .3s all;
+        transition: .3s all;
+        border: 2px solid transparent;
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0
+    }
+}
+
+@media (max-width: 1000px) {
+    /*wreck diver accesibilty functions*/
+    .dive-info {left: calc(50% - 22.5vh); bottom: 10vh;}
+    
+    .collection-button {left: 8px;}
+}
+
+@media (min-width: 456px) and (max-width: 924px) {
+
+    .landscape .page--exploring-hms-lawrence .two {
+        top: 1vh; 
+        right: 20vh; 
+		z-index: 1;
+    }
+    .landscape .page--exploring-hms-lawrence .three {
+        left: 12vw;
+        top: 35vw
+    }
+    .landscape .page--exploring-hms-lawrence .four {
+        left: 15vh; 
+        top: 45vh 
+	}	
+	.page--exploring-hms-lawrence .two {
+        left: 23.5%;
+        width: 48.78vw;
+		height: 21.15vw;
+    }
+	.page--exploring-hms-lawrence .four {
+        top: 55vh;
+        left: 12vw;
+		width: 27vh;
+        height: 17vh
+    }
+    .page--exploring-hms-lawrence .five {
+        top: 15vh;
+        right: 24vh;
+		width: 47.18vh;
+		height: 20.54vh;
+    }
+    .page--exploring-hms-lawrence .six {
+        top: 45vh;
+        left: 20vw;
+		width: 27vh;
+        height: 17vh
+    }
+	.landscape .page--exploring-hms-lawrence .four {
+        bottom: 5vh;
+        left: 4vh;
+        width: 27vw;
+        height: 17vw
+    }
+    .landscape .page--exploring-hms-lawrence .six {
+        right: 48vh;
+        top: 52vh;
+		width: 27vw;
+        height: 17vw
+    }
+    .landscape .page--exploring-hms-lawrence .seven {
+        right: 4vh
+    }
+    .landscape .page--exploring-hms-lawrence .eight {
+        right: 23vh;
+        bottom: 4vh
+    }
+}
+
+@media (max-width: 950px) {
+    .no-border-sm {
+        border-width: 0
+    }
+    .padding {
+        padding: 16px 16px
+    }
+    .padding-out {
+        margin: -16px -16px
+    }
+}
+
+@media (max-width: 850px) {
+	header .header .title a {
+		font-size: 25px;
+		line-height: 1;
+	}
+
+	header .sub-title {font-size: 20px;}
+}
+
+@media (max-width: 768px) {
+    .no-border-xs {
+        border-width: 0
+    }
+	  .padding {
+        padding: 8px 8px
+    }
+    .padding-out {
+        margin: -8px -8px
+    }
+    .page--exploring-hms-lawrence .five {
+        right: 20vw;
+    }
+    .landscape .page--exploring-hms-lawrence .five {
+        top: 15vh;
+        right: 30vh
+    }
+    .landscape .page--exploring-hms-lawrence .three {
+        left: 40vh;
+        top: 35vh
+    }
+	.page--exploring-hms-lawrence .three {
+		left: 5vw
+	}
+	.body--mysteries {
+        overflow: hidden
+    }
+    .mysteries-depths--link {
+        max-width: none
+    }
+    .portrait .sub-header .sub-title {
+        font-size: 35px;
+        top: 1vh;
+        position: relative
+    }
+
+    .block--mysteries-depths-anchors {
+        position: relative;
+        left: unset;
+        transform: translateX(0);
+        bottom: unset;
+        top: 12vh
+    }
+    .block--mysteries-depths-anchors .mysteries-depths--link {
+        left: 0;
+        margin-left: 0;
+        max-width: 100%;
+        background: none !important;
+        width: 100%
+    }
+    .block--mysteries-depths-anchors .mysteries-depths--link:hover:after {
+        background: none !important
+    }
+    .mysteries-depths--link.first {
+        height: 13vh
+    }
+    .mysteries-depths--link.second {
+        height: 12vh
+    }
+    .mysteries-depths--link.third {
+        height: 15vh
+    }
+    .mysteries-depths--link.four {
+        height: 11vh
+    }
+}
+
+@media (min-width: 767px) {
+    .item-list {
+        overflow: hidden;
+        margin-left: -30px
+    }
+    .item-list li {
+        float: left;
+        padding-left: 30px;
+        width: 33.33%
+    }
+    .item-list li+li {
+        margin-top: 0
+    }
+    body.page--about .page--about--content {
+		margin-top: 1%;
+    } 
+    .item-list {
+        overflow: hidden;
+        margin-left: -30px
+    }
+    .item-list li {
+        float: left;
+        padding-left: 30px;
+        width: 33.33%
+    }
+    .item-list li+li {
+        margin-top: 0
+    }
+
+	body.page--about .page--about--content {
+    padding: 5% 10%;
+	}
+	
+	/*WDK add-on*/.page--about--content h3 {color:#1b4729;}
+	
+    .portrait.body--exploring-hms-lawrence .exploring-hms--slider-content .sp-button {
+        position: relative;
+        bottom: 1.5vh
+    }
+    .portrait.body--exploring-hms-lawrence .exploring-hms--slider-content .sp-arrow.sp-previous-arrow {
+        right: 55%;
+        margin-top: 0.5vh
+    }
+    .portrait.body--exploring-hms-lawrence .exploring-hms--slider-content .sp-arrow.sp-next-arrow {
+        left: 55%;
+        margin-top: 0.5vh
+    }
+	.portrait .page--exploring-hms-lawrence .one {
+        width: 26.6vw;
+        height: 24.06vw
+    }
+    .page--exploring-hms-lawrence .one {  
+        width: 26.6vw!important;
+        height: 24.06vw!important;
+    }
+}
+
+/*** end min 767px ****/
+
+@media (max-width: 736px) and (orientation: portrait) {
+    .sitemap a {
+        font-size: 30px;
+    }
+    .sitemap .container {
+        padding-top: 9%;
+        padding-left: 15%
+    }
+    .sitemap .col-12 {
+        padding-top: 5%;
+        padding-left: 5%;
+        width: auto
+    }
+    .sitemap .col-12 ul {
+        margin-left: 11%
+    }
+}
+
+@media (max-width: 703px) {
+    .mysteries-depths--link.first {
+        height: 11vh
+    }
+    .mysteries-depths--link.second {
+        height: 9vh
+    }
+    .mysteries-depths--link.third {
+        height: 13vh
+    }
+    .mysteries-depths--link.four {
+        height: 11vh
+    }
+}
+
+@media (max-width: 640px) {
+    .portrait .navi-area br { display: none;}
+    .portrait .navi-area b { display: block;}
+}
+
+@media (max-width: 500px) {
+	header .header .title a {
+		font-size: 18px;
+		line-height: 1;
+	}
+
+	header .sub-title {font-size: 18px;}
+}
+
+@media (max-width: 481px) {
+    
+	.explore-charts-map-location-modal .sp-buttons {
+        margin-top: 0;
+    }	
+    .exploring-hms--slider-content .sp-buttons {
+        margin-top: 0;
+    }
+    .navi-area>div .tooltip {
+        min-width: 0;
+    }
+    .navi-area__hms .tooltip {
+        right: 24%;
+    }
+    .navi-area__mysteries .tooltip {
+        top: 67%;
+    }
+    .navi-area__explore .tooltip {
+        right: 26%;
+    }
+    .mysteries-depths--slider-content .sp-buttons {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .sidebar--popup.learn-popup .table.two-column .td,
+    .sidebar--popup.help-popup .table.two-column .td {
+        float: none;
+        width: 100%
+    }
+}
+
+@media (min-width: 479px) {
+	main.index > div.content {
+		background: url("../img/home-background.png") no-repeat center;
+		background-size: cover;
+		background-color: #0a3718;
+	}	
+	
+    .page--exploring-hms-lawrence-modal {
+        max-width: 124vh
+    }
+}
+
+@media (max-width: 478px) {
+	.portrait .navi-area {
+		background: url("../img/background/home/background--navi-area--mobile.png") no-repeat center;
+		background-size: cover;
+	}
+}
+
+@media (orientation: portrait) {
+    html.page-tablet {
+        transform: rotate(-90deg);
+        transform-origin: left top;
+        height: 100vw;
+		max-width: 100vw;
+        overflow-x: hidden;
+        position: absolute;
+        top: 100%;
+        left: 0
+    }
+}
+
+/*Height Based Media Queries*/
+
+@media (max-height: 768px) {
+    .sidebar--popup.learn-popup, .sidebar--popup.help-popup {max-height: 60%!important;}
+    .sidebar--popup.help-popup { top: 26vh;}
+}
+
+@media (max-height: 705px) {
+    .sidebar--popup.learn-popup h2, .sidebar--popup.help-popup h3 {
+    padding: 2vh 2vh 2vh 65px;
+    }
+    .sidebar--popup.help-popup h3 {
+    background: url(../img/img_icon_help_small.png) no-repeat 2vh .4vh;
+    background-size: 5%;
+    }
+    .sidebar--popup.learn-popup, .sidebar--popup.help-popup {width: 60vw!important; z-index: 50;}   
+}
+
+/* Modals Fixes */
+
+@media (max-width: 400px) {
+
+	/*portrait mode*/body.portrait .blocker {padding: 20px 0;}
+
+}
+
+/*Explore Charats Modals*/
+
+@media (max-width: 400px) {
+	/*portrait mode*/body.portrait #mysteries-one, body.portrait #mysteries-two, body.portrait #mysteries-three {width: 100%;}
+}
+
+/* Map Modals*/
+@media (max-width: 1024px) {
+	/* Map Modals */
+	.explore-charts--modal-content {max-width: initial;}
+
+	/*map modals - Landscape */
+
+	body.landscape .explore-charts--modal-content > .map-wrap {width: 65%;}
+
+	/* Ship Modals */
+	#enlarged-great-lakes-location-madeira, #enlarged-great-lakes-location-monarch, #enlarged-great-lakes-location-hesper, #enlarged-great-lakes-location-kamloops, #enlarged-great-lakes-location-alvinclark, #enlarged-great-lakes-location-frankoconnor, #enlarged-great-lakes-location-carldbradley, #enlarged-kingston-kph, #enlarged-kingston-effie, #enlarged-kingston-lawrence, #enlarged-kingston-aloha, #enlarged-kingston-comet, #enlarged-kingston-george, #enlarged-kingston-taber, #enlarged-kingston-prince, #enlarged-kingston-wolfe, #enlarged-great-lakes-location-danieljmorrell, #enlarged-great-lakes-location-waubuno, #enlarged-great-lakes-location-charlesprice, #enlarged-great-lakes-location-admiral, #enlarged-great-lakes-location-argo, #enlarged-great-lakes-location-colgate, #enlarged-great-lakes-location-gpgriffith, #enlarged-great-lakes-location-hmsontario, #enlarged-great-lakes-location-brothers, #enlarged-great-lakes-location-milan, #enlarged-great-lakes-location-roberval {
+		max-width: initial;
+	}
+}
+
+/*Sidebar fixes */
+
+@media (max-width: 820px) {
+			
+	body.landscape .learn, body.landscape .sidebar--popup.learn-popup {
+		top: 0 !important;
+		position: absolute;
+	}
+
+	body.landscape:not(.body--wreck-diver) .sidebar--popup.learn-popup, body.landscape:not(.body--wreck-diver) .sidebar--popup.help-popup {
+		width: 80%!important;
+		max-width: 70vw;
+		z-index: 60;
+	}
+
+	.explore, .learn, .help {z-index: 55;}
+
+	body.landscape:not(.body--wreck-diver) .sidebar--popup.learn-popup, body.landscape:not(.body--wreck-diver) .sidebar--popup.help-popup { max-height: 40vh!important;}
+}
+
+/* Mysteries of the Depths Fix */
+
+@media (max-width: 850px) {
+	/*portrait mode*/body.landscape .blocker {padding: 0;}
+	body.body--mysteries-depths .content-popup { padding: 0;}
+}
+
+@media (max-width: 768px) {
+	/*portrait mode*/ body.portrait #mysteries-one, body.portrait #mysteries-two, body.portrait #mysteries-three {width: 80vw;}
+}
+
+/*Exploring HMS Modal Fixes*/
+
+@media (max-width: 768px) {
+	#page--exploring-hms-one, #page--exploring-hms-two, #page--exploring-hms-three, #page--exploring-hms-four, #page--exploring-hms-five, #page--exploring-hms-six, #page--exploring-hms-seven {
+			max-width: 100%;
+			width: 100vw;
+			height: 90%;
+			overflow-y: auto;
+			overflow-x: hidden;
+		}
+
+	div#page--exploring-video-player {
+		max-width: 100%!important;
+		width: 100%;
+	}
+
+	.modal-info, .slider-box {
+		position: relative;
+		width: 100%;
+		float: none;
+	}
+
+	.image--caption {text-align: left;}
+}
+
+/* Wreck Diver Fixes */
+
+@media (max-width: 900px) {
+		
+/*wreck diver page layout*/
+
+	body.body--wreck-diver.landscape {
+		height: auto!important;
+		overflow-y: auto;
+	}
+	
+	body.body--wreck-diver.landscape .page--wreck-diver {
+		height: auto;
+	}
+
+	body.body--wreck-diver.landscape main#main-content, main {
+		flex: 1 1 auto;
+		outline: 0;
+		position: relative;
+		display: block;
+		height: calc(100vh + 50px);
+	}
+
+	body.body--wreck-diver.landscape .content {
+		width: 100%;
+		height: 100%;
+		overflow: initial;
+		position: absolute;
+	}
+
+	body.body--wreck-diver.landscape .page--copyright {position: absolute;}
+
+	/*buttons*/
+
+	body.body--wreck-diver.landscape .head-to-surface, body.body--wreck-diver.landscape .head-to-surface-anytime, body.body--wreck-diver.landscape .skip-video {
+		width: auto;
+	}
+
+	body.body--wreck-diver.landscape .dive-two-button, body.body--wreck-diver.landscape .dive-one-button {
+		min-height: 12vh;
+		bottom: 18vh;
+		width: 20vw;
+	}
+
+	body.body--wreck-diver.landscape .resume-dive {
+		min-height: 12vh;
+		bottom: 18vh;
+		width: auto;
+	}
+	
+	.page--wreck-diver .adventure .continue {
+    width: 65vh;
+    left: calc(50% - 32.5vh);
+	}
+
+/* Journal Modal - Mobile (Landscape)*/
+
+	/*right page*/
+	html.page-tablet body.body--wreck-diver.landscape .still-image.part.part-journal.active {overflow-y: auto;}
+
+	html.page-tablet .journal, body.portrait-bb .journal {height: 100%;}
+
+	html.page-tablet body.body--wreck-diver.landscape .col-12 { height: 100%;}
+
+	html.page-tablet body.body--wreck-diver.landscape .journal-nojs .main-side {
+		width: 100%;
+		height: 100%;
+		background: url(../img/wreck-diver/journal-bg.jpg) repeat-y center top;
+		background-size: contain;		
+	}
+
+		/*left page*/
+	html.page-tablet body.body--wreck-diver.landscape .journal-nojs .title-note {width: calc(100% + 8vw);}
+
+	html.page-tablet body.body--wreck-diver.landscape .journal-nojs .title-note:before {
+		content: url(../img/wreck-diver/paper-clip.png);
+		position: absolute;
+		display: block;
+		top: -39px;
+		left: 0;
+		transform: scale(0.5);
+	}
+
+	html.page-tablet body.body--wreck-diver.landscape .journal-nojs .title-note .item-detail-label {
+		margin-left: 40px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+
+		/*right page*/
+	html.page-tablet body.body--wreck-diver.landscape .journal-nojs .book .right-page .item-title .item-sketch {
+		max-height: 80px;
+		text-align: center;
+		vertical-align: middle;
+	}
+
+	html.page-tablet body.body--wreck-diver.landscape .item-sketch img {
+		height: 60px;
+		width: auto;
+	}
+
+	html.page-tablet body.body--wreck-diver.landscape .journal-nojs .book .right-page .item-title .item-sketch:before, html.page-tablet body.body--wreck-diver.landscape .journal-nojs .book .right-page .item-title .item-sketch:after {display:none;}
+
+	html.page-tablet body.body--wreck-diver.landscape .journal-nojs .book .right-page .item-title {
+		position: relative;
+		padding-top: 60px;
+	}
+
+	/*Discoveries Menu*/
+
+	html.page-tablet body.body--wreck-diver.landscape .collection {z-index: 99999;}
+
+	html.page-tablet body.body--wreck-diver.landscape .collectionTab {
+		left: -42vh;
+		height: 25px;
+		width: 42vh;
+	}
+
+	html.page-tablet body.body--wreck-diver.landscape .collection .title {
+		height: 25px;
+		font-size: 16px;
+	}
+
+	html.page-tablet body.body--wreck-diver.landscape .bag-scroll {height: 65vh;}
+
+	html.page-tablet body.body--wreck-diver.landscape .bag {
+		margin: .75vmax;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto repeat(10, auto) auto repeat(3, auto);
+		grid-column-gap: 5px;
+		grid-row-gap: 10px;
+	}
+
+	html.page-tablet body.body--wreck-diver.landscape .collection .bag > div img {
+		max-height: 40px;
+		width: auto;
+		max-width: 80%;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 500px) {
+	.blocker {padding: 20px 0;}
+}

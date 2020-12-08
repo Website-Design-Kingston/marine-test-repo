@@ -1,0 +1,1311 @@
+/*CSS file customized from the "mbmwx.css" to match with Mysteries of the depths page needs*/
+
+body {
+  height: 100%;
+  width: 100%;
+  line-height: normal;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+@media (max-display-width: 764px) and (orientation: landscape) {
+  .navi-area {
+    height: 73vh;
+  }
+}
+.page--exploring-hms-lawrence {
+  all: unset;
+  background: none;
+}
+.page--exploring-hms-lawrence .content {
+  background: url("../img/explore-hms/Explore_St_Lawrence_BG.jpg") no-repeat
+    center center;
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  overflow-y: auto;
+}
+
+.page--exploring-hms-lawrence .st-lawrence > a:focus {
+  border: 0;
+}
+.st-lawrence::-webkit-scrollbar {
+  display: none;
+}
+.exploring-hms--transcript {
+  margin-top: 2vh;
+  height: 100%;
+}
+
+.page--wreck-diver {
+  max-width: 1920px;
+  height: 100vh;
+  margin: auto;
+  position: relative;
+}
+
+.body--explore-charts {
+  background: unset;
+}
+
+.page--custom--container,
+.page--wreck-diver {
+  display: flex;
+  flex-direction: column;
+  max-width: 1920px;
+  position: relative;
+}
+
+.content::-webkit-scrollbar,
+.page--custom--container::-webkit-scrollbar {
+  display: none;
+}
+.sidebar--popup.learn-popup,
+.sidebar--popup.help-popup {
+  max-height: 90%;
+  overflow-y: auto;
+  min-height: auto;
+}
+
+.sidebar--popup.learn-popup,
+.sidebar--popup.help-popup {
+  border-radius: 0 1vh 1vh;
+}
+
+header {
+  flex: 0 0 auto;
+}
+
+header .header {
+  height: auto;
+  padding: 1vh 0;
+}
+
+header .header .title {
+  flex: auto;
+  line-height: 4vh;
+  align-self: center;
+  order: 1;
+}
+
+@media (max-width: 1200px) {
+  .header .left-logo a img, .header .right-logo a img {
+    width: 100%;
+  }
+  header .sub-header .menu ul {
+    min-width: auto;
+    width: max-content;
+    border-radius: 0 0 1vh 1vh;
+  }
+}
+
+.header .left-logo {
+  max-width: 20%;
+  margin-left: 1%;
+  flex: auto;
+  order: 0;
+  align-items: flex-start;
+}
+
+.header .left-logo img {
+  filter: invert(1);
+  width: 100%;
+  max-width: 182px;
+}
+
+.header .right-logo {
+  max-width: 20%;
+  margin-right: 1%;
+  flex: 1 1 0;
+  order: 2;
+}
+
+.header .right-logo img {
+  width: 100%;
+  max-width: 139px;
+}
+header a img {
+  content: unset;
+}
+.header .left-logo,
+.header .right-logo {
+  display: flex;
+}
+.header .left-logo a,
+.header .right-logo a {
+  display: block;
+  margin: auto;
+  line-height: normal;
+  align-items: center;
+}
+.sub-header .home-menu {
+  margin-left: 1%;
+  max-width: 4.5vmax;
+  padding: 0;
+  width: 4.5vh;
+}
+
+.fi-list:before {
+  content: "\f169";
+  font-size: 40px;
+  vertical-align: middle;
+}
+
+.page--custom--music-player,
+#music-player-container li {
+  width: unset;
+}
+
+header .sub-header .menu > ul > li.active > a::after,
+header .sub-header .menu > ul > li:active > a::after,
+header .sub-header .menu > ul > li > a:active:after,
+header .sub-header .menu > ul > li > a:focus:after {
+  content: "";
+  background: #0b391a;
+  width: 60%;
+  height: 0.2vh;
+  position: absolute;
+  left: 20%;
+  bottom: 10%;
+}
+
+.sub-header .lang {
+  flex: auto;
+  margin-right: 1%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header .sub-header .lang a {
+  vertical-align: middle;
+  font-size: 18px !important;
+}
+
+.jp-play a {
+  min-width: 2.5vh;
+}
+
+.sub-lang {
+  margin-left: auto;
+}
+
+header .sub-title {
+  position: relative;
+  width: 100%;
+}
+
+.image-error {
+  display: none;
+  z-index: -1;
+}
+
+main.page--mysteries .content {
+  background: url("../img/mysteries-depths/mysteries_bg.jpg") no-repeat center
+    center;
+  background-size: cover;
+}
+
+main.index > div.content {
+  background: url("../img/home-background.png") no-repeat center;
+  background-size: cover;
+  background-color: #0a3718;
+}
+
+main.page--explore-charts .content {
+  background: url("../img/explore-charts/background-explore-charts.jpg") no-repeat
+    center center;
+  background-size: cover;
+}
+
+p.break {
+  margin-top: 1.5em;
+}
+
+.learn,
+.sidebar--popup.learn-popup {
+  top: 40px !important;
+  position: absolute;
+}
+
+.help-popup p {
+  font-weight: inherit;
+}
+
+.page--mysteries .content {
+  display: grid;
+  grid-template-columns: 35% 0.9fr 1fr 1.1fr 34%;
+}
+
+.page--mysteries .content{
+        width: 100%;
+        height: 70.5vh;
+        overflow: hidden;
+        position: absolute;
+    }
+
+.explore-charts--modal-content > div.wreck {
+  cursor: inherit;
+}
+@media (max-width: 767px) and (orientation: portrait) {
+  .explore-charts--modal-content > div.wreck {
+    display: none;
+  }
+}
+
+.page--mysteries .content::after,
+.page--mysteries .content::before {
+    content: "";
+    position: absolute;
+    height: 98%;
+    width: 100%;
+    z-index: 10;
+}
+
+.page--mysteries .content > a::after,
+.page--mysteries .content > a::before {
+    content: "";
+    position: absolute;
+    height: 98%;
+    width: 100%;
+    z-index: 10;
+}
+
+.portrait .page--mysteries .content {
+  grid-template-columns: 13% 1fr 1fr 1fr 13%;
+  height: calc(100% - 2vh);
+}
+
+.page--mysteries .content > a {
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  position: static;
+}
+
+a.page--mysteries-text:focus-within {
+  border: 0;
+}
+
+.page--mysteries .content::after,
+.page--mysteries .content::before {
+  z-index: 1;
+}
+
+a.book-one,
+a.book-one::after,
+a.book-one::before {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / span 1;
+}
+
+a.book-one::before {
+  background: url("../img/mysteries-depths/btn_edmund_bg.png") no-repeat;
+}
+
+a.book-one::after {
+  background: url("../img/mysteries-depths/btn_edmund_rollover.png") no-repeat;
+}
+
+a.book-one::after,
+a.book-one::before {
+  background-size: contain;
+  background-position: bottom;
+}
+
+a.book-two,
+a.book-two::after,
+a.book-two::before {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / span 1;
+  justify-content: center;
+}
+
+a.book-two::before {
+  background: url("../img/mysteries-depths/btn_griffon_bg.png") no-repeat;
+}
+
+a.book-two::after {
+  background: url("../img/mysteries-depths/btn_griffon_rollover.png") no-repeat;
+}
+
+a.book-two::after,
+a.book-two::before {
+  background-size: contain;
+  background-position: bottom;
+}
+
+a.book-three,
+a.book-three::after,
+a.book-three::before {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4 / span 1;
+}
+
+a.book-three::before {
+  background: url("../img/mysteries-depths/btn_bannockburn_bg.png") no-repeat;
+}
+
+a.book-three::after {
+  background: url("../img/mysteries-depths/btn_bannockburn_rollover.png")
+    no-repeat;
+}
+
+a.book-three::after,
+a.book-three::before {
+  background-size: contain;
+  background-position: bottom;
+}
+
+.page--mysteries .content > a:focus:after,
+.page--mysteries .content > a:hover:after,
+a.change:after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity =100)";
+  opacity: 1 !important;
+  border: 0;
+}
+
+.page--mysteries .content > a:after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity =0)";
+  opacity: 0;
+  border: 0;
+}
+
+.content-popup .sp-arrow.sp-next-arrow {
+  left: 65%;
+}
+
+.content-popup .sp-arrow {
+  border-radius: 20%;
+  background-image: none !important;
+  border: 1px solid #409233;
+  background-color: #fff !important;
+  color: #0c361a;
+}
+
+.mysteries-depths--slider-content .sp-arrow {border: 1px solid #2b2204!important;}
+
+.content-popup .sp-arrow:after,
+.content-popup .sp-arrow:before {
+  background-color: #0c361a;
+  content: "";
+  display: block;
+  width: 5%;
+  height: 20%;
+}
+
+.content-popup .sp-arrow.sp-previous-arrow:after,
+.content-popup .sp-arrow.sp-previous-arrow:before {
+  left: 46%;
+}
+
+.content-popup .sp-arrow.sp-next-arrow:after,
+.content-popup .sp-arrow.sp-next-arrow:before {
+  right: 46%;
+}
+
+.content-popup .sp-arrow.sp-next-arrow:before {
+  transform: skew(40deg, 0deg);
+  top: 12%;
+}
+
+.content-popup .sp-arrow.sp-next-arrow:after {
+  transform: skew(-40deg, 0deg);
+  top: 32%;
+}
+
+.sp-button:hover {
+  background-color: #fff;
+}
+
+.slider-pro a {
+  position: static;
+}
+
+p.field label {
+  display: block;
+}
+
+div.explore-charts--header-left p.field img {
+  margin-bottom: 0.5em;
+}
+
+@media (max-width: 812px) {
+  [class*="-map-location-modal"] .sp-button,
+  [class*="-slider-content"] .sp-button {
+    width: 0.3em;
+    height: 0.3em;
+    margin: 0 0.3em;
+  }
+}
+
+.portrait [class*="-map-location-modal"] .sp-buttons,
+.portrait [class*="-slider-content"] .sp-buttons {
+  left: 0 !important;
+  right: 0 !important;
+  margin: 0 auto;
+}
+
+#enlarged-great-lakes-superior[class*="-map-location-modal"],
+#enlarged-great-lakes-superior[class*="-slider-content"] {
+  padding-bottom: 6.5vh;
+}
+
+.explore-charts--modal-content a.close-modal,
+[class*="-map-location-modal"] a.close-modal,
+[class*="-slider-content"] a.close-modal {
+  width: 4.5vmax;
+  height: 4.5vmax;
+  border-radius: 20%;
+}
+
+@media (min-width: 1025px) {
+  .explore-charts--modal-content > div {
+    width: 2rem;
+    height: 1.7rem;
+  }
+
+  .explore-charts--modal-content a.close-modal,
+  [class*="-map-location-modal"] a.close-modal,
+  [class*="-slider-content"] a.close-modal {
+    width: 4vh;
+    height: 4vh;
+    border-radius: 20%;
+  }
+}
+
+[class*="-slider-information"] [class*="-header-right"] p {
+  font-size: 20px;
+}
+
+[class*="-slider-information"] [class*="-slider-title"] {
+  font-size: 24px;
+}
+
+.content-popup .close-menu {
+  display: none !important;
+}
+
+.content-popup .btn-close ~ .close-modal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)" !important;
+  filter: alpha(opacity=100) !important;
+  opacity: 1 !important;
+}
+
+.content-popup .close-modal,
+.sidebar--popup .close-menu {
+  border-radius: 20%;
+  background-color: #035c1b !important;
+  background-image: none !important;
+  border: 1px solid #409233;
+  color: #fff;
+  font-size: 0;
+  text-indent: 0 !important;
+}
+
+.content-popup .close-modal:active,
+.content-popup .close-modal:focus,
+.content-popup .close-modal:hover,
+.sidebar--popup .close-menu:active,
+.sidebar--popup .close-menu:focus,
+.sidebar--popup .close-menu:hover {
+  background-color: #fff !important;
+  color: #0c361a;
+}
+
+.content-popup .close-modal:active,
+.content-popup a.close-modal:focus-within,
+.learn:focus-within,
+.tooltip:focus,
+a.close-modal:focus,
+a.close-modal:focus-within,
+footer a:focus,
+header a.skip-nav:focus,
+li.wreck-single:focus,
+span.sp-arrow:focus,
+span.sp-arrow:focus-within,
+span.sp-buttons:focus,
+span.sp-buttons:focus-within {
+  border: 4px solid #ffbe00 !important;
+}
+
+.skip-nav {
+  padding: 1vmax;
+}
+
+section.learn-about-noscript {
+  padding: 2%;
+  background-color: #fff;
+  position: inherit;
+  margin-top: 2%;
+}
+
+header .sub-header .menu > ul:active > li + li:before {
+  border-left: none;
+}
+
+footer {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.page--copyright--inner {
+  all: unset;
+}
+
+.page--explore-charts .left-box {
+  height: calc(58vw * 0.7115);
+  max-width: 897px !important;
+  max-height: 663px !important;
+}
+
+#enlarged-great-lakes {
+  max-width: 883px !important;
+  max-height: 799.33px !important;
+}
+
+#enlarged-kingston {
+  max-width: 866px !important;
+}
+
+.page--explore-charts .right-box {
+  bottom: 8vh;
+  max-width: 885px !important;
+  height: calc(50vw * 0.7864);
+  max-height: 670px !important;
+}
+
+.portrait .page--explore-charts .left-box {
+  height: calc(85vw * 0.7115);
+  width: 85vw;
+  max-width: 897px !important;
+}
+
+.portrait .page--explore-charts .right-box {
+  height: calc(87vw * 0.7864);
+  width: 87vw;
+  top: 30vh;
+}
+
+.page--explore-charts .right-box::before {
+  left: 0.3vw;
+}
+
+.portrait .page--explore-charts .left-box-icon-two {
+  height: calc(47.5vw * 0.53448);
+  width: 47.5vw;
+  left: 7vh;
+  bottom: 0;
+}
+
+.page--explore-charts .left-box-icon-two {
+  position: fixed;
+}
+
+.page--explore-charts .right-box-icon-one {
+  top: 24vh;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .page--explore-charts .right-box {
+    top: 12vh;
+  }
+}
+
+@media only screen and (min-device-width: 1920px) and (orientation: landscape) {
+  .page--explore-charts .right-box {
+    right: 3%;
+  }
+}
+
+
+.page--explore-charts > .left-box:focus,
+.page--explore-charts > .right-box:focus,
+section.page--explore-charts:focus {
+  border: 0;
+}
+
+#enlarged-great-lakes > div.one {
+  top: 10.37%;
+  left: 25%;
+}
+
+#enlarged-great-lakes > div.two {
+  top: 13.8%;
+  left: 21.5%;
+}
+
+#enlarged-great-lakes > div.three {
+  left: 13.59%;
+  top: 19.66%;
+}
+
+#enlarged-great-lakes > div.four {
+  top: 22.29%;
+  left: 8.2%;
+}
+
+#enlarged-great-lakes > div.five {
+  top: 43.5%;
+  left: 35.7%;
+}
+
+#enlarged-great-lakes > div.six {
+  top: 45.22%;
+  left: 29%;
+}
+
+#enlarged-great-lakes > div.seven {
+  top: 48.8%;
+  left: 31.25%;
+}
+
+#enlarged-great-lakes > div.eight {
+  top: 48.3%;
+  left: 70%;
+}
+
+#enlarged-great-lakes > div.nine {
+  top: 57.3%;
+  left: 55.5%;
+}
+
+#enlarged-great-lakes > div.ten {
+  top: 69.5%;
+  left: 58%;
+}
+
+#enlarged-great-lakes > div.eleven {
+  left: 77.6%;
+  top: 66.04%;
+}
+
+#enlarged-great-lakes > div.twelve {
+  top: 66%;
+  left: 81%;
+}
+
+#enlarged-great-lakes > div.thirteen {
+  top: 63.33%;
+  left: 90%;
+}
+
+#enlarged-great-lakes > div.fourteen {
+  top: 62%;
+  left: 92.8%;
+}
+
+#enlarged-great-lakes > div.fifteen {
+  top: 81.9132%;
+  left: 60.0423%;
+}
+
+#enlarged-great-lakes > div.sixteen {
+  top: 86%;
+  left: 63.1%;
+}
+
+#enlarged-great-lakes > div.seventeen {
+  top: 87%;
+  left: 60.2%;
+}
+
+#enlarged-great-lakes > div.eighteen {
+  top: 87.8%;
+  left: 55.8%;
+}
+
+#enlarged-kingston > div.one {
+  top: 13%;
+  left: 50.5%;
+}
+
+#enlarged-kingston > div.two {
+  top: 14.5%;
+  left: 43.33%;
+}
+
+#enlarged-kingston > div.three {
+  top: 20%;
+  left: 32.5%;
+}
+
+#enlarged-kingston > div.four {
+  top: 24%;
+  left: 19.07%;
+}
+
+#enlarged-kingston > div.five {
+  top: 46.12%;
+  left: 15.5%;
+}
+
+#enlarged-kingston > div.six {
+  top: 57.5%;
+  left: 8.34%;
+}
+
+#enlarged-kingston > div.seven {
+  top: 62.07%;
+  left: 8.34%;
+}
+
+#enlarged-kingston > div.eight {
+  top: 65.5%;
+  left: 3.6%;
+}
+
+#enlarged-kingston > div.nine {
+  top: 80.8%;
+  left: 11.12%;
+}
+
+#enlarged-kingston > b.kingston-north {
+  left: 53.8656%;
+  top: 21.8947%;
+}
+
+#enlarged-kingston > b.kingston-west {
+  top: 48.0337%;
+  left: 22.5907%;
+}
+
+.explore-charts--modal-content b.magnifier {
+  background-image: url("../img/explore-charts/img_charts_magnifier.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 5.5vh;
+  height: 5.5vh;
+  cursor: pointer;
+}
+
+.explore-charts--modal-content b.magnifier:hover {
+  background-image: url("../img/explore-charts/img_charts_magnifier_gold.png");
+}
+
+#enlarged-great-lakes > b.superior {
+  top: 21.33%;
+  left: 30.5%;
+}
+
+#enlarged-great-lakes > b.michigan {
+  top: 59.1291%;
+  left: 33.5042%;
+}
+
+#enlarged-great-lakes > b.huron {
+  left: 61%;
+  top: 53.2%;
+}
+
+#enlarged-great-lakes > b.erie {
+  top: 78.4837%;
+  left: 72.4534%;
+}
+
+#enlarged-great-lakes > b.ontario {
+  top: 67.5055%;
+  left: 85.7331%;
+}
+
+.amiri {
+  font-family: "Amiri", "opensans", "sans-serif", Arial, Tahoma;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+h1.amiri {
+  line-height: 2.2 !important;
+}
+
+h3.amiri,
+p.amiri {
+  margin-top: 1vw;
+}
+
+.mysteries-depths--slider-information h3{
+  text-align: center;
+  font-size: 20px;
+}
+
+.ol.menu-wrecks {
+  list-style-type: upper-alpha;
+  font-weight: 400;
+  font-family: "opensans", "sans-serif", Arial, Tahoma;
+  font-style: normal;
+  font-size: 2.5vh;
+  line-height: 1.5;
+  padding: 0;
+  margin-top: 1.5em;
+}
+.explore-charts--header-right {
+  margin: 1.5em 0;
+}
+
+li.wreck-single {
+  text-decoration: none;
+  font-style: italic;
+  list-style-position: inside;
+  padding: 0.5em 0;
+  transition: color 0.3s;
+  -webkit-transition: color 0.3s;
+}
+
+li.wreck-single:hover {
+  background-color: rgba(3, 14, 7, 0.9);
+  padding-right: 0.3em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.landscape .enlarged-map .sp-thumbnail-container {
+  margin-top: 9vh;
+}
+
+.mysteries-titlepage {
+  color: #2b2204;
+}
+
+.map-enlarged
+  .mysteries-depths--slider-information
+  .mysteries-depths--slider-title::after {
+  right: -100vw !important;
+}
+
+.sp-image {
+  border: 1px transparent;
+  border-radius: 1em;
+}
+
+/*Modified for portrait display*/
+.sp-horizontal .sp-arrows,
+.sp-horizontal .sp-buttons {
+  width: 90%;
+  margin: 2.5vh 0 2vh 5%;
+  height: 6.5vh;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 100%;
+}
+
+.sp-horizontal .sp-buttons {
+  padding-top: 1.5vh;
+}
+
+.sp-horizontal .sp-arrow.sp-next-arrow {
+  left: calc(70% - 3vh);
+  margin: 0 !important;
+}
+
+.sp-horizontal .sp-arrow.sp-previous-arrow {
+  right: calc(70% - 3vh);
+  margin: 0 !important;
+}
+
+.portrait .sp-horizontal .sp-arrows,
+.portrait .sp-horizontal .sp-buttons {
+  max-width: 43%;
+  margin: 2vh auto !important;
+  height: 6.5vh;
+  left: 0;
+  right: 0;
+}
+
+.portrait .sp-horizontal .sp-arrow.sp-previous-arrow {
+  right: 90% !important;
+  left: auto;
+  margin: 0;
+}
+
+.portrait .sp-horizontal .sp-arrow.sp-next-arrow {
+  left: 90% !important;
+  right: auto;
+  margin: 0;
+}
+
+span.fi-anchor {
+  margin: 2vw auto;
+  display: table;
+  font-size: 3vh;
+}
+
+.sp-layer span.fi-anchor {margin: 2vw auto 0;}
+
+div.slider-pro:not(.sp-has-buttons) div.sp-arrows {
+  display: none;
+}
+
+body.page--about .contact-us--form {
+  margin-bottom: 2vmax;
+}
+
+.content.contact-us .contact-us--introduction p {
+  margin-top: 1vmax;
+}
+
+.body--wreck-diver .sidebar--popup.learn-popup {
+  width: auto;
+  max-width: 52vh;
+}
+
+.learn-popup .close-menu {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  width: 5vh;
+  height: 5vh;
+  float: right;
+}
+
+.learn-popup .close-menu,
+.body--wreck-diver .sidebar--popup .btn-dive-now {
+  max-width: 5vh;
+  max-height: 5vh;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  float: right;
+}
+
+.body--wreck-diver .sidebar--popup .btn-close {
+  position: relative;
+  border-radius: 1vh;
+  bottom: 0;
+  right: 0;
+  float: right;
+  max-width: 5vh;
+  max-height: 5vh;
+}
+
+.sidebar--popup.learn-popup .table .tr:after {
+  content: "";
+  display: block;
+  clear: none;
+}
+
+.sidebar--popup.learn-popup .table,
+.sidebar--popup.help-popup .table {
+  margin-bottom: 0;
+}
+
+.page--wreck-diver #main-content > section > div > button.help {
+  display: none;
+  top: 0;
+  position: absolute;
+  border-radius: 0 0 5px 0;
+  text-transform: uppercase;
+  font-size: 1.8vh;
+  height: 5vh;
+  width: 18vh;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  background: #0b391a;
+  background-image: none;
+  padding: 0;
+  z-index: 0;
+}
+
+.page--wreck-diver #main-content > section > div > button.help.active {
+  background-color: #0b391a;
+  color: #fff;
+  display: inline-block;
+}
+
+.page--wreck-diver #main-content > section > div > section {
+  top: 5vh;
+  position: absolute;
+  max-width: 52vh;
+  width: auto;
+}
+.page--wreck-diver #main-content > section > div > section > h3 {
+  padding: 2vh 2vh 0;
+}
+
+.page--wreck-diver .adventure .part .video .skip-video {
+  position: absolute;
+  bottom: 0;
+  font-size: 1.8vh;
+}
+
+#control-bar,
+#control-bar-journal {
+  bottom: -14vh;
+  height: 18vh;
+}
+
+.page--wreck-diver .adventure .control {
+  background-color: #488e34;
+  width: 100vw;
+  font-size: 1.5vh;
+  color: #fff;
+  border-top: 1px solid #fff;
+  z-index: 1;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.control-grid,
+.control-grid-journal {
+  display: grid;
+  align-content: center;
+  justify-content: stretch;
+  align-items: center;
+  grid-template-columns: 1fr 40% 1fr;
+  grid-row: 1;
+}
+
+.controlTab div,
+.page--wreck-diver .adventure .control > div {
+  position: relative;
+}
+
+.page--wreck-diver .adventure .continue {
+  all: unset;
+  left: calc(50% - 9vh);
+  opacity: 0;
+  position: fixed;
+  bottom: 4vh;
+  border: 1px solid #6bbc45;
+  border-bottom: none;
+  width: 16vh;
+  height: auto;
+  z-index: 1;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px 5px 0 0;
+  padding: 1vh 1vh 2vh;
+  min-height: 6vh;
+}
+
+.page--wreck-diver .adventure .continue a {
+  all: unset;
+  display: block;
+  color: #fff;
+  font-size: 1.8vh;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.page--wreck-diver .adventure .continue .clickable {
+  all: unset;
+  cursor: pointer;
+  position: relative;
+  width: auto;
+  height: auto;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform: none;
+}
+
+.dive-two-button,
+.dive-one-button,
+.head-to-surface,
+.head-to-surface-anytime,
+.skip-video {
+  background: #0b391a;
+  color: #fff;
+  top: auto;
+  min-height: 9vh;
+  right: 1vw;
+  opacity: 1;
+  position: fixed;
+  bottom: 4vh;
+  border: 1px solid #6bbc45;
+  border-bottom: none;
+  width: 16vh;
+  height: auto;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px 5px 0 0;
+  padding: 1vh 1vh 2vh;
+}
+
+.resume-dive {
+  background: #0b391a;
+  color: #fff;
+  top: auto;
+  min-height: 9vh;
+  left: 1vw;
+  opacity: 1;
+  position: fixed;
+  bottom: 4vh;
+  border: 1px solid #6bbc45;
+  border-bottom: none;
+  width: 16vh;
+  height: auto;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px 5px 0 0;
+  padding: 1vh 1vh 2vh;
+}
+
+.dive-two-button,
+.dive-one-button,
+.head-to-surface,
+.head-to-surface-anytime,
+.resume-dive,
+.skip-video,
+.continue {
+  z-index: 1;
+}
+
+.head-to-surface,
+.head-to-surface-anytime,
+.skip-video {
+  display: none;
+  font-size: 1.2vh;
+}
+
+.dive-two-button,
+.dive-one-button,
+.resume-dive {
+  font-size: 1.8vh;
+}
+
+.page--wreck-diver .adventure .continue a img,
+.page--wreck-diver .adventure .part-journal .head-to-surface {
+  display: none;
+}
+
+.head-to-surface span,
+.head-to-surface-anytime span,
+.resume-dive p,
+.skip-video span {
+  all: unset;
+  font-size: 1.8vh;
+  display: block;
+}
+
+.head-to-surface .confirm {
+  height: auto;
+  display: none;
+}
+
+.head-to-surface .confirm > .text {
+  line-height: 2vh;
+}
+
+.head-to-surface .confirm .button {
+  line-height: 4vh;
+  margin: 0.4em;
+}
+
+.head-to-surface .confirm .button > span {
+  background: #02591a;
+  border: 1px solid #6bbc45;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin: 0.4em;
+}
+
+.showControl,
+.showControlJournal {
+  bottom: 4vh !important;
+}
+
+.controlTab {
+  display: flex;
+  bottom: 4vh;
+  position: absolute;
+  height: 4vh;
+  width: 15vh;
+  box-shadow: 0 0 -15px 0 rgba(0, 0, 0, 0.5);
+  background: #141414;
+  border-radius: 15px 15px 0 0;
+}
+
+.controlTab div {
+  flex: auto;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  font-family: "opensans", "sans-serif", Arial, Tahoma;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  text-transform: uppercase;
+}
+
+.page--wreck-diver .adventure .control .head-to-surface .confirm {
+  right: 8.5vw;
+}
+
+.page--wreck-diver .collection {
+  position: absolute;
+  top: 0;
+  height: 50%;
+  width: 21%;
+  right: -21%;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  border: 0;
+  border-bottom: 1px solid #6bbc45;
+  border-left: 1px solid #6bbc45;
+  z-index: 1;
+}
+
+.showCollection {
+  right: 0 !important;
+}
+
+.collectionTab {
+  display: flex;
+  margin-top: 0;
+  position: absolute;
+  left: -18vh;
+  top: 0;
+  height: 5vh;
+  width: 18vh;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  background: #0b391a;
+  border-radius: 0 0 0 5px;
+  border: 1px solid #6bbc45;
+  border-right: none;
+}
+
+.collectionTab div,
+.page--wreck-diver .collection .title {
+  font-size: 1.8vh;
+  color: #fff;
+  padding: 1vh 1vw;
+  line-height: unset;
+}
+
+.collectionTab div {
+  flex: auto;
+  text-align: center;
+  position: relative;
+  font-weight: 400;
+  font-family: "opensans", "sans-serif", Arial, Tahoma;
+  text-transform: uppercase;
+}
+
+.page--wreck-diver .collection .title {
+  border-bottom: 1px solid #6bbc45;
+  border-left: 1px solid #6bbc45;
+  border-top: none;
+  text-transform: inherit;
+  height: 5vh;
+}
+
+#add-on-help {
+  display: block;
+  font-weight: 700;
+}
+
+#main-content > section > div > aside > div {
+  overflow: visible;
+}

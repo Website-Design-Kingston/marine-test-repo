@@ -1,0 +1,1046 @@
+@font-face {
+  font-family: "Kalam-Regular";
+  src: url("font/kalam-regular/Kalam-Regular.eot");
+  src: url("font/kalam-regular/Kalam-Regular-.eot#iefix")
+      format("embedded-opentype"),
+    url("font/kalam-regular/Kalam-Regular.woff") format("woff"),
+    url("font/kalam-regular/Kalam-Regular.ttf") format("truetype"),
+    url("font/kalam-regular/Kalam-Regular.svg#Kalam-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.body--wreck-diver {
+  background: none;
+}
+
+.body--wreck-diver .sidebar--popup .btn-dive-now {
+  background: rgba(2, 95, 27, 0.9)
+    url("../img/wreck-diver/button_begin_dive_icon.png") no-repeat center 80%;
+  background-size: 30% auto;
+  width: 35%;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  padding-top: 1%;
+  cursor: pointer;
+  border-radius: 1vh;
+}
+
+.body--wreck-diver .sidebar--popup .btn-close {
+  border-radius: 2vh;
+  background: rgba(2, 95, 27, 0.9) url("../img/background/btn-close.png")
+    no-repeat center center;
+  background-size: cover;
+  border: 1px solid #6bbc45;
+}
+
+.body--wreck-diver .sidebar--popup .btn-close:hover {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+  filter: alpha(opacity=85);
+  opacity: 0.85;
+}
+
+.body--wreck-diver .learn-popup {
+  display: block;
+}
+
+.body--wreck-diver .learn-popup .learn-content {
+  display: none;
+}
+
+.body--wreck-diver .learn-popup .learn-content.active {
+  display: block;
+}
+
+.page--wreck-diver .adventure {
+  position: relative;
+}
+
+.page--wreck-diver {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.page--wreck-diver .adventure .part {
+  top: 0;
+  left: 0;
+  background: #0b391a;
+  display: none;
+}
+.page--wreck-diver .adventure .part {
+  display: none;
+}
+.page--wreck-diver .adventure .part.active {
+  opacity: 1;
+  display: block;
+  animation-name: twinkles;
+  animation-duration: 1s;
+}
+
+.page--wreck-diver .adventure .part .video .part-video {
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  background-size: cover;
+}
+
+.page--wreck-diver .adventure .part .video .skip-video {
+  background: #0b391a;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  top: auto;
+  border: 1px solid #6bbc45;
+  border-bottom: none;
+  width: 16vh;
+  height: 9vh;
+  font-size: 1.2vh;
+  right: 2vw;
+  z-index: 19;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px 5px 0 0;
+  display: none;
+}
+
+.page--wreck-diver .adventure .part .video .skip-video img {
+  width: 35%;
+  margin-top: 5px;
+}
+
+.part-item {
+  position: absolute;
+  height: auto;
+  display: none;
+}
+
+.part-item.active {
+  animation-name: fade-in;
+  animation-duration: 1s;
+  display: block;
+}
+
+.part-item .twinkles {
+  width: 5vw;
+  height: auto;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.part-item.active .twinkles {
+  animation-name: twinkles;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+  width: 100%;
+  height: 100%;
+}
+
+.part-item .twinkles img {
+  display: none;
+  width: 100%;
+}
+
+.part-item .twinkles {
+  background: url("../img/wreck-diver/Object--button---Bowsprit.png") no-repeat
+    center center;
+  background-size: contain;
+}
+
+.part-item .description {
+  visibility: hidden;
+  border: 2px solid #0b391a;
+  font-size: 1.5vh;
+  position: relative;
+  margin-bottom: 1.7vh;
+  width: 30vh;
+}
+
+.part-item .description.onleft {
+  transform: translate(calc(-50% - 7vh), calc(50% + 6.5vh));
+}
+
+.part-item .description.onright {
+  transform: translate(calc(50% + 7vh), calc(50% + 6.5vh));
+}
+
+.part-item .description .arrow {
+  position: absolute;
+  bottom: -4vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border: 2vh solid #0b391a;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.part-item .description.onleft .arrow {
+  left: calc(100% + 2.3vh);
+  bottom: calc(50%);
+  transform: translate(-50%, 50%);
+  border-left-color: inherit;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+}
+
+.part-item .description.onright .arrow {
+  right: calc(100% + -2vh);
+  left: unset;
+  bottom: calc(50%);
+  transform: translate(-50%, 50%);
+  border-right-color: inherit;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+}
+
+.part-item .description .title {
+  background: #0b391a;
+  color: #fff;
+  font-size: 2vh;
+  position: relative;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.part-item .description .explain {
+  background: #fff;
+}
+
+.part-item .description .explain > div {
+  display: table-cell;
+  padding: 0.5vh;
+  vertical-align: top;
+  line-height: 2vh;
+}
+
+.part-item .description .explain > div img {
+  height: auto;
+}
+
+.part-item .description .explain > div:first-child {
+  border-right: 1px solid #0b391a;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.part-item .description .explain > div:last-child {
+  width: 60%;
+}
+
+.page--wreck-diver .adventure .control {
+  position: fixed;
+  bottom: 0;
+  height: 20vh;
+  background: #0b391a;
+  width: 86vw;
+  display: none;
+  font-size: 1.5vh;
+  color: #fff;
+  border-top: 1px solid #fff;
+}
+
+.page--wreck-diver .adventure .control.active {
+  display: block;
+}
+
+.page--wreck-diver .adventure .control > div {
+  position: absolute;
+}
+
+.page--wreck-diver .adventure .control .monitor-wrapper {
+  transform: translateX(7vw);
+  height: 90%;
+  margin: 1vh 0 0 0;
+}
+
+.page--wreck-diver .adventure .control .monitor-wrapper > span {
+  display: block;
+  width: 10vh;
+  transform: translateY(-50%);
+  top: 50%;
+  position: absolute;
+}
+
+.page--wreck-diver .adventure .control .monitor {
+  width: 45vh;
+  height: 100%;
+  background: url("../img/wreck-diver/Diver-Monitor.png") no-repeat center center;
+  background-size: contain;
+  padding: 3vh 14.5vh 3vh 12.5vh;
+  margin-left: 3.5vh;
+}
+
+.page--wreck-diver .adventure .control .monitor .depth {
+  margin: 0.5vh 0 1.7vh 0;
+}
+
+.page--wreck-diver .adventure .control .monitor .oxygen {
+  position: absolute;
+  top: 3.5vh;
+  right: 16vh;
+}
+
+.page--wreck-diver .adventure .control .monitor .oxygen .oxy-bar {
+  height: 8.5vh;
+  width: 0.9vw;
+  margin: 0 auto;
+  border: 1px inset #ccc;
+  position: relative;
+}
+
+.page--wreck-diver .adventure .control .monitor .oxygen .oxy-bar .progress-bar {
+  background: linear-gradient(to bottom, #3bc000, #0b5f12);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.page--wreck-diver .adventure .control .navigation {
+  width: 10vw;
+  height: 100%;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+.page--wreck-diver .adventure .control .navigation > div {
+  position: absolute;
+  text-align: center;
+}
+
+.page--wreck-diver .adventure .control .navigation > div > img {
+  width: 2.5vh;
+}
+
+.page--wreck-diver .adventure .control .navigation #center {
+  width: 10vh;
+  height: 10vh;
+  background: url("../img/wreck-diver/Directional_circle.png") no-repeat center
+    center;
+  background-size: contain;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  padding-top: 2.5vh;
+  color: #000;
+  transform: translate(-50%, -50%);
+}
+
+.page--wreck-diver .adventure .control .navigation #up {
+  top: 1vh;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  font-size: 1.2vh;
+}
+
+.page--wreck-diver .adventure .control .navigation #down {
+  top: 15.5vh;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  font-size: 1.2vh;
+}
+
+.page--wreck-diver .adventure .control .navigation #left {
+  top: 6.5vh;
+  left: calc(50% - 7.5vh);
+  transform: translateX(-50%);
+  cursor: pointer;
+  font-size: 1.2vh;
+}
+
+.page--wreck-diver .adventure .control .navigation #right {
+  top: 6.5vh;
+  left: calc(50% + 7.5vh);
+  transform: translateX(-50%);
+  cursor: pointer;
+  font-size: 1.2vh;
+}
+
+.page--wreck-diver .adventure .control .location {
+  width: 14vw;
+  height: 100%;
+  background: url("../img/wreck-diver/position.png") no-repeat center 10vh;
+  background-size: contain;
+  transform: translateX(55vw);
+  padding-top: 2vh;
+}
+
+.page--wreck-diver .adventure .control .location img {
+  position: absolute;
+  right: 0;
+  top: 5vh;
+}
+
+.page--wreck-diver .adventure .control .head-to-surface {
+  right: 2vw;
+  bottom: 0;
+}
+
+.page--wreck-diver .adventure .control .head-to-surface img {
+  display: block;
+  width: 17vh;
+  height: 10vh;
+  cursor: pointer;
+}
+
+.page--wreck-diver .adventure .control .head-to-surface .confirm,
+.oxy-bar .confirm {
+  padding: 10px;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  border: 2px solid #02591a;
+  display: none;
+  position: absolute;
+  bottom: 13vh;
+  right: -1vw;
+  color: #000;
+}
+
+.oxy-bar .confirm {
+  bottom: 14vh;
+  right: -11vh;
+}
+
+.page--wreck-diver .adventure .control .head-to-surface .confirm::after,
+.oxy-bar .confirm::after {
+  content: "";
+  position: absolute;
+  bottom: -5.5vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border: 3vh solid #fff;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.page--wreck-diver .adventure .control .head-to-surface .confirm .text,
+.oxy-bar .confirm .text {
+  width: 20vh;
+  margin-bottom: 20px;
+  font-size: 2vh;
+}
+
+.page--wreck-diver .adventure .control .head-to-surface .confirm .button > span,
+.oxy-bar .confirm .button > span {
+  background: #02591a;
+  border: 1px solid #6bbc45;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.page--wreck-diver .adventure .continue {
+  text-transform: uppercase;
+  text-align: center;
+  left: calc(50% - 14vh);
+  transform: translateX(-51%);
+  bottom: 20vh;
+  height: 12vh;
+  position: absolute;
+  z-index: 1;
+  width: 28vh;
+  opacity: 0;
+}
+
+.page--wreck-diver .adventure .continue .clickable {
+  cursor: pointer;
+  position: absolute;
+  width: 18vh;
+  height: 65%;
+  top: -10%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, 50%);
+}
+
+.page--wreck-diver .adventure .continue a {
+  display: block;
+  position: relative;
+  color: #fff;
+  font-size: 2vh;
+  padding-top: 5vh;
+}
+
+.page--wreck-diver .adventure .continue a img {
+  width: 28vh;
+  position: absolute;
+  top: -2vh;
+  left: 50%;
+  z-index: -1;
+  transform: translateX(-50%);
+  max-width: unset;
+}
+
+.page--wreck-diver .collection {
+  position: fixed;
+  top: 19vh;
+  right: 0;
+  background: #0b391a;
+  width: 14vw;
+  border-left: 1px solid #fff;
+  border-top: 1px solid #fff;
+  visibility: hidden;
+}
+
+.page--wreck-diver .collection.active {
+  visibility: visible;
+}
+
+.page--wreck-diver .collection .bag {
+  position: relative;
+  overflow-y:scroll;
+}
+
+.page--wreck-diver .collection .bag > div {
+  position: absolute;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.page--wreck-diver .collection .bag > div[discover="true"] {
+  pointer-events: auto;
+}
+
+.page--wreck-diver .collection .bag > div.active[discover="true"] {
+  opacity: 1;
+  animation-name: twinkles;
+  animation-duration: 0.7s;
+  animation-iteration-count: 4;
+  background-color: #0b391a;
+}
+
+.page--wreck-diver .collection .bag > div img {
+  width: 4.2vw;
+  height: auto;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.page--wreck-diver .collection .bag .bag__item--image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 3vh;
+  -webkit-filter: invert(0);
+  filter: invert(0);
+}
+
+.page--wreck-diver .collection .bag > div[data-dive="1"] {
+  z-index: 1;
+}
+
+.dive-two-button,
+.dive-one-button{
+  background: rgba(2, 95, 27, 0.9)
+    url("../img/wreck-diver/button_begin_dive_icon.png") no-repeat 10px center;
+  background-size: 30% auto;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  padding: 2vh 2vh 2vh 8vh;
+  cursor: pointer;
+  border-radius: 1vh;
+  width: 17vh;
+  height: 10vh;
+  position: absolute;
+  bottom: 0;
+  right: 35vh;
+  font-size: 80%;
+  z-index: 1;
+}
+
+.page--wreck-diver .adventure .still-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh!important;
+    background: url(../img/wreck-diver/Wreck_Diver_onDeck_BG.jpg) no-repeat 0 0;
+    background-size: cover;
+    overflow-y: visible;
+}
+
+.dive-complete-message,
+.dive-incomplete-message {
+  width: 40vh;
+  padding: 10px;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  border: 2px solid #02591a;
+  display: none;
+  position: relative;
+  bottom: 52vh;
+  left: -20vw;
+  color: #000;
+}
+
+.dive-complete-message::after,
+.dive-incomplete-message::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(100%, -65%);
+  width: 0;
+  height: 0;
+  border: 3vh solid #fff;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+}
+
+@keyframes twinkles {
+  from {
+    opacity: 0.3;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.journal {
+  display: none;
+  position: fixed;
+  height: 71.5vh;
+  width: 94vh;
+  top: 19vh;
+  right: 16vw;
+  border-radius: 10px;
+  background: url("../img/wreck-diver/journal_wreck_diver_bg_resized.png") no-repeat 0 0;
+  background-size: cover;
+}
+
+.journal p {
+  margin-bottom: 10px;
+}
+
+.journal.active {
+  display: block;
+}
+
+.journal .attachment-image {
+  position: absolute;
+  right: 0;
+  top: 1.5vh;
+  background: url("../img/wreck-diver/image_note_bg.png") no-repeat 0 0;
+  background-size: contain;
+  width: 15vh;
+  height: 16vh;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.journal .attachment-image--src {
+  width: 9vh;
+  height: 10vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  vertical-align: middle;
+  transform: translate(5px, -5px);
+}
+
+.journal .left-side {
+  width: 100%;
+  height: 40%;
+}
+
+.journal .left-side .item-detail {
+  position: absolute;
+  width: 45%;
+  height: 40%;
+  top: 20px;
+  left: 20px;
+  padding: 4vh 1vw 3vh 1.5vw;
+}
+
+.journal .left-side .item-detail-label {
+  text-transform: uppercase;
+  margin-bottom: 1vh;
+  font-weight: bold;
+}
+
+.journal .left-side .item-detail-text {
+  font-size: 80%;
+}
+
+.journal .left-side .ship-detail {
+  position: absolute;
+  width: 50%;
+  height: 40%;
+  right: 20px;
+  top: 15px;
+  padding: 2vh 1vw 3vh 1.5vw;
+  color: #fff;
+
+}
+
+.journal .left-side .ship-detail-label {
+  text-transform: uppercase;
+  margin-bottom: 1vh;
+}
+
+.journal .left-side .ship-detail-text {
+  font-size: 85%;
+  font-style: italic;
+}
+
+.journal .main-side {
+  float: left;
+  width: 72.5%;
+  height: 100%;
+  position: relative;
+}
+
+.journal .book {
+  height: 86%;
+  font-family: Kalam-Regular;
+  background: url("../img/wreck-diver/dive_assets.png") no-repeat 3.5vw 10vh;
+  background-size: 90%;
+}
+
+.journal .book .left-page {
+  display: none;
+  width: 47%;
+  height: 100%;
+  float: left;
+  padding: 5vh 1vw 3vh 2vw;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.journal .book .left-page .conditions-title,
+.journal .book .left-page .location-title {
+  text-transform: uppercase;
+  font-size: 130%;
+  margin-bottom: 0.5vh;
+}
+
+.journal .book .left-page .location-footer {
+  font-family: "opensans", "sans-serif", Arial, Tahoma;
+  font-size: 75%;
+  position: absolute;
+  bottom: 0;
+}
+
+.journal .book .left-page .conditions-text {
+  font-size: 120%;
+}
+
+.journal .book .left-page .location {
+  background-image: url("../img/wreck-diver/discovery-position.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 25vh;
+  position: relative;
+}
+
+.journal .book .left-page .location .location-point {
+  width: 2vh;
+  height: 2vh;
+  background: red;
+  border-radius: 1vh;
+  position: absolute;
+}
+
+.journal .book .right-page {
+  display: none;
+  width: 48%;
+  height: 100%;
+  float: left;
+  padding: 5vh 2vw 3vh 1vw;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.journal .book .right-page .item-title .item-title-label {
+  text-transform: uppercase;
+  font-size: 130%;
+}
+
+.journal .book .right-page .item-title .item-name {
+  font-size: 120%;
+}
+
+.journal .book .right-page .item-image {
+  width: 100%;
+  height: 70%;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.journal .book .right-page .item-image__text {
+  position: absolute;
+  color: red;
+  text-shadow: 1px 1px 1px #000;
+  font-weight: normal;
+  font-variant: small-caps;
+  color: #e20000;
+  font-size: 130%;
+  text-align: center;
+}
+
+.journal .book .spine {
+  width: 5%;
+  height: 100%;
+  float: left;
+}
+
+.journal .footer {
+  height: 14%;
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0 0 0 1vw;
+  width: 100%;
+}
+
+.journal .footer .footer-text {
+  font-size: 150%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: Kalam-Regular;
+}
+.journal .footer .btn-close {
+  border: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 5vh;
+  height: 5vh;
+  background-image: url("../img/button_close.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.journal .paging {
+  position: absolute;
+  width: 100%;
+  height: 10vh;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.journal:hover .paging {
+  display: block;
+}
+
+.journal .paging > span {
+  font-size: 200%;
+  color: #ccc;
+  font-weight: bold;
+}
+
+.journal .paging .paging__back {
+  float: left;
+}
+
+.journal .paging .paging__next {
+  float: right;
+}
+
+@media (max-width: 1200px) {
+  .body--wreck-diver .sidebar--popup .btn-dive-now {
+    height: 9vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .body--wreck-diver .sidebar--popup .btn-dive-now {
+    height: 7.5vh;
+  }
+}
+
+/*--- MBWX edit ---*/
+
+.col-12,
+.adventure {
+  height: 100%;
+}
+.page--wreck-diver .adventure .part {
+  position: relative;
+  text-align: center;
+  height: 100%;
+}
+
+.page--wreck-diver .adventure::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+.video {
+  max-width: 1280px;
+  position: relative;
+  display: inline-block;
+  object-fit: contain;
+}
+.portrait .video {
+  margin-top: 5vh;
+}
+.page--wreck-diver .adventure .part .video .part-video {
+  min-width: unset;
+  min-height: unset;
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+.part-item {
+  height: 5vw;
+  width: 5vw;
+}
+@media only screen and (min-device-width: 1440px) and (orientation: landscape) {
+  .part-item {
+    height: 3vw;
+    width: 3vw;
+  }
+}
+.part-item .description {
+  display: none;
+  z-index: auto;
+}
+#main-content span.shimmering-stars > img {
+  filter: invert(1);
+  height: 2vh;
+}
+.bag {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(5vmax, 1fr));
+  grid-gap: 1px;
+  grid-auto-flow: dense;
+  margin: 1vmax;
+  max-height: calc(100% - 8vw);
+}
+@media screen and (max-height: 414px) {
+  .bag {
+    grid-template-columns: repeat(auto-fill, minmax(4vmax, 1fr));
+  }
+}
+div.bagItem {
+  position: relative !important;
+  padding: 1vmin;
+}
+.diveNum {
+  color: #fff8b6;
+  font-size: 60%;
+  opacity: 0.5 !important;
+  text-align: center;
+}
+.page--wreck-diver .collection .bag > div img {
+  max-width: 4vw;
+  width: unset;
+}
+.page--wreck-diver .collection .bag > div.active[discover="true"] {
+  animation-iteration-count: 16;
+}
+.page--wreck-diver .collection .bag > div[discover="true"] {
+  opacity: 1;
+  text-align: right;
+}
+b.checkmark {
+  width: 100%;
+}
+.page--wreck-diver .collection .bag > div[discover="true"] b.checkmark::after {
+  content: "\2713";
+  font-weight: bold;
+  color: white;
+  display: block;
+}
+div.active[discover="true"] b.checkmark::after {
+  opacity: 1;
+  animation-name: twinkles;
+  animation-duration: 0.7s;
+}
+.dive-complete-message,
+.dive-incomplete-message {
+  right: 43vh;
+  bottom: 28vh;
+  left: unset;
+}
+
+/* Journal */
+
+.journal {
+  position: relative;
+  top: 3vw;
+  right: unset;
+  margin: auto;
+}
+.journal.active:hover {
+  z-index: 20;
+}
+html.page-tablet .journal,
+body.portrait-bb .journal {
+  height: 60vh;
+  width: calc(60vh * 2.1207386363636362);
+}
+.page--wreck-diver .adventure .part-journal {
+  height: 100%;
+  padding-bottom: unset;
+}
+#main-content
+  > section
+  > div
+  > button.learn.page--custom--learn-address-book.active {
+  z-index: unset;
+}
+
+ /* Full width background image*/
+
+.full-width-bg {
+    background: url(../img/wreck-diver/wreck_diver_bg.PNG) no-repeat center center fixed;
+    height: 90vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

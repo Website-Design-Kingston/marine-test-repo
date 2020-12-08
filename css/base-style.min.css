@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css?family=Amiri%7COpen+Sans:300,400,700");
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+}
+button {
+    outline: none;
+    cursor: pointer;
+}
+.clearfix {
+    clear: both;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.secondary {
+    background-image: url("../img/Secondary_page_bg.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.content {
+    width: 100%;
+    height: calc(100% - 50px);
+    overflow: hidden;
+    position: absolute;
+}
+.container {
+    max-width: 90%;
+    margin: auto;
+    height: 100%;
+}
+.col-3 {
+    width: 33.33%;
+    float: left;
+}
+.col-6 {
+    width: 50%;
+    float: left;
+}
+.col-12 {
+    width: 100%;
+}
+.explore,
+.learn,
+.help {
+    background-image: url("../img/button_explore_bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: transparent;
+    color: #fff;
+    position: fixed;
+    top: 14vh;
+    border: none;
+    width: 8vh;
+    height: 7.5vh;
+    font-size: 14px;
+    left: 0;
+    z-index: 19;
+}
+.learn {
+    background-image: url("../img/button_learn_bg.png");
+    bottom: 11.7vh;
+    top: auto;
+}
+.help {
+    background-image: url("../img/button_help_bg.png");
+    bottom: 3.3vh;
+    top: auto;
+}
+.learn-popup {
+    position: fixed;
+    left: 7.3vh;
+    bottom: 11.7vh;
+    font-family: "Amiri", serif;
+    width: 26.7vh;
+    height: 51vh;
+    padding-left: 4vh;
+    padding-right: 7vh;
+    color: #fff;
+    background-image: url("../img/popup_learn_bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: none;
+    z-index: 19;
+}
+.learn-popup h2 {
+    font-weight: normal;
+    font-size: 24px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+.learn-popup p {
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 0.6vh;
+    font-size: 16px;
+    font-weight: 400;
+}
+.learn-popup .close-menu {
+    border: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 8vh;
+    height: 7.5vh;
+    background-image: url("../img/button_close.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+.help-popup {
+    position: fixed;
+    bottom: 3.4vh;
+    left: 6.9vh;
+    font-family: "Amiri", serif;
+    background-image: url("../img/popup_help_bg.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 28vh;
+    height: 31.3vh;
+    color: #fff;
+    display: none;
+    padding-left: 4vh;
+    padding-right: 3vh;
+    z-index: 19;
+}
+.help-popup h2 {
+    font-weight: normal;
+    font-size: 24px;
+    margin-top: 1vh;
+    margin-bottom: 0vh;
+}
+.help-popup p {
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 1vh;
+    font-size: 16px;
+    font-weight: 300;
+}
+.help-popup .close-menu {
+    border: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 8vh;
+    height: 7.5vh;
+    background-image: url("../img/button_close.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+.menu {
+    display: none;
+    background-image: url("../img/main_menu_bg.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    height: 64vh;
+    width: 43.2vh;
+    position: fixed;
+    top: 14vh;
+    font-family: "Amiri", serif;
+    z-index: 19;
+}
+.menu .close-menu {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    color: #fff;
+    right: 0;
+    top: 0;
+    width: 7vh;
+    height: 7vh;
+}
+.menu li {
+    width: 74%;
+    position: relative;
+    line-height: 6vh;
+    padding-left: 3.5vh;
+    margin-bottom: 1vh;
+}
+.menu li.double {
+    line-height: 3vh;
+    padding-top: 2vh;
+    height: 8vh;
+}
+.menu li.alone {
+    line-height: 8vh;
+    height: 10vh;
+}
+
+.menu img {
+    float: right;
+    width: 9.7vh;
+    position: absolute;
+    top: 0;
+    right: 0.4vh;
+}
+
+ul.main-menu {margin: 5px auto;}
+
+.credits .container {
+    padding-top: 3%;
+    padding-left: 5%;
+    height: 92%;
+}
+.credits .col-3 {
+    background-image: url("../img/Divider_line_01.png");
+    background-repeat: no-repeat;
+    height: 86%;
+    background-size: auto 100%;
+}
+.credits p {
+    color: #1b4729;
+    padding-left: 2vh;
+    padding-right: 3vh;
+    font-size: 18px;
+}
+.credits--description {
+    margin-bottom: 20px;
+}
+.contact-us {
+    color: #1b4729;
+}
+.contact-us .container {
+    padding-top: 3%;
+    padding-left: 5%;
+}
+
+.contact-us .col-6:first-child {
+    padding-left: 2%;
+    padding-right: 5%;
+    width: 43%;
+    background-image: url("../img/Divider_line_01.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+.contact-us .col-6 p {
+    margin-top: 4vh;
+    font-size: 20px;
+}
+.contact-us .col-6 form p {
+    font-size: 18px;
+}
+.contact-us .col-6 form label {
+    font-family: "Amiri", serif;
+    font-size: 24px;
+}
+.contact-us .col-6 form .form-group {
+    margin-bottom: 1vh;
+}
+.contact-us .col-6 form .form-group .form-control {
+    width: 100%;
+    height: 5vh;
+    border-color: #1b4729;
+    border-width: 0.09vh;
+    font-size: 18px;
+    font-weight: 300;
+    padding-left: 1vh;
+}
+.contact-us .col-6 form .form-group textarea.form-control {
+    height: 15vh;
+    resize: none;
+    width: 100%;
+    padding: 1vh;
+}
+.contact-us .col-6 form .submit-button {
+    float: right;
+}
+.contact-us .col-6 form .submit-button input {
+    color: #fff;
+    border: none;
+    padding: 1vh 5vh;
+    font-size: 18px;
+    font-weight: 300;
+}
+.contact-us .col-6 form .submit-button .clear {
+    background-color: #196d2f;
+}
+.contact-us .col-6 form .submit-button .send {
+    background-color: #0b3819;
+}
+@media (max-width: 736px) and (orientation: portrait) {
+    .index {
+        background-size: auto 100%;
+    }
+    .content {
+        padding-bottom: 4vh;
+    }
+    .content.credits,
+    .content.sitemap,
+    .content.contact-us {
+        background-size: 100% 100%;
+        overflow: auto;
+        width: 100%;
+    }
+    .content.credits .container {
+        background-image: url("../img/Divider_line_01.png");
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        margin-left: 15%;
+        padding-left: 1%;
+        max-width: 75%;
+        padding-top: 2%;
+        margin-top: 7%;
+    }
+    .credits .col-3 {
+        width: 100%;
+        height: auto;
+        background: none;
+    }
+    .credits p {
+        font-size: 20px;
+        margin-bottom: 2vh;
+    }
+    .contact-us .container {
+        padding-left: 15%;
+        padding-top: 11%;
+        height: auto;
+        overflow: auto;
+    }
+    .contact-us .col-6 {
+        padding-left: 6%;
+        width: 89%;
+    }
+    .contact-us .col-6:first-child {
+        padding-left: 6%;
+        width: 89%;
+    }
+    .contact-us .col-6:first-child p {
+        margin-top: 1vh;
+        margin-bottom: 2vh;
+    }
+}
+@media (min-width: 736px) {
+    .credits .row {
+        display: table;
+        width: 100%;
+    }
+    .credits .col-3 {
+        display: table-cell;
+        width: 33.33%;
+        float: none;
+    }
+}
