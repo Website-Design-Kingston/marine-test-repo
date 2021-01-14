@@ -105,33 +105,15 @@
 		</header><!-- Content --><!-- Note from WDK For ease of acess and future updates we recomend doing tabindex in increments of 10 -->
 		<main class="index bypass-block-target" id="main-content" title="Main Content">
 			<h1 class="outliner-hide">Great Lakes Shipwrecks (Home)</h1><!-- Sidebar popup toggle -->
-			<button class="learn page--custom--learn-address-book active" href="#" tabindex="80">Welcome to<br>
-			Shipwrecks</button>
-			<aside class="learn-popup sidebar--popup" style="display: block">
-				
-				<h2 class="page--custom--address-book">Welcome to Shipwrecks</h2>
-				<div class="table">
-					<div class="tr">
-						<div class="td">
-							<p>Welcome to the Great Lakes Shipwrecks Virtual Exhibit.</p>
-							<p>There are hundreds of shipwrecks at the bottom of the Great Lakes and each one is a unique window into Canada's marine history.</p>
-							<p>But unless you're a trained diver, these incredible artefacts remain hidden beneath the waves!</p>
-							<p>This is your chance to explore some of these shipwrecks and learn about marine archaeology.</p>
-							<p>Choose an activity from the menu above or explore the painting to receive a suggestion.</p>
-							<p><strong>First, close this popup to get started.</strong></p>
-						</div>
-					</div>
-				</div>
-				<button aria-label="Close Welcome to Shipwrecks popup" class="close-menu btn-close" tabindex="90"></button>
-			</aside><!-- End learn popup -->
+
 			<div class="content navi-area">
 				<div class="navi-area__wreck-dive">
 					<a aria-label="Wreck Diver: Explore a real 100-year-old shipwreck." href="explore-wreck-diver.html" tabindex="100"></a>
 					<div class="tooltip" title="Wreck Diver: Explore a real 100-year-old shipwreck.">
 						<a href="explore-wreck-diver.html">
-						<h3>Wreck Diver</h3>
-						<p>Explore a real 100-<br>
-						year-old shipwreck!</p></a>
+							<h3>Wreck Diver</h3>
+							<p>Explore a real 100-<br>
+								year-old shipwreck!</p></a>
 					</div>
 				</div>
 				<div class="navi-area__hms">
@@ -147,23 +129,44 @@
 					<a aria-label="Mysteries of the Depths: Do you like ghost stories?" href="mysteries-of-the-depths.html" tabindex="120"></a>
 					<div class="tooltip"  title="Mysteries of the Depths: Do you like ghost stories?">
 						<a href="mysteries-of-the-depths.html">
-						<h3>Mysteries of the Depths</h3>
-						<p>Do you like<br>
-						ghost stories?</p></a>
+							<h3>Mysteries of the Depths</h3>
+							<p>Do you like<br>
+								ghost stories?</p></a>
 					</div>
 				</div>
 				<div class="navi-area__explore">
 					<a aria-label="Explorers' Charts: Discover interesting Great Lakes shipwrecks." href="explore-charts.html" tabindex="130"></a>
 					<div class="tooltip" title="Explorers' Charts: Discover interesting Great Lakes shipwrecks.">
 						<a href="explore-charts.html">
-						<h3>Explorer&apos;s Charts</h3>
-						<p>Discover interesting<br>
-						Great Lakes shipwrecks.</p></a>
+							<h3>Explorer&apos;s Charts</h3>
+							<p>Discover interesting<br>
+								Great Lakes shipwrecks.</p></a>
 					</div>
 				</div>
 			</div>
+
+			<button id="home-learn-open" class="learn page--custom--learn-address-book active" href="#" tabindex="80">Welcome to<br>
+			Shipwrecks</button>
+			<aside id="home-learn-aside" class="learn-popup sidebar--popup" style="display: block">
+				
+				<h2 class="page--custom--address-book">Welcome to Shipwrecks</h2>
+				<div class="table">
+					<div class="tr">
+						<div class="td">
+							<p>Welcome to the Great Lakes Shipwrecks Virtual Exhibit.</p>
+							<p>There are hundreds of shipwrecks at the bottom of the Great Lakes and each one is a unique window into Canada's marine history.</p>
+							<p>But unless you're a trained diver, these incredible artefacts remain hidden beneath the waves!</p>
+							<p>This is your chance to explore some of these shipwrecks and learn about marine archaeology.</p>
+							<p>Choose an activity from the menu above or explore the painting to receive a suggestion.</p>
+							<p><strong>First, close this popup to get started.</strong></p>
+						</div>
+					</div>
+				</div>
+				<button id="home-learn-close" aria-label="Close Welcome to Shipwrecks popup" class="close-menu btn-close" tabindex="90"></button>
+			</aside><!-- End learn popup -->
+
 		</main>
-<!-- Footer -->
+		<!-- Footer -->
 		<footer>
 			<div class="page--copyright">
 				<div class="page--copyright--inner">
@@ -182,7 +185,10 @@
 	<script src="js/script.min.js">
 	</script> 
 	<script src="js/marine.min.js">
-	</script> 
+	</script>
+
+	<script src="js/jquery.blockUI.min.js">
+	</script>
 
 	<script src="js/index.js">
 	</script> <!-- Fallback for the browser that does not support for `:focus-within` in css -->
