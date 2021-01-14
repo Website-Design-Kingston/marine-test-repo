@@ -1389,3 +1389,7 @@ nav.shift ul li a:hover:after {
     text-align: center;
 }
 
+/* Kilian, change the z-index of blockUI js blocked element  */
+.unveil{
+  z-index: 1022;
+}
