@@ -1,0 +1,6 @@
+# IntelliJ IDE specific
+.idea/*
+*.iml
+
+# Dreamweaver IDE specific
+_notes/
