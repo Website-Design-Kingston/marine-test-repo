@@ -334,10 +334,10 @@
 				<span class="no-image-message">Oops! Looks like pictures are not loading.<br>
 				Check your browser, or use the menu bar above to make a selection.</span>
 			</div><!-- learn popup -->
-				<button class="learn page--custom--learn-address-book active" tabindex="110"><span>
+				<button class="learn page--custom--learn-address-book active" id="mysteries-learn-open" tabindex="110"><span>
 			About This<br>
 			Activity</span></button>
-			<aside class="learn-popup sidebar--popup" style="display: block">
+			<aside class="learn-popup sidebar--popup" id="mysteries-learn-popup" style="display: block">
 				<h2 class="mysteries-depths--slider-title page--custom--address-book">About This Activity</h2>
 				<div class="table">
 					<div class="tr">
@@ -347,7 +347,7 @@
 						</div>
 					</div>
 				</div>
-				<button aria-label="Close About This Activity popup" class="close-menu btn-close" tabindex="120"></button>
+				<button aria-label="Close About This Activity popup" id="mysteries-learn-close" class="close-menu btn-close" tabindex="120"></button>
 			</aside><!-- end LEARN POPUP -->
 			<div class="content cover-photo" title="Stacks of old books on a desk. Three books standing vertically have titles showing on their spines.">
 				<!--image map-->
@@ -590,7 +590,10 @@
 	<script src="js/script.min.js">
 	</script> 
 	<script src="js/marine.min.js">
-	</script> 
+	</script>
+
+	<script src="js/jquery.blockUI.min.js">
+	</script>
 
 	<script src="js/mysteries-of-the-depths.js">
 	</script> <!-- Fallback for the browser that does not support for `:focus-within` in css -->
