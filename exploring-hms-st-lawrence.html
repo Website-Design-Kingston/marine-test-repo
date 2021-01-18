@@ -128,7 +128,7 @@
 					<div class="pagetitle-bar">
 				<h1 class="sub-title page--sub-title">Exploring HMS St. Lawrence</h1>
 			</div>
-		<nav id="map-menu" class="page--exploring-hms-lawrence no-css" hidden>
+		<nav id="map-menu" class="page--exploring-hms-lawrence no-css" hidden >
 				<!-- WDK we added this submenu for when images are broken -->
 				<h2 class="outliner-hide">Activity Navigation</h2>
 				<ul>
@@ -458,10 +458,10 @@
 				Check your browser, or use the menu bar above to make a selection.</span>
 			</div>
 			<div class="content cover-photo st-lawrence" title="Captain's Desk">
-				<button class="learn page--custom--learn-address-book active" tabindex="160" title="About this Activity">
+				<button class="learn page--custom--learn-address-book active"id="exploring-hms-learn-open" tabindex="160" title="About this Activity">
 				About This<br>
 				Activity</button>
-				<aside class="learn-popup sidebar--popup" style="display: block" hidden>	
+				<aside class="learn-popup sidebar--popup"  id="exploring-hms-learn-popup" style="display: block" hidden>
 					<h2 class="mysteries-depths--slider-title page--custom--address-book">About This Activity</h2>
 					<div class="table">
 						<div class="tr">
@@ -473,7 +473,7 @@
 							</div>
 						</div>
 					</div>
-					<button aria-label="Close About This Activity popup" class="close-menu btn-close" tabindex="170"></button>
+					<button aria-label="Close About This Activity popup" class="close-menu btn-close" id="exploring-hms-learn-close" tabindex="170"></button>
 				</aside><!-- End learn popup -->
 
 					<!--image map-->
@@ -815,7 +815,11 @@
 	<script src="vendors/jquery/jquery.modal.min.js">
 	</script> 
 	<script src="js/script.min.js">
-	</script> 
+	</script>
+
+	<script src="js/jquery.blockUI.min.js">
+	</script>
+
 	<script src="js/marine.min.js">
 	</script> 
 	<script src="js/exploring-hms-st-lawrence.js">
