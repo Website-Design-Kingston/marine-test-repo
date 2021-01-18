@@ -11,6 +11,7 @@
         this.startLakeSlider();
         this.startModalSlider();
         this.startShipewreckSlider();
+        this.blockView();
     };
 
     ExploreCharts.prototype.initTemplate = function () {
@@ -39,6 +40,29 @@
         });
 
     };
+
+    /* Avoid click on map-menu and main-content (.page--explore-charts) until learn box popup is closed*/
+    ExploreCharts.prototype.blockView = function(){
+
+        $('.page--explore-charts').block({
+            message: null,
+            overlayCSS: { cursor : 'default'}
+        });
+
+        $('#map-menu').block({
+            message: null,
+            overlayCSS: { cursor : 'default'}
+        });
+
+        $('#explore-charts-learn-open').css('z-index', '1022');
+        $('#explore-charts-learn-popup').css('z-index', '1033');
+
+        $('#explore-charts-learn-close').click(function() {
+            $('#map-menu').unblock();
+            $('.page--explore-charts').unblock();
+        });
+
+    }
 
     ExploreCharts.prototype.openLearnPopup = function () {
         var learnButton = $('button.learn');

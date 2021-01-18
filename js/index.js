@@ -7,6 +7,7 @@
     MainService.initAudio();
     this.openLearnPopup();
     this.setupEvents();
+    this.blockView()
   };
 
   Index.prototype.openLearnPopup = function () {
@@ -25,6 +26,22 @@
       $(this).addClass('active');
     });
   };
+
+  /* Avoid click on main-content until learn box popup is closed*/
+  Index.prototype.blockView = function(){
+    $('#home-main-content').block({
+      message: null,
+      overlayCSS: { cursor : 'default'}
+    });
+
+    $('#home-learn-open').css('z-index', '1022');
+    $('#home-learn-aside').css('z-index', '1033');
+
+    $('#home-learn-close').click(function() {
+      $('#home-main-content').unblock();
+    });
+
+  }
 
   $(document).ready(function () {
     var index = new Index();

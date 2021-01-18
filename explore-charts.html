@@ -1291,10 +1291,10 @@
 				<span class="no-image-message">Oops! Looks like the pictures of items on the table didn’t load.<br>
 				Check your browser, or use the menu bar above to make a selection.</span>
 			</div><!-- LEARN POP UP -->
-			<button class="learn page--custom--learn-address-book" tabindex="100">Learn<br>
+			<button class="learn page--custom--learn-address-book" id="explore-charts-learn-open" tabindex="100">Learn<br>
 			About This<br>
 			Activity</button>
-			<aside class="learn-popup sidebar--popup active" style="display: block">
+			<aside class="learn-popup sidebar--popup active" id="explore-charts-learn-popup" style="display: block">
 				<h2 class="mysteries-depths--slider-title">Learn About This Activity</h2>
 				<div class="table">
 					<div class="tr">
@@ -1306,7 +1306,7 @@
 						</div>
 					</div>
 				</div>
-				<button aria-label="Close Learn About This Activity popup" class="close-menu btn-close" tabindex="110"></button>
+				<button aria-label="Close Learn About This Activity popup" id="explore-charts-learn-close" class="close-menu btn-close" tabindex="110"></button>
 			</aside><!-- End learn popup -->
 			<!-- Front Charts -->
 			<div class="content cover-photo" title="Captain&#39;s desk with map">
@@ -2586,7 +2586,10 @@
 	<script src="js/script.min.js">
 	</script> 
 	<script src="js/marine.min.js">
-	</script> 
+	</script>
+
+	<script src="js/jquery.blockUI.min.js">
+	</script>
 
 	<script src="js/explore-charts.js">
 	</script> <!-- Global site tag (gtag.js) - Google Analytics -->

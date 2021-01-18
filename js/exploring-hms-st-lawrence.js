@@ -12,7 +12,25 @@
     this.startTextModal();
     this.toggleTranscript();
 	this.toggleClipping(); //toggle for additional function WDK
+      this.blockView();
   };
+
+    /* Avoid click on map-menu and main-content until learn box popup is closed*/
+    ExploreHmsLawrence.prototype.blockView = function(){
+
+        $('.page--exploring-hms-lawrence').block({
+            message: null,
+            overlayCSS: { cursor : 'default'}
+        });
+
+        $('#exploring-hms-learn-open').css('z-index', '1022');
+        $('#exploring-hms-learn-popup').css('z-index', '1033');
+
+        $('#exploring-hms-learn-close').click(function() {
+            $('.page--exploring-hms-lawrence').unblock();
+        });
+
+    }
 
   ExploreHmsLawrence.prototype.initTemplate = function() {
     var isMobile = window.innerWidth < 1200;
