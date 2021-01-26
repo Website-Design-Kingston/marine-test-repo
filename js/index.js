@@ -33,7 +33,7 @@
   Index.prototype.blockView = function(){
     $('#home-main-content').block({
       message: null,
-      overlayCSS: { cursor : 'default'}
+      overlayCSS: { opacity: 0, cursor : 'default'}
     });
 
     $('#home-learn-open').css('z-index', '1022');
