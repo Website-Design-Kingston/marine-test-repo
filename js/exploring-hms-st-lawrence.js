@@ -32,6 +32,7 @@
         $('#exploring-hms-learn-popup').css('z-index', '1033');
 
         $('#exploring-hms-learn-close').click(function() {
+            $('#map-menu').unblock();
             $('#exploring-hms-content').unblock();
         });
 
