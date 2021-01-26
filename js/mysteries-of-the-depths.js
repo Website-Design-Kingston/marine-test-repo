@@ -7,7 +7,9 @@
         //MainService.initAudio();
         this.openLearnPopup();
         this.startSlider();
-        this.blockView()
+        if ($(window).width() > 768) {
+            this.blockView();
+        }
     };
     /*     MysteriesDepths.prototype.initTemplate = function() {
             var isMobile = window.innerWidth < 1200;
