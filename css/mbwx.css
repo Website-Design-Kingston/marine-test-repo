@@ -11,17 +11,13 @@ body {
     height: 73vh;
   }
 }
-.page--exploring-hms-lawrence {
-  all: unset;
-  background: none;
-}
 .page--exploring-hms-lawrence .content {
   background: url("../img/explore-hms/Explore_St_Lawrence_BG.jpg") no-repeat
     center center;
   background-size: cover;
   height: 100%;
-  position: absolute;
-  overflow-y: auto;
+  position: relative;
+  overflow-y: hidden;
 }
 
 .page--exploring-hms-lawrence .st-lawrence > a:focus {
@@ -44,14 +40,6 @@ body {
 
 .body--explore-charts {
   background: unset;
-}
-
-.page--custom--container,
-.page--wreck-diver {
-  display: flex;
-  flex-direction: column;
-  max-width: 1920px;
-  position: relative;
 }
 
 .content::-webkit-scrollbar,
@@ -530,13 +518,6 @@ span.sp-buttons:focus-within {
   padding: 1vmax;
 }
 
-section.learn-about-noscript {
-  padding: 2%;
-  background-color: #fff;
-  position: inherit;
-  margin-top: 2%;
-}
-
 .image--caption {
     font-size: 16px;
     line-height: 20px;
@@ -546,15 +527,6 @@ section.learn-about-noscript {
 
 header .sub-header .menu > ul:active > li + li:before {
   border-left: none;
-}
-
-footer {
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 0;
-  z-index: 50;
-  width: 100%;
-  flex: 0 0 auto;
 }
 
 .page--copyright--inner {
@@ -951,34 +923,17 @@ body.page--about .contact-us--form {
   max-width: 52vh;
 }
 
-.learn-popup .close-menu {
-  position: relative;
-  right: 0;
-  bottom: 0;
-  width: 5vh;
-  height: 5vh;
-  float: right;
-}
-
 .learn-popup .close-menu,
 .body--wreck-diver .sidebar--popup .btn-dive-now {
-  max-width: 5vh;
-  max-height: 5vh;
-  position: relative;
+  border-radius: 1vh;
+  width: 5vh;
+  height: 5vh;
+  position: absolute;
   right: 0;
-  bottom: 0;
-  float: right;
+  top: 0;
+  z-index: 10;
 }
 
-.body--wreck-diver .sidebar--popup .btn-close {
-  position: relative;
-  border-radius: 1vh;
-  bottom: 0;
-  right: 0;
-  float: right;
-  max-width: 5vh;
-  max-height: 5vh;
-}
 
 .sidebar--popup.learn-popup .table .tr:after {
   content: "";
@@ -1388,3 +1343,4 @@ nav.shift ul li a:hover:after {
 .body--explore-charts .mysteries-depths--slider-information p {
     text-align: center;
 }
+

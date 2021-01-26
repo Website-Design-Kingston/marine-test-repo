@@ -44,7 +44,7 @@
     /* Avoid click on map-menu and main-content (.page--explore-charts) until learn box popup is closed*/
     ExploreCharts.prototype.blockView = function(){
 
-        $('.page--explore-charts').block({
+        $('#explore-charts-content').block({
             message: null,
             overlayCSS: { cursor : 'default'}
         });
@@ -59,7 +59,7 @@
 
         $('#explore-charts-learn-close').click(function() {
             $('#map-menu').unblock();
-            $('.page--explore-charts').unblock();
+            $('#explore-charts-content').unblock();
         });
 
     }

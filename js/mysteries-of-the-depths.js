@@ -33,7 +33,7 @@
     /* Avoid click on map-menu and main-content (.page--mysteries) until learn box popup is closed*/
     MysteriesDepths.prototype.blockView = function(){
 
-        $('.page--mysteries').block({
+        $('#mysteries-content').block({
             message: null,
             overlayCSS: { cursor : 'default'}
         });
@@ -48,7 +48,7 @@
 
         $('#mysteries-learn-close').click(function() {
             $('#map-menu').unblock();
-            $('.page--mysteries').unblock();
+            $('#mysteries-content').unblock();
         });
 
     }
