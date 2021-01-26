@@ -22,12 +22,12 @@
 
         $('#exploring-hms-content').block({
             message: null,
-            overlayCSS: { cursor : 'default'}
+            overlayCSS: { opacity: 0, cursor : 'default'}
         });
 
         $('#map-menu').block({
             message: null,
-            overlayCSS: { cursor : 'default'}
+            overlayCSS: { opacity: 0, cursor : 'default'}
         });
 
         $('#exploring-hms-learn-open').css('z-index', '1022');

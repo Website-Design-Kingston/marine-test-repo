@@ -48,12 +48,12 @@
 
         $('#explore-charts-content').block({
             message: null,
-            overlayCSS: { cursor : 'default'}
+            overlayCSS: { opacity: 0, cursor : 'default'}
         });
 
         $('#map-menu').block({
             message: null,
-            overlayCSS: { cursor : 'default'}
+            overlayCSS: { opacity: 0, cursor : 'default'}
         });
 
         $('#explore-charts-learn-open').css('z-index', '1022');
