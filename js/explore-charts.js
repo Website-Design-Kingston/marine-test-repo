@@ -11,7 +11,9 @@
         this.startLakeSlider();
         this.startModalSlider();
         this.startShipewreckSlider();
-        this.blockView();
+        if ($(window).width() > 768) {
+            this.blockView();
+        }
     };
 
     ExploreCharts.prototype.initTemplate = function () {

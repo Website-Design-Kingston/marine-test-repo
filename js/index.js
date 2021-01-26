@@ -7,7 +7,9 @@
     MainService.initAudio();
     this.openLearnPopup();
     this.setupEvents();
-    this.blockView()
+    if ($(window).width() > 768) {
+      this.blockView();
+    }
   };
 
   Index.prototype.openLearnPopup = function () {

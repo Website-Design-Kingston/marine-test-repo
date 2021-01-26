@@ -12,7 +12,9 @@
     this.startTextModal();
     this.toggleTranscript();
 	this.toggleClipping(); //toggle for additional function WDK
-      this.blockView();
+      if ($(window).width() > 768) {
+          this.blockView();
+      }
   };
 
     /* Avoid click on map-menu and main-content until learn box popup is closed*/
