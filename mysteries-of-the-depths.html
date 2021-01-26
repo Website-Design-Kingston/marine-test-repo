@@ -30,15 +30,18 @@
 	<link href="css/style.min.media.css" rel="stylesheet">
 	<link href="css/mbwx-mod.css" rel="stylesheet">
 	<link href="css/modals-custom.css" rel="stylesheet">
-	<noscript>
-		<link href="css/no-js-styles.css" rel="stylesheet">
-	</noscript><!-- WDK added -->
+		<!-- no js + small screen css -->
+    <link href="css/no-js-styles.css" rel="stylesheet">
+
+    <noscript>
+		<link href="css/no-script-styles.css" rel="stylesheet">
+	</noscript>
     
 </head>
 
 
 <body class="body--mysteries-depths page--custom">
-	<div class="page--custom--container">
+	<div class="page--custom--container site-wrap">
 		<!-- Header -->
     <header>
       <div class="header">
@@ -110,253 +113,285 @@
           </div>
 			</div>
 		</div><!-- end subheader -->
-			<div class="pagetitle-bar">
-				<h1 class="sub-title page--sub-title">Mysteries Of The Depths</h1>
-			</div>
-			<nav id="map-menu" class="no-css" hidden>
-				<!-- WDK we added this submenu for when images are broken -->
-				<span class="outliner-hide">Activity Menu</span>
-				<ul>
-					<li>
-						<a aria-label="The Wreck of the Edmund Fitzgerald" class="mysteries-depths--link page--mysteries-text one ignore-click" href="#edmundfitzgerald-nojs" data-modal="#mysteries-one" id="one-menu" tabindex="80">The Wreck of the Edmund Fitzgerald</a>
-					</li>
-					<li>
-						<a aria-label="Ship Plans" class="mysteries-depths--link page--mysteries-text two ignore-click" href="#legriffon-nojs" data-modal="#mysteries-two" id="two-menu" tabindex="90">What Happened To Le Griffon?</a>
-					</li>
-					<li>
-						<a aria-label="Disappearance Of the Bannockburn" class="mysteries-depths--link page--mysteries-text three ignore-click" href="#bannockburn-nojs" data-modal="#mysteries-three" id="three-menu" tabindex="100">Disappearance Of the Bannockburn</a>
-					</li>
-				</ul>
-			</nav>
 		</header><!-- Content --><!-- Note from WDK For ease of acess and future updates we recomend doing tabindex in increments of 10 -->
 		<main class="page--mysteries bypass-block-target" id="main-content" tabindex="105">
-			<!-- when JavaScript off, this dispalys WDK -->
-		<noscript>
-		<section  class="learn-popup sidebar--popup" title="About this Activity">
-			<h2 class="mysteries-depths--slider-title page--custom--address-book">About This Activity</h2>
-			<div class="table">
-				<div class="tr">
-					<div class="td">
-						<p>All of the Great Lakes Shipwrecks involve stories of people, ships, and tragedy.</p>
-						<p>Often, all that we know of a ship lost at sea are a few details and guesses.</p>
-						<p>Explorers and archaeologists use stories and historical records to try to locate the final resting place of ships that have disappeared into the waters of the Great Lakes.</p>
-					</div>
-					<div class="td">
-						<p class="break">Click on one of the three book titles to explore some famous stories.</p>
-						<nav id="no-js-nav">
-							<h2 class="outliner-hide">Activity Navigation</h2>
-							<ul>
-								<li>
-									<a href="#edmundfitzgerald-nojs" tabindex="80">Edmund Fitzgerald</a>
-								</li>
-								<li>
-									<a href="#legriffon-nojs" tabindex="90">Le Griffon</a>
-								</li>
-								<li>
-									<a href="#bannockburn-nojs"  tabindex="100">Bannockburn</a>
-								</li>
-							</ul>
-						</nav>
-					</div>
-				</div>
+            <div class="pagetitle-bar">
+				<h1 class="sub-title page--sub-title">Mysteries Of The Depths</h1>
 			</div>
-		</section><!-- CONTENT BLOCK ONE WDK -->
-		<!-- Section 1 -->
-		<div class="block--no-js-content" id="edmundfitzgerald-nojs">
-			<div class="container">
-				<div class="row">
-					<div class="col-6">
-						<div class="mysteries-depths--slider-information">
-							<h2 class="mysteries-depths--slider-title" tabindex="0"><!-- Edmund Fitzgerald Title -->The Wreck of the Edmund Fitzgerald<!-- END Section 1 Title --></h2><!-- Edmund Fitzgerald Content -->
-							<br>
-							<p>In her day, the largest laker on the Great Lakes was the Edmund Fitzgerald.</p>
-							<p>She was last sighted by the captain of a passing ship in the early morning of November 10th 1975.</p><!-- END Edmund Fitzgerald Content -->
-						</div>
-					</div>
-					<div class="col-6">
-						<div class=" mysteries-depths--slider-image">
-							<div class="image--caption" tabindex="0">
-								<!-- Edmund Fitzgerald Slide 1 image caption -->Edmund Fitzgerald<!-- END Section 1 Slide 1 image caption -->
-							</div>
-							<div class="sp-thumbnail-container"><img alt="A ship in there foreground passing the Edmund Edmund Fitzgerald in the distance in stormy weather." src="figures/mysteries/content_mysteries_Edmund_Fitzgerald_01.jpg" title="A ship in there foreground passing the Edmund Edmund Fitzgerald in the distance in stormy weather."></div>
-						</div><!-- End slide #1 -->
-						<div class="mysteries-depths--slider-image">
-							<div class="image--caption" tabindex="0">
-								<!-- Edmund Fitzgerald Slide 3 image caption -->
-								<p>The Edmund Fitzgerald set out from Duluth, Michigan, loaded with iron ore.</p>
-								<p>She was heading for the Soo Locks.</p><!-- END Edmund Fitzgerald Slide 2 image caption -->
-							</div>
-							<div class="sp-thumbnail-container"><img alt="The Edmund Fitzgerald being loaded with iron ore by cranes. A tugboat in the foreground." src="figures/mysteries/content_mysteries_Edmund_Fitzgerald_02.jpg" title="The Edmund Fitzgerald being loaded with iron ore by cranes. A tugboat in the foreground."></div>
-						</div><!-- Section slide #2 -->
-						<div class="mysteries-depths--slider-image">
-							<div class="image--caption" tabindex="0">
-								<!-- Edmund Fitzgerald Slide 3 image caption -->
-								<p>On Nov 9, the Edmund Fitzgerald sailed into a severe storm on Lake Superior that would batter her for hours that night.</p>
-								<p>Her last message was radioed by the captain: ‘We’re holding our own.’</p>
-								<p>Then nothing more.</p><!-- Edmund Fitzgerald Slide 3 image caption -->
-							</div>
-							<div class="sp-thumbnail-container"><img alt="The Edmund Fitzgerald hit by a tall wave." src="figures/mysteries/content_mysteries_Edmund_Fitzgerald_03.jpg" title="The Edmund Fitzgerald hit by a tall wave."></div>
-						</div><!-- Section slide #4 -->
-						<div class="mysteries-depths--slider-image">
-							<div class="image--caption" tabindex="0">
-								<!-- Edmund Fitzgerald Slide 4 image caption -->
-								<p>A large scale search was made for survivors, but only debris was found.</p>
-								<p>She had sunk with all 29 crew.</p><!-- Edmund Fitzgerald Slide 4 image caption -->
-							</div>
-							<div class="sp-thumbnail-container"><img alt="An aerial view of ships, a prop plane and helicopter searching stormy waters at night." src="figures/mysteries/content_mysteries_Edmund_Fitzgerald_04.jpg" title="An aerial view of ships, a prop plane and helicopter searching stormy waters at night."></div>
-						</div><!-- Section slide #5 -->
-						<div class="mysteries-depths--slider-image">
-							<div class="image--caption" tabindex="0">
-								<!-- Edmund Fitzgerald Slide 5 image caption -->
-								<p>In 1980, Jean-Michel Cousteau, the son of the famous Jacques Cousteau, sent the first manned submersible to the wreck site.</p><!-- Edmund Fitzgerald Slide 5 image caption -->
-							</div>
-							<div class="sp-thumbnail-container"><img alt="A small submersible with lights decends on the broken wreck of the Edmund Fitzgerald." src="figures/mysteries/content_mysteries_Edmund_Fitzgerald_05.jpg" title="A small submersible with lights decends on the broken wreck of the Edmund Fitzgerald."></div>
-						</div>
-					</div><!-- End slide #5 -->
-				</div><!-- end column -->
-			</div><!-- end container -->
-		</div><!-- END Edmund Fitzgerald -->
-		<!-- END BLOCK ONE -->
-		<!-- CONTENT BLOCK TWO WDK -->
-		<!-- Le Griffon -->
-		<div class="block--no-js-content" id="legriffon-nojs">
-			<div class="container">
-				<div class="row">
-					<div class="col-6">
-						<div class="mysteries-depths--slider-information">
-							<h2 class="mysteries-depths--slider-title" tabindex="0"><!-- Le Griffon Title -->What Happened To Le Griffon?<!-- END Le Griffon Title --></h2><!-- Le Griffon Content -->
-							<p>One of the oldest and greatest shipwreck mysteries of the Great Lakes is the disappearance of Le Griffon in 1679.<!-- END Le Griffon Content --></p>
-						</div>
-					</div>
-					<div class="col-6">
-						<div class="sp-layer sp-static mysteries-depths--slider-image" data-horizontal="30%" data-vertical="0" data-width="70%">
-							<div class="image--caption" tabindex="0">
-								<!-- Le Griffon Slide 1 image caption -->Le Griffon<!-- END Le Griffon Slide 1 image caption -->
-							</div><!-- End slide #1 -->
-							<div class="sp-thumbnail-container"><img alt="The ship Le Griffon sailing away with two fur traders in a canoe paddling out to meet it." src="figures/mysteries/content_mysteries_Le_Griffon_01.jpg" title="The ship Le Griffon sailing away with two fur traders in a canoe paddling out to meet it."></div>
-						</div>
-						<div class="image--caption" tabindex="0">
-							<!-- Le Griffon Slide 1 image caption -->
-							<p>Le Griffon was built on the shore of the Niagara River in 1679 by the famous explorer La Salle.</p>
-							<p>It was perhaps the first full sized sailing ship on the Great Lakes.</p><!-- END Le Griffon Slide 1 image caption -->
-						</div>
-						<div class="sp-layer sp-static mysteries-depths--slider-image" data-horizontal="30%" data-vertical="0" data-width="70%">
-							<div class="sp-thumbnail-container"><img alt="An aerial view of a ship, Le Griffon, being built beside docks on the Niagra River." src="figures/mysteries/content_mysteries_Le_Griffon_02.jpg" title="An aerial view of a ship, Le Griffon, being built beside docks on the Niagra River."></div>
-						</div><!-- Section slide #2 -->
-						<div class="sp-layer sp-static mysteries-depths--slider-image" data-horizontal="30%" data-vertical="0" data-width="70%">
-							<div class="image--caption" tabindex="0">
-								<!-- Le Griffon Slide 2 image caption -->
-								<p>La Salle and his men sailed and hauled the vessel to Georgian Bay, and then to Mackinac Island and Green Bay where she was loaded with a cargo of fur.<!-- END Le Griffon Slide 2 image caption --></p>
-							</div>
-							<div class="sp-thumbnail-container"><img alt="Le Griffon near shore, being loaded with bundles of furs by many men." src="figures/mysteries/content_mysteries_Le_Griffon_03.jpg" title="Le Griffon near shore, being loaded with bundles of furs by many men."></div>
-						</div><!-- End slide #3 -->
-						<div class="sp-layer sp-static mysteries-depths--slider-image" data-horizontal="30%" data-vertical="0" data-width="70%">
-							<div class="image--caption" tabindex="0">
-								<!-- Le Griffon Slide 3 image caption -->
-								<p>The ship headed back to the Niagara River, loaded with valuable furs and La Salle stayed behind to explore further.</p>
-								<p>Le Griffon was never seen again.</p><!-- Le Griffon Slide 3 image caption -->
-							</div>
-							<div class="sp-thumbnail-container"><img alt="The ship, Le Griffon, in full sail on the water." src="figures/mysteries/content_mysteries_Le_Griffon_04.jpg" title="The ship, Le Griffon, in full sail on the water."></div>
-						</div><!-- End slide #3 -->
-						<div class="sp-layer sp-static mysteries-depths--slider-image" data-horizontal="30%" data-vertical="0" data-width="70%">
-							<div class="image--caption" tabindex="0">
-								<!-- Le Griffon Slide 3 image caption -->
-								<p>Underwater explorers still search for the remains of this important ship from our past.</p><!-- Le Griffon Slide 3 image caption -->
-							</div>
-							<div class="sp-thumbnail-container"><img alt="The wreckage of Le Griffon on a lake bottom." src="figures/mysteries/content_mysteries_Le_Griffon_05.jpg" title="The wreckage of Le Griffon on a lake bottom."></div>
-						</div>
-					</div><!-- end column -->
-				</div>
-			</div><!-- end container -->
-		</div><!-- END Le Griffon -->
-		<!-- END BLOCK TWO -->
-		<!-- CONTENT BLOCK THREE WDK -->
-		<!-- Bannockburn -->
-		<div class="block--no-js-content" id="bannockburn-nojs">
-			<div class="container">
-				<div class="row">
-					<div class="col-6">
-						<div class="mysteries-depths--slider-information">
-							<h2 class="mysteries-depths--slider-title" tabindex="0"><!-- Bannockburn Title -->Disappearance Of the Bannockburn<!-- END Bannockburn Title --></h2><!-- Bannockburn Content -->
-							<p>This is the story of the Bannockburn, a cargo ship built in the United Kingdom and sailed on the Great Lakes.</p><!-- END Bannockburn Content -->
-						</div>
-					</div>
-					<div class="col-6">
-						<div class="sp-layer sp-static mysteries-depths--slider-image" data-horizontal="30%" data-vertical="0" data-width="70%">
-							<div class="image--caption" tabindex="0">
-								<!-- Bannockburn Slide 1 image caption -->
-								<p>Bannockburn</p><!-- END Bannockburn Slide 1 image caption -->
-							</div>
-							<div class="sp-thumbnail-container"><img alt="The ship Bannockburn, being tossed in stormy water. A passenger ship can be seen in the distance." src="figures/mysteries/content_mysteries_Bannockburn_01.jpg" title="The ship Bannockburn, being tossed in stormy water. A passenger ship can be seen in the distance."></div>
-						</div><!-- End slide #1 -->
-						<div class="sp-layer sp-static mysteries-depths--slider-image" data-horizontal="30%" data-vertical="0" data-width="70%">
-							<div class="image--caption" tabindex="0">
-								<!-- Bannockburn Slide 1 image caption -->
-								<p>In November of 1902, the Bannockburn was headed with a load of grain from Fort William to Kingston Ontario when a great storm blew up in the Eastern end of Lake Superior.</p><!-- END Bannockburn Slide 1 image caption -->
-							</div>
-							<div class="sp-thumbnail-container"><img alt="A cranes loading the Bannockburn with grain" src="figures/mysteries/content_mysteries_Bannockburn_02.jpg" title="A cranes loading the Bannockburn with grain"></div>
-						</div><!-- Section slide #2 -->
-						<div class="sp-layer sp-static mysteries-depths--slider-image" data-horizontal="30%" data-vertical="0" data-width="70%">
-							<div class="image--caption" tabindex="0">
-								<!-- Bannockburn Slide 2 image caption -->
-								<p>She was spotted heading for the Soo Locks by the passenger steamer Huronic.</p>
-								<p>After that, she was never seen or heard from againaside.</p><!-- END Bannockburn Slide 2 image caption -->
-							</div>
-							<div class="sp-thumbnail-container"><img alt="A view from inside a ship’s bridge. Two sailors sight the Bannockburn in the distance." src="figures/mysteries/content_mysteries_Bannockburn_03.jpg" title="A view from inside a ship’s bridge. Two sailors sight the Bannockburn in the distance."></div>
-						</div><!-- End slide #3 -->
-						<div class="sp-layer sp-static mysteries-depths--slider-image" data-horizontal="30%" data-vertical="0" data-width="70%">
-							<div class="image--caption" tabindex="0">
-								<!-- Bannockburn Slide 3 image caption -->
-								<p>A few weeks later, a lifejacket from the Bannockburn came ashore near the Grand Marias Lifesaving Station, the only debris from the Bannockburn ever found.</p><!-- Bannockburn Slide 3 image caption -->
-							</div>
-							<div class="sp-thumbnail-container"><img alt="A rocky shore with a lighthouse. A man is making his way along the shore where a life preserver with the words Bannockburn has washed up." src="figures/mysteries/content_mysteries_Bannockburn_04.jpg" title="A rocky shore with a lighthouse. A man is making his way along the shore where a life preserver with the words Bannockburn has washed up."></div>
-						</div><!-- End slide #3 -->
-						<div class="sp-layer sp-static mysteries-depths--slider-image" data-horizontal="30%" data-vertical="0" data-width="70%">
-							<div class="image--caption" tabindex="0">
-								<!-- Bannockburn Slide 3 image caption -->
-								<p>No one knows exactly where the Bannockburn lies, but there have been many reports over the last century of strange ghostly sightings of her, usually just before a storm is about to begin!</p><!-- Bannockburn Slide 3 image caption -->
-							</div>
-							<div class="sp-thumbnail-container"><img alt="The wreckage of the Bannockburn on a lake bottom." src="figures/mysteries/content_mysteries_Bannockburn_05.jpg" title="The wreckage of the Bannockburn on a lake bottom."></div>
-						</div>
-					</div><!-- end column -->
-				</div><!-- end row -->
-			</div><!-- end container -->
-			<span class="fi-anchor"></span>
-		</div><!-- END Bannockburn -->
-		<!-- END BLOCK THREE -->
+            <div class="content-body">
+                <nav id="map-menu" class="no-css" hidden>
+                    <!-- WDK we added this submenu for when images are broken -->
+                    <span class="outliner-hide">Activity Menu</span>
+                    <ul>
+                        <li>
+                            <a aria-label="The Wreck of the Edmund Fitzgerald" class="mysteries-depths--link page--mysteries-text one ignore-click" href="#edmundfitzgerald-nojs" data-modal="#mysteries-one" id="one-menu" tabindex="80">The Wreck of the Edmund Fitzgerald</a>
+                        </li>
+                        <li>
+                            <a aria-label="Ship Plans" class="mysteries-depths--link page--mysteries-text two ignore-click" href="#legriffon-nojs" data-modal="#mysteries-two" id="two-menu" tabindex="90">What Happened To Le Griffon?</a>
+                        </li>
+                        <li>
+                            <a aria-label="Disappearance Of the Bannockburn" class="mysteries-depths--link page--mysteries-text three ignore-click" href="#bannockburn-nojs" data-modal="#mysteries-three" id="three-menu" tabindex="100">Disappearance Of the Bannockburn</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="no-script-header">
+                    <img src="img/mysteries-header.jpg" alt="Shelf with books">
+                </div>
+                <div class="content-wrap" id="mysteries-content">
+                    <div class="no-js" hidden>
+                    <div class="image-error">
+                        <span class="no-image-message">Oops! Looks like pictures are not loading.<br>
+                        Check your browser, or use the menu bar above to make a selection.</span>
+                    </div><!-- learn popup -->
+                        <button class="learn page--custom--learn-address-book active" tabindex="110"><span>
+                    About This<br>
+                    Activity</span></button>
+                    <aside class="learn-popup sidebar--popup" style="display: block">
+                        <button aria-label="Close About This Activity popup" class="close-menu btn-close" tabindex="120"></button>
+                        <h2 class="mysteries-depths--slider-title page--custom--address-book">About This Activity</h2>
+                        <div class="table">
+                            <div class="tr">
+                                <div class="td">
+                                    <p>All of the Great Lakes Shipwrecks involve stories of people, ships, and tragedy. Often, all that we know of a ship lost at sea are a few details and guesses. Explorers and archaeologists use stories and historical records to try to locate the final resting place of ships that have disappeared into the waters of the Great Lakes.</p>
+                                    <p class="break">Click on one of the three book titles to explore some famous stories. Use the arrows to flip through the pages.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </aside><!-- end LEARN POPUP -->
+                    <div class="content cover-photo" title="Stacks of old books on a desk. Three books standing vertically have titles showing on their spines.">
+                        <!--image map-->
+                        <a aria-label="The Wreck of the Edmund Fitzgerald" class="book-one page--mysteries-text" data-modal="#mysteries-one" href="#edmundfitzgerald-nojs" title="The Wreck of the Edmund Fitzgerald"></a>
+                        <a aria-label="What Happened To Le Griffon?" class="book-two page--mysteries-text" data-modal="#mysteries-two" href="#legriffon-nojs" title="What Happened To Le Griffon?"></a>
+                        <a aria-label="Disappearance Of the Bannockburn" class="book-three page--mysteries-text" data-modal="#mysteries-three" href="#bannockburn-nojs" title="Disappearance Of the Bannockburn"></a>
+                        <!--image map-->
+                    </div><div class="no-js" hidden>
+                    <div class="image-error">
+                        <span class="no-image-message">Oops! Looks like pictures are not loading.<br>
+                        Check your browser, or use the menu bar above to make a selection.</span>
+                    </div><!-- learn popup -->
+                        <button class="learn page--custom--learn-address-book active" id="mysteries-learn-open" tabindex="110"><span>
+                    About This<br>
+                    Activity</span></button>
+                    <aside class="learn-popup sidebar--popup" id="mysteries-learn-popup" style="display: block">
+                        <button aria-label="Close About This Activity popup" id="mysteries-learn-close" class="close-menu btn-close" tabindex="120"></button>
+                        <h2 class="mysteries-depths--slider-title page--custom--address-book">About This Activity</h2>
+                        <div class="table">
+                            <div class="tr">
+                                <div class="td">
+                                    <p>All of the Great Lakes Shipwrecks involve stories of people, ships, and tragedy. Often, all that we know of a ship lost at sea are a few details and guesses. Explorers and archaeologists use stories and historical records to try to locate the final resting place of ships that have disappeared into the waters of the Great Lakes.</p>
+                                    <p class="break">Click on one of the three book titles to explore some famous stories. Use the arrows to flip through the pages.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </aside><!-- end LEARN POPUP -->
+                    <div class="content cover-photo" title="Stacks of old books on a desk. Three books standing vertically have titles showing on their spines.">
+                        <!--image map-->
+                        <a aria-label="The Wreck of the Edmund Fitzgerald" class="book-one page--mysteries-text" data-modal="#mysteries-one" href="#edmundfitzgerald-nojs" title="The Wreck of the Edmund Fitzgerald"></a>
+                        <a aria-label="What Happened To Le Griffon?" class="book-two page--mysteries-text" data-modal="#mysteries-two" href="#legriffon-nojs" title="What Happened To Le Griffon?"></a>
+                        <a aria-label="Disappearance Of the Bannockburn" class="book-three page--mysteries-text" data-modal="#mysteries-three" href="#bannockburn-nojs" title="Disappearance Of the Bannockburn"></a>
+                        <!--image map-->
+                    </div>
+                    </div>
+                    </div>
+                    <!-- when JavaScript off, this dispalys -->
+                    <div class="no-script">
+                         <nav id="small-map-menu" class="no-css" hidden>
+                            <!-- WDK we added this submenu for when images are broken -->
+                            <span class="outliner-hide">Activity Menu</span>
+                            <ul>
+                                <li>
+                                    <a href="#edmundfitzgerald-nojs" tabindex="80">The Wreck of the Edmund Fitzgerald</a>
+                                </li>
+                                <li>
+                                    <a href="#legriffon-nojs" tabindex="90">Le Griffon</a>
+                                </li>
+                                <li>
+                                    <a href="#bannockburn-nojs"  tabindex="100">Bannockburn</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <section  class="learn-about-noscript" title="About this Activity">
+                            <h2 class="mysteries-depths--slider-title page--custom--address-book">About This Activity</h2>
+                            <div class="table">
+                                <div class="tr">
+                                    <div class="td">
+                                        <p>All of the Great Lakes Shipwrecks involve stories of people, ships, and tragedy.</p>
+                                        <p>Often, all that we know of a ship lost at sea are a few details and guesses.</p>
+                                        <p>Explorers and archaeologists use stories and historical records to try to locate the final resting place of ships that have disappeared into the waters of the Great Lakes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section><!-- CONTENT BLOCK ONE WDK -->
+                        <!-- Section 1 -->
+                        <div class="block--no-js-content" id="edmundfitzgerald-nojs">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="mysteries-depths--slider-information">
+                                            <h2 class="mysteries-depths--slider-title" tabindex="0"><!-- Edmund Fitzgerald Title -->The Wreck of the Edmund Fitzgerald<!-- END Section 1 Title --></h2><!-- Edmund Fitzgerald Content -->
+                                            <br>
+                                            <p>In her day, the largest laker on the Great Lakes was the Edmund Fitzgerald.</p>
+                                            <p>She was last sighted by the captain of a passing ship in the early morning of November 10th 1975.</p><!-- END Edmund Fitzgerald Content -->
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class=" mysteries-depths--slider-image">
+                                            <div class="image--caption" tabindex="0">
+                                                <!-- Edmund Fitzgerald Slide 1 image caption -->Edmund Fitzgerald<!-- END Section 1 Slide 1 image caption -->
+                                            </div>
+                                            <div class="sp-thumbnail-container"><img alt="A ship in there foreground passing the Edmund Edmund Fitzgerald in the distance in stormy weather." src="figures/mysteries/content_mysteries_Edmund_Fitzgerald_01.jpg" title="A ship in there foreground passing the Edmund Edmund Fitzgerald in the distance in stormy weather."></div>
+                                        </div><!-- End slide #1 -->
+                                        <div class="mysteries-depths--slider-image">
+                                            <div class="image--caption" tabindex="0">
+                                                <!-- Edmund Fitzgerald Slide 3 image caption -->
+                                                <p>The Edmund Fitzgerald set out from Duluth, Michigan, loaded with iron ore.</p>
+                                                <p>She was heading for the Soo Locks.</p><!-- END Edmund Fitzgerald Slide 2 image caption -->
+                                            </div>
+                                            <div class="sp-thumbnail-container"><img alt="The Edmund Fitzgerald being loaded with iron ore by cranes. A tugboat in the foreground." src="figures/mysteries/content_mysteries_Edmund_Fitzgerald_02.jpg" title="The Edmund Fitzgerald being loaded with iron ore by cranes. A tugboat in the foreground."></div>
+                                        </div><!-- Section slide #2 -->
+                                        <div class="mysteries-depths--slider-image">
+                                            <div class="image--caption" tabindex="0">
+                                                <!-- Edmund Fitzgerald Slide 3 image caption -->
+                                                <p>On Nov 9, the Edmund Fitzgerald sailed into a severe storm on Lake Superior that would batter her for hours that night.</p>
+                                                <p>Her last message was radioed by the captain: ‘We’re holding our own.’</p>
+                                                <p>Then nothing more.</p><!-- Edmund Fitzgerald Slide 3 image caption -->
+                                            </div>
+                                            <div class="sp-thumbnail-container"><img alt="The Edmund Fitzgerald hit by a tall wave." src="figures/mysteries/content_mysteries_Edmund_Fitzgerald_03.jpg" title="The Edmund Fitzgerald hit by a tall wave."></div>
+                                        </div><!-- Section slide #4 -->
+                                        <div class="mysteries-depths--slider-image">
+                                            <div class="image--caption" tabindex="0">
+                                                <!-- Edmund Fitzgerald Slide 4 image caption -->
+                                                <p>A large scale search was made for survivors, but only debris was found.</p>
+                                                <p>She had sunk with all 29 crew.</p><!-- Edmund Fitzgerald Slide 4 image caption -->
+                                            </div>
+                                            <div class="sp-thumbnail-container"><img alt="An aerial view of ships, a prop plane and helicopter searching stormy waters at night." src="figures/mysteries/content_mysteries_Edmund_Fitzgerald_04.jpg" title="An aerial view of ships, a prop plane and helicopter searching stormy waters at night."></div>
+                                        </div><!-- Section slide #5 -->
+                                        <div class="mysteries-depths--slider-image">
+                                            <div class="image--caption" tabindex="0">
+                                                <!-- Edmund Fitzgerald Slide 5 image caption -->
+                                                <p>In 1980, Jean-Michel Cousteau, the son of the famous Jacques Cousteau, sent the first manned submersible to the wreck site.</p><!-- Edmund Fitzgerald Slide 5 image caption -->
+                                            </div>
+                                            <div class="sp-thumbnail-container"><img alt="A small submersible with lights decends on the broken wreck of the Edmund Fitzgerald." src="figures/mysteries/content_mysteries_Edmund_Fitzgerald_05.jpg" title="A small submersible with lights decends on the broken wreck of the Edmund Fitzgerald."></div>
+                                        </div>
+                                    </div><!-- End slide #5 -->
+                                </div><!-- end column -->
+                            </div><!-- end container -->
+                        </div><!-- END Edmund Fitzgerald -->
+                        <!-- END BLOCK ONE -->
+                        <!-- CONTENT BLOCK TWO WDK -->
+                        <!-- Le Griffon -->
+                        <div class="block--no-js-content" id="legriffon-nojs">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="mysteries-depths--slider-information">
+                                            <h2 class="mysteries-depths--slider-title" tabindex="0"><!-- Le Griffon Title -->What Happened To Le Griffon?<!-- END Le Griffon Title --></h2><!-- Le Griffon Content -->
+                                            <p>One of the oldest and greatest shipwreck mysteries of the Great Lakes is the disappearance of Le Griffon in 1679.<!-- END Le Griffon Content --></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="sp-layer sp-static mysteries-depths--slider-image" data-horizontal="30%" data-vertical="0" data-width="70%">
+                                            <div class="image--caption" tabindex="0">
+                                                <!-- Le Griffon Slide 1 image caption -->Le Griffon<!-- END Le Griffon Slide 1 image caption -->
+                                            </div><!-- End slide #1 -->
+                                            <div class="sp-thumbnail-container"><img alt="The ship Le Griffon sailing away with two fur traders in a canoe paddling out to meet it." src="figures/mysteries/content_mysteries_Le_Griffon_01.jpg" title="The ship Le Griffon sailing away with two fur traders in a canoe paddling out to meet it."></div>
+                                        </div>
+                                        <div class="image--caption" tabindex="0">
+                                            <!-- Le Griffon Slide 1 image caption -->
+                                            <p>Le Griffon was built on the shore of the Niagara River in 1679 by the famous explorer La Salle.</p>
+                                            <p>It was perhaps the first full sized sailing ship on the Great Lakes.</p><!-- END Le Griffon Slide 1 image caption -->
+                                        </div>
+                                        <div class="sp-layer sp-static mysteries-depths--slider-image" data-horizontal="30%" data-vertical="0" data-width="70%">
+                                            <div class="sp-thumbnail-container"><img alt="An aerial view of a ship, Le Griffon, being built beside docks on the Niagra River." src="figures/mysteries/content_mysteries_Le_Griffon_02.jpg" title="An aerial view of a ship, Le Griffon, being built beside docks on the Niagra River."></div>
+                                        </div><!-- Section slide #2 -->
+                                        <div class="sp-layer sp-static mysteries-depths--slider-image" data-horizontal="30%" data-vertical="0" data-width="70%">
+                                            <div class="image--caption" tabindex="0">
+                                                <!-- Le Griffon Slide 2 image caption -->
+                                                <p>La Salle and his men sailed and hauled the vessel to Georgian Bay, and then to Mackinac Island and Green Bay where she was loaded with a cargo of fur.<!-- END Le Griffon Slide 2 image caption --></p>
+                                            </div>
+                                            <div class="sp-thumbnail-container"><img alt="Le Griffon near shore, being loaded with bundles of furs by many men." src="figures/mysteries/content_mysteries_Le_Griffon_03.jpg" title="Le Griffon near shore, being loaded with bundles of furs by many men."></div>
+                                        </div><!-- End slide #3 -->
+                                        <div class="sp-layer sp-static mysteries-depths--slider-image" data-horizontal="30%" data-vertical="0" data-width="70%">
+                                            <div class="image--caption" tabindex="0">
+                                                <!-- Le Griffon Slide 3 image caption -->
+                                                <p>The ship headed back to the Niagara River, loaded with valuable furs and La Salle stayed behind to explore further.</p>
+                                                <p>Le Griffon was never seen again.</p><!-- Le Griffon Slide 3 image caption -->
+                                            </div>
+                                            <div class="sp-thumbnail-container"><img alt="The ship, Le Griffon, in full sail on the water." src="figures/mysteries/content_mysteries_Le_Griffon_04.jpg" title="The ship, Le Griffon, in full sail on the water."></div>
+                                        </div><!-- End slide #3 -->
+                                        <div class="sp-layer sp-static mysteries-depths--slider-image" data-horizontal="30%" data-vertical="0" data-width="70%">
+                                            <div class="image--caption" tabindex="0">
+                                                <!-- Le Griffon Slide 3 image caption -->
+                                                <p>Underwater explorers still search for the remains of this important ship from our past.</p><!-- Le Griffon Slide 3 image caption -->
+                                            </div>
+                                            <div class="sp-thumbnail-container"><img alt="The wreckage of Le Griffon on a lake bottom." src="figures/mysteries/content_mysteries_Le_Griffon_05.jpg" title="The wreckage of Le Griffon on a lake bottom."></div>
+                                        </div>
+                                    </div><!-- end column -->
+                                </div>
+                            </div><!-- end container -->
+                        </div><!-- END Le Griffon -->
+                        <!-- END BLOCK TWO -->
+                        <!-- CONTENT BLOCK THREE WDK -->
+                        <!-- Bannockburn -->
+                        <div class="block--no-js-content" id="bannockburn-nojs">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="mysteries-depths--slider-information">
+                                            <h2 class="mysteries-depths--slider-title" tabindex="0"><!-- Bannockburn Title -->Disappearance Of the Bannockburn<!-- END Bannockburn Title --></h2><!-- Bannockburn Content -->
+                                            <p>This is the story of the Bannockburn, a cargo ship built in the United Kingdom and sailed on the Great Lakes.</p><!-- END Bannockburn Content -->
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="sp-layer sp-static mysteries-depths--slider-image" data-horizontal="30%" data-vertical="0" data-width="70%">
+                                            <div class="image--caption" tabindex="0">
+                                                <!-- Bannockburn Slide 1 image caption -->
+                                                <p>Bannockburn</p><!-- END Bannockburn Slide 1 image caption -->
+                                            </div>
+                                            <div class="sp-thumbnail-container"><img alt="The ship Bannockburn, being tossed in stormy water. A passenger ship can be seen in the distance." src="figures/mysteries/content_mysteries_Bannockburn_01.jpg" title="The ship Bannockburn, being tossed in stormy water. A passenger ship can be seen in the distance."></div>
+                                        </div><!-- End slide #1 -->
+                                        <div class="sp-layer sp-static mysteries-depths--slider-image" data-horizontal="30%" data-vertical="0" data-width="70%">
+                                            <div class="image--caption" tabindex="0">
+                                                <!-- Bannockburn Slide 1 image caption -->
+                                                <p>In November of 1902, the Bannockburn was headed with a load of grain from Fort William to Kingston Ontario when a great storm blew up in the Eastern end of Lake Superior.</p><!-- END Bannockburn Slide 1 image caption -->
+                                            </div>
+                                            <div class="sp-thumbnail-container"><img alt="A cranes loading the Bannockburn with grain" src="figures/mysteries/content_mysteries_Bannockburn_02.jpg" title="A cranes loading the Bannockburn with grain"></div>
+                                        </div><!-- Section slide #2 -->
+                                        <div class="sp-layer sp-static mysteries-depths--slider-image" data-horizontal="30%" data-vertical="0" data-width="70%">
+                                            <div class="image--caption" tabindex="0">
+                                                <!-- Bannockburn Slide 2 image caption -->
+                                                <p>She was spotted heading for the Soo Locks by the passenger steamer Huronic.</p>
+                                                <p>After that, she was never seen or heard from againaside.</p><!-- END Bannockburn Slide 2 image caption -->
+                                            </div>
+                                            <div class="sp-thumbnail-container"><img alt="A view from inside a ship’s bridge. Two sailors sight the Bannockburn in the distance." src="figures/mysteries/content_mysteries_Bannockburn_03.jpg" title="A view from inside a ship’s bridge. Two sailors sight the Bannockburn in the distance."></div>
+                                        </div><!-- End slide #3 -->
+                                        <div class="sp-layer sp-static mysteries-depths--slider-image" data-horizontal="30%" data-vertical="0" data-width="70%">
+                                            <div class="image--caption" tabindex="0">
+                                                <!-- Bannockburn Slide 3 image caption -->
+                                                <p>A few weeks later, a lifejacket from the Bannockburn came ashore near the Grand Marias Lifesaving Station, the only debris from the Bannockburn ever found.</p><!-- Bannockburn Slide 3 image caption -->
+                                            </div>
+                                            <div class="sp-thumbnail-container"><img alt="A rocky shore with a lighthouse. A man is making his way along the shore where a life preserver with the words Bannockburn has washed up." src="figures/mysteries/content_mysteries_Bannockburn_04.jpg" title="A rocky shore with a lighthouse. A man is making his way along the shore where a life preserver with the words Bannockburn has washed up."></div>
+                                        </div><!-- End slide #3 -->
+                                        <div class="sp-layer sp-static mysteries-depths--slider-image" data-horizontal="30%" data-vertical="0" data-width="70%">
+                                            <div class="image--caption" tabindex="0">
+                                                <!-- Bannockburn Slide 3 image caption -->
+                                                <p>No one knows exactly where the Bannockburn lies, but there have been many reports over the last century of strange ghostly sightings of her, usually just before a storm is about to begin!</p><!-- Bannockburn Slide 3 image caption -->
+                                            </div>
+                                            <div class="sp-thumbnail-container"><img alt="The wreckage of the Bannockburn on a lake bottom." src="figures/mysteries/content_mysteries_Bannockburn_05.jpg" title="The wreckage of the Bannockburn on a lake bottom."></div>
+                                        </div>
+                                    </div><!-- end column -->
+                                </div><!-- end row -->
+                            </div><!-- end container -->
+                            <span class="fi-anchor"></span>
+                        </div><!-- END Bannockburn -->
+                        <!-- END BLOCK THREE -->
 
-		<div class="to-top">
-			<a href="#top" tabindex="0">To Top</a>
-		</div></noscript>
-
-			<div class="no-js" hidden>
-			<div class="image-error">
-				<span class="no-image-message">Oops! Looks like pictures are not loading.<br>
-				Check your browser, or use the menu bar above to make a selection.</span>
-			</div><!-- learn popup -->
-				<button class="learn page--custom--learn-address-book active" tabindex="110"><span>
-			About This<br>
-			Activity</span></button>
-			<aside class="learn-popup sidebar--popup" style="display: block">
-				<h2 class="mysteries-depths--slider-title page--custom--address-book">About This Activity</h2>
-				<div class="table">
-					<div class="tr">
-						<div class="td">
-							<p>All of the Great Lakes Shipwrecks involve stories of people, ships, and tragedy. Often, all that we know of a ship lost at sea are a few details and guesses. Explorers and archaeologists use stories and historical records to try to locate the final resting place of ships that have disappeared into the waters of the Great Lakes.</p>
-							<p class="break">Click on one of the three book titles to explore some famous stories. Use the arrows to flip through the pages.</p>
-						</div>
-					</div>
-				</div>
-				<button aria-label="Close About This Activity popup" class="close-menu btn-close" tabindex="120"></button>
-			</aside><!-- end LEARN POPUP -->
-			<div class="content cover-photo" title="Stacks of old books on a desk. Three books standing vertically have titles showing on their spines.">
-				<!--image map-->
-				<a aria-label="The Wreck of the Edmund Fitzgerald" class="book-one page--mysteries-text" data-modal="#mysteries-one" href="#edmundfitzgerald-nojs" title="The Wreck of the Edmund Fitzgerald"></a>
-				<a aria-label="What Happened To Le Griffon?" class="book-two page--mysteries-text" data-modal="#mysteries-two" href="#legriffon-nojs" title="What Happened To Le Griffon?"></a>
-				<a aria-label="Disappearance Of the Bannockburn" class="book-three page--mysteries-text" data-modal="#mysteries-three" href="#bannockburn-nojs" title="Disappearance Of the Bannockburn"></a>
-				<!--image map-->
-			</div>
-			</div>
+                        <div class="to-top">
+                            <a href="#top" tabindex="0">To Top</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 		</main><!-- Pop up Modal sections -->
 
 		<div class="content-popup mysteries-depths--slider-content modal overflow-scroll" hidden id="mysteries-one" tabindex="0">
@@ -590,7 +625,10 @@
 	<script src="js/script.min.js">
 	</script> 
 	<script src="js/marine.min.js">
-	</script> 
+	</script>
+
+	<script src="js/jquery.blockUI.min.js">
+	</script>
 
 	<script src="js/mysteries-of-the-depths.js">
 	</script> <!-- Fallback for the browser that does not support for `:focus-within` in css -->

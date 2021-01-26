@@ -1,6 +1,6 @@
-if (window.innerHeight > window.innerWidth) {
+/*if (window.innerHeight > window.innerWidth) {
   alert("Please use Landscape!");
-}
+}*/
 
 var isVideoStopped = false;
 var isAllTwinklesInLastActiveStillOpened = false;

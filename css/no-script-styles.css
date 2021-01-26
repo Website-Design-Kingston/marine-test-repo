@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Hiden Elements */
+
+/* no js hide*/
+#map-menu {display: none;}
+
+main .cover-photo {display:none!important;}
+
+.no-js {display:none!important; visibility: hidden;}
+
+.learn {
+	display: none;
+}
+
+/*show js*/
+
+div.no-script {display:block!important;}

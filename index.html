@@ -31,7 +31,7 @@
 </head>
 
 <body class="body-index page--custom">
-	<div class="page--custom--container">
+	<div class="page--custom--container site-wrap">
 		<!-- Header -->
 		<header id="top">
 			<div class="header">
@@ -105,10 +105,10 @@
 		</header><!-- Content --><!-- Note from WDK For ease of acess and future updates we recomend doing tabindex in increments of 10 -->
 		<main class="index bypass-block-target" id="main-content" title="Main Content">
 			<h1 class="outliner-hide">Great Lakes Shipwrecks (Home)</h1><!-- Sidebar popup toggle -->
-			<button class="learn page--custom--learn-address-book active" href="#" tabindex="80">Welcome to<br>
+			<button id="home-learn-open" class="learn page--custom--learn-address-book active" href="#" tabindex="80">Welcome to<br>
 			Shipwrecks</button>
-			<aside class="learn-popup sidebar--popup" style="display: block">
-				
+			<aside class="learn-popup sidebar--popup" id="home-learn-aside" style="display: block">
+				<button id="home-learn-close" aria-label="Close Welcome to Shipwrecks popup" class="close-menu btn-close" tabindex="90"></button>
 				<h2 class="page--custom--address-book">Welcome to Shipwrecks</h2>
 				<div class="table">
 					<div class="tr">
@@ -122,9 +122,8 @@
 						</div>
 					</div>
 				</div>
-				<button aria-label="Close Welcome to Shipwrecks popup" class="close-menu btn-close" tabindex="90"></button>
 			</aside><!-- End learn popup -->
-			<div class="content navi-area">
+			<div class="content navi-area" id="home-main-content">
 				<div class="navi-area__wreck-dive">
 					<a aria-label="Wreck Diver: Explore a real 100-year-old shipwreck." href="explore-wreck-diver.html" tabindex="100"></a>
 					<div class="tooltip" title="Wreck Diver: Explore a real 100-year-old shipwreck.">
@@ -182,7 +181,10 @@
 	<script src="js/script.min.js">
 	</script> 
 	<script src="js/marine.min.js">
-	</script> 
+	</script>
+
+	<script src="js/jquery.blockUI.min.js">
+	</script>
 
 	<script src="js/index.js">
 	</script> <!-- Fallback for the browser that does not support for `:focus-within` in css -->

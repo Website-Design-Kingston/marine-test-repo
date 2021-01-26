@@ -24,10 +24,9 @@ button {
     background-repeat: no-repeat;
 }
 .content {
-    width: 100%;
-    height: calc(100% - 50px);
+    width: 100%;;
     overflow: hidden;
-    position: absolute;
+    position: relative;
 }
 .container {
     max-width: 90%;
@@ -48,11 +47,9 @@ button {
 .explore,
 .learn,
 .help {
-    background-image: url("../img/button_explore_bg.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-color: transparent;
+    background-color: #0b391a;
     color: #fff;
+    -webkit-text-fill-color: #fff;
     position: fixed;
     top: 14vh;
     border: none;
@@ -62,16 +59,15 @@ button {
     left: 0;
     z-index: 19;
 }
-.learn {
-    background-image: url("../img/button_learn_bg.png");
-    bottom: 11.7vh;
-    top: auto;
+
+.explore.active,
+.learn.active,
+.help.active {
+    background-color: #fff;
+    color: #0b391a;
+    -webkit-text-fill-color: #0b391a;
 }
-.help {
-    background-image: url("../img/button_help_bg.png");
-    bottom: 3.3vh;
-    top: auto;
-}
+
 .learn-popup {
     position: fixed;
     left: 7.3vh;
@@ -82,9 +78,7 @@ button {
     padding-left: 4vh;
     padding-right: 7vh;
     color: #fff;
-    background-image: url("../img/popup_learn_bg.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background: #0b391a;
     display: none;
     z-index: 19;
 }
@@ -100,18 +94,7 @@ button {
     font-size: 16px;
     font-weight: 400;
 }
-.learn-popup .close-menu {
-    border: none;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 8vh;
-    height: 7.5vh;
-    background-image: url("../img/button_close.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-color: transparent;
-}
+
 .help-popup {
     position: fixed;
     bottom: 3.4vh;
@@ -141,16 +124,8 @@ button {
     font-weight: 300;
 }
 .help-popup .close-menu {
-    border: none;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 8vh;
-    height: 7.5vh;
-    background-image: url("../img/button_close.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-color: transparent;
+    width: 5vh;
+    height: 5vh;
 }
 .menu {
     display: none;
@@ -201,11 +176,6 @@ button {
 
 ul.main-menu {margin: 5px auto;}
 
-.credits .container {
-    padding-top: 3%;
-    padding-left: 5%;
-    height: 92%;
-}
 .credits .col-3 {
     background-image: url("../img/Divider_line_01.png");
     background-repeat: no-repeat;
@@ -213,7 +183,6 @@ ul.main-menu {margin: 5px auto;}
     background-size: auto 100%;
 }
 .credits p {
-    color: #1b4729;
     padding-left: 2vh;
     padding-right: 3vh;
     font-size: 18px;
@@ -229,14 +198,7 @@ ul.main-menu {margin: 5px auto;}
     padding-left: 5%;
 }
 
-.contact-us .col-6:first-child {
-    padding-left: 2%;
-    padding-right: 5%;
-    width: 43%;
-    background-image: url("../img/Divider_line_01.png");
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-}
+
 .contact-us .col-6 p {
     margin-top: 4vh;
     font-size: 20px;

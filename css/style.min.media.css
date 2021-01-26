@@ -238,7 +238,14 @@ header .sub-header .home-menu {
     
     .col-6 {float:none; width: 100%; max-width: none;}
     
-    .contact-us .col-6:first-child {float:none; width: 100%; max-width: none;}
+    .content .col-6:not(:last-child) {margin-bottom: 5vh;}
+    
+    
+    .contact-us .col-6:first-child {
+        float:none;
+        width: 100%;
+        max-width: none;
+    }
  
     header .header {
         display: flex;
@@ -251,6 +258,9 @@ header .sub-header .home-menu {
     header .header .title a {
         font-size: 30px
     }
+    
+    .page--sub-title {font-size: 35px;}
+    
 	.page--exploring-hms-lawrence .three {
     }
 	.page--exploring-hms-lawrence .four {
@@ -404,7 +414,7 @@ header .sub-header .home-menu {
         padding-left: 5%;
     }
 	
-    .content.credits .container {
+    .page--about--content .container {
         margin-left: 10%
     }
     .page--exploring-hms-lawrence .seven {
@@ -676,9 +686,7 @@ header .sub-header .home-menu {
     .item-list li+li {
         margin-top: 0
     }
-    body.page--about .page--about--content {
-		margin-top: 1%;
-    } 
+
     .item-list {
         overflow: hidden;
         margin-left: -30px
@@ -691,10 +699,6 @@ header .sub-header .home-menu {
     .item-list li+li {
         margin-top: 0
     }
-
-	body.page--about .page--about--content {
-    padding: 5% 10%;
-	}
 	
 	/*WDK add-on*/.page--about--content h3 {color:#1b4729;}
 	
@@ -953,13 +957,6 @@ header .sub-header .home-menu {
 		height: auto;
 	}
 
-	body.body--wreck-diver.landscape main#main-content, main {
-		flex: 1 1 auto;
-		outline: 0;
-		position: relative;
-		display: block;
-		height: calc(100vh + 50px);
-	}
 
 	body.body--wreck-diver.landscape .content {
 		width: 100%;
@@ -1083,4 +1080,65 @@ header .sub-header .home-menu {
 
 @media (max-width: 500px) {
 	.blocker {padding: 20px 0;}
+}
+
+/* smaller screen sizes and no js media quearies */
+
+@media (min-width: 768.01px) {
+	div.no-script {display:none;}
+    
+    .site-wrap {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height: 100vh;
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
+    main#main-content, main { overflow: hidden;}
+
+    main:not(.index), .content-body {
+        display: grid!important;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height: 100%
+    }
+    
+    .content-wrap {position: relative;}
+
+    .content {height: 100%;}
+    
+    .no-script-header {display:none;}
+    
+    .content-wrap > .no-js {height: 100%;}
+}
+
+@media (max-width: 768px) {
+
+    .page--custom--container {
+        min-height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    body.body-index .site-wrap {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height: 100vh;
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+    
+    main.index > div.content {height: 100%;}
+    
 }

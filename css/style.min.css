@@ -745,60 +745,60 @@ header .header .right-logo img, header .header .left-logo img {
 	white-space: nowrap;
 }
 
-/*Sub Menu and Modal Menu*/
-    #map-menu {
+/*Sub Menu and Modal Menu + Small screen Menu */
+    #map-menu, #small-map-menu {
       height: auto;
       display: block;
     }
 
 
-    #map-menu ul li {
+    #map-menu ul li, #small-map-menu ul li {
       font-family: "Amiri", serif;
       padding: 4px 8px;
       line-height: 28px;
     }
 
-    #map-menu ul li a:link {
+    #map-menu ul li a:link, #small-map-menu ul li a:link {
       font-size: 20px;
     }
     
-    #map-menu, .modal-menu {
+    #map-menu, .modal-menu, #small-map-menu {
         background: #fff!important;
         border-top: 2px solid #6bbc45;
         border-bottom: 2px solid #6bbc45;
         min-height: 45px;
     }
         
-    #map-menu ul, .modal-menu > ul {
+    #map-menu ul, .modal-menu > ul, #small-map-menu > ul {
         text-align: center;
         list-style: none;
         margin: 6px auto;
     }
     
-    #map-menu ul li, .modal-menu ul > li {
+    #map-menu ul li, .modal-menu ul > li, #small-map-menu ul > li {
         display: inline-block;
         color: #000;
         padding: 0 8px;
         position: relative;
     }
 
-    #map-menu ul li:before, .modal-menu > ul > li:before {
+    #map-menu ul li:before, .modal-menu > ul > li:before, #small-map-menu > ul > li:before {
         color: #6bbc45;
         content: "[";
         padding-right: 7px;
     }
     
-    #map-menu ul li:after, .modal-menu > ul > li:after {
+    #map-menu ul li:after, .modal-menu > ul > li:after, #small-map-menu > ul > li:after {
         color: #6bbc45;
         content: "]";
         padding-left: 7px;
     }
 
-    #map-menu ul li a:hover, .modal-menu > ul > li > a:hover {
+    #map-menu ul li a:hover, .modal-menu > ul > li > a:hover, #small-map-menu > ul > li > a:hover {
         text-decoration: underline!important;
     }
 
-    #map-menu ul li a:link, .modal-menu > ul > li > a:link {
+    #map-menu ul li a, .modal-menu > ul > li > a, #small-map-menu > ul > li > a {
         text-decoration: none;
         color: #000;
     }
@@ -972,25 +972,17 @@ li.jp-pause, li.jp-repeat-off, li.jp-unmute, .jp-no-solution {
 .page--copyright {
     background-color: #093116;
     color: #fff;
-    height: 50px;
+    height: auto;;
     padding: 0 15px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 20;
     font-size: 15px;
     line-height: 50px;
     font-weight: 500;
 }
-.page--copyright--inner {
-	-ms-transform: translateX(0) translateY(-50%);
-	-webkit-transform: translateX(0) translateY(-50%);
-	transform: translateX(0) translateY(-50%);
-	position: absolute;
-	left: 15px;
-	top: 50%;
-}
+
+.page--copyright--inner { padding: 0 15px; }
+
+.page--copyright--inner p {margin: 0;}
+
 section.menu li {
 	width: 81%;
 }
@@ -1014,12 +1006,7 @@ section.menu li.double {
 .sidebar--popup p {
 	font-size: 18px;
 }
-.sidebar--popup .btn-close {
-	border-radius: 2vh;
-	background: rgba(2, 95, 27, 0.9) url("../img/background/btn-close.png") no-repeat center center;
-	background-size: cover;
-	border: 1px solid #6bbc45;
-}
+
 .sidebar--popup .btn-close:hover {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity =85)";
 	filter: alpha(opacity=85);
@@ -1164,24 +1151,14 @@ body.body--explore-charts .sp-slides-container .sp-thumbnail-container {
 }
 
 body.page--about .page--about--content {
-	position: absolute;
 	height: 100%;
-	left: 0;
-	right: 0;
-	overflow-y: auto;
-	padding: 50px 0;
+
 }
 body.page--about .page--about--content .container {
 	background: url("../img/Divider_line_01.png") no-repeat 0 center;
 	background-size: auto 100%;
-	padding-left: 2%;
-	padding-right: 2%;
-	margin-top: 0 !important;
-	padding-top: 0 !important;
-	margin-left: auto !important;
-	margin-right: auto !important;
-	padding-bottom: 2%;
-	overflow: auto;
+    padding: 4vh 3vh 6vh;
+    overflow-y: auto;
 }
 body.page--about .contact-us--form {
 	background-image: none;
@@ -1194,15 +1171,6 @@ body.page--about .contact-us--form {
     margin-bottom: 1em;
 }
 
-body.page--about .content.contact-us .container {
-	background-image: none;
-}
-body.page--about.no-footer .content {
-	height: 81vh !important;
-}
-body.page--about.no-footer footer {
-	display: none;
-}
 .content.contact-us::-webkit-input-placeholder {
 	font-size: 16px;
 }
@@ -2276,8 +2244,6 @@ header .header .title a.focus, header .header .title a:focus-within, header .hea
 }
 
 main#main-content, main {
-  flex: 1 1 auto;
-  outline: 0;
   position: relative;
   display: block;
 }
@@ -2314,9 +2280,7 @@ header {
 	color: #fff;
 	text-align: center;
 }
-.page--about--content {
-	padding-top: 20px!important;
-}
+
 .sitemap {
 	color: #1b4729;
 }
@@ -2637,8 +2601,6 @@ main.index .navi-area .tooltip span, .navi-area .tooltip a p {font-size: 20px; l
 
 .mysteries-depths--slider-information {
     padding: 4vh 2vw 0;
-/*    max-height: 480px;
-    overflow-y: auto;*/
 }
 
 /*custom css for sp-slider elements => a.close-modal, sp-buttons, sp-button, sp-selected-button, etc.. */
@@ -2820,22 +2782,17 @@ header {
 	background-color: #0b391a;
 }
 header .sub-header {
-	background: #fff;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	overflow: visible;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+    background: #fff;
+	display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto;
+    grid-column-gap: 12px;
+    grid-row-gap: 0px;
+    padding: 0 2vw;
+    overflow: visible;
 }
 header .sub-header .home-menu a {
 	text-decoration: none;
-}
-header .sub-header .home-menu a {
 	color: #0b391a;
 }
 
@@ -3193,11 +3150,6 @@ body.portrait.portrait-iphonex .one {
 }
 .page--custom {
 	background-color: #fff;
-}
-.page--custom--container {
-	height: 100vh;
-	position: relative;
-	overflow: hidden;
 }
 /* WDK Addons */
 
