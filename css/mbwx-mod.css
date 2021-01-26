@@ -239,9 +239,8 @@ p.break {
 
 .page--mysteries .content{
         width: 100%;
-        height: 70.5vh;
         overflow: hidden;
-        position: absolute;
+        position: relative;
     }
 
 .explore-charts--modal-content > div.wreck {
@@ -273,7 +272,7 @@ p.break {
 
 .portrait .page--mysteries .content {
   grid-template-columns: 13% 1fr 1fr 1fr 13%;
-  height: calc(100% - 2vh);
+  height: 100%;
 }
 
 .page--mysteries .content > a {
@@ -955,34 +954,15 @@ body.page--about .contact-us--form {
   width: auto;
   max-width: 52vh;
 }
-
-.learn-popup .close-menu {
-  position: relative;
-  right: 0;
-  bottom: 0;
-  width: 5vh;
-  height: 5vh;
-  float: right;
-}
-
 .learn-popup .close-menu,
 .body--wreck-diver .sidebar--popup .btn-dive-now {
-  max-width: 5vh;
-  max-height: 5vh;
-  position: relative;
-  right: 0;
-  bottom: 0;
-  float: right;
-}
-
-.body--wreck-diver .sidebar--popup .btn-close {
-  position: relative;
   border-radius: 1vh;
-  bottom: 0;
+  width: 5vh;
+  height: 5vh;
+  position: absolute;
   right: 0;
-  float: right;
-  max-width: 5vh;
-  max-height: 5vh;
+  top: 0;
+  z-index: 10;
 }
 
 .sidebar--popup.learn-popup .table .tr:after {

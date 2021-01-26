@@ -18,7 +18,12 @@
     /* Avoid click on map-menu and main-content until learn box popup is closed*/
     ExploreHmsLawrence.prototype.blockView = function(){
 
-        $('.page--exploring-hms-lawrence').block({
+        $('#exploring-hms-content').block({
+            message: null,
+            overlayCSS: { cursor : 'default'}
+        });
+
+        $('#map-menu').block({
             message: null,
             overlayCSS: { cursor : 'default'}
         });
@@ -27,7 +32,7 @@
         $('#exploring-hms-learn-popup').css('z-index', '1033');
 
         $('#exploring-hms-learn-close').click(function() {
-            $('.page--exploring-hms-lawrence').unblock();
+            $('#exploring-hms-content').unblock();
         });
 
     }

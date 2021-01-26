@@ -26,15 +26,21 @@
   <link href="vendors/pace/themes/white/pace-theme-center-radar.css" rel="stylesheet">
 
   <link href="css/base-style.min.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
-    <link href="css/style.min.media.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.min.media.css" rel="stylesheet">
   <link href="css/mbwx.css" rel="stylesheet">
+  <!-- no js + small screen css -->
+  <link href="css/no-js-styles.css" rel="stylesheet">
+    
+  <noscript>
+	<link href="css/no-script-styles.css" rel="stylesheet">
+  </noscript>
   
 </head>
 
 <body class="body--sitemap page--custom page--about">
   
-    <div class="page--custom--container">
+    <div class="page--custom--container site-wrap">
 
         <!-- Header -->
     <header>
@@ -45,11 +51,11 @@
 			  <img alt="This site was created by Marine Museum of the Great Lakes of Kingston." class="page--custom--image-handler" src="img/Marine_Museum_logo_inv.png" title="This site was created by Marine Museum of the Great Lakes of Kingston.">
 		   </a>
         </div>
-        <h2 class="title page--title">
+        <div class="title page--title">
           <a href="index.html" title="Homepage" tabindex="10">
             Great Lakes Shipwrecks
           </a>
-        </h2>
+        </div>
 
         <div class="right-logo">
           <a href="http://www.virtualmuseum.ca/" title="Virtual Museum of Canada" target="_blank" tabindex="30">
@@ -111,9 +117,11 @@
 
   <!-- Content --> <!-- Note from WDK For ease of acess and future updates we recomend doing tabindex in increments of 10 -->
   <main title="Main Content">
-      <div class="pagetitle-bar"><h1 class="sub-title page--sub-title">Sitemap</h1></div>
+      <div class="pagetitle-bar">
+          <h1 class="sub-title page--sub-title">Sitemap</h1>
+      </div>
       <div id="main-content" class="content sitemap secondary bypass-block-target" tabindex="75">
-    <div class="page--about--content">
+          <div class="page--about--content">
       <div class="container">
       
 			<a href="index.html" title="Home" tabindex="80"><h2>Great Lakes Shipwrecks (Home)</h2></a>
@@ -214,7 +222,7 @@
                     </div>
                 </div><!-- end of content-->
             </div>
-        </main>
+  </main>
 
         <!-- Footer -->
         <footer>
