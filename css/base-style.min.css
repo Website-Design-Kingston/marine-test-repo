@@ -45,9 +45,8 @@ button {
     width: 100%;
 }
 .explore,
-.learn,
-.help {
-    background-color: #0b391a;
+.learn {
+    background-color: #093216;
     color: #fff;
     -webkit-text-fill-color: #fff;
     position: fixed;
@@ -58,6 +57,44 @@ button {
     font-size: 14px;
     left: 0;
     z-index: 19;
+}
+
+.help {
+    background-color: #093216;
+    color: #fff;
+    -webkit-text-fill-color: #fff;
+    display: none;
+    text-decoration: none;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: relative;
+    top: 30px;
+    left: 20px;
+    border: 1px solid #6bbc45;
+    position: absolute;
+    min-height: fit-content;
+    min-width: fit-content;
+    z-index: 10;
+}
+
+.help-icon {
+    display: block;
+    content: '';
+    height: 35px;
+    width: 35px;
+    margin: 5px auto 0;
+}
+
+.help .help-icon {
+    background: url("../img/img_icon_help_normal.png") no-repeat center center;
+    background-size: contain;
+}
+
+.help.active .help-icon {
+    background: url("../img/img_icon_help_pressed.png") no-repeat center center;
+    background-size: contain;
 }
 
 .explore.active,
@@ -126,16 +163,10 @@ button {
 .help-popup .close-menu {
     width: 5vh;
     height: 5vh;
+    min-width: 50px;
+    min-height: 50px;
 }
 .menu {
-    display: none;
-    background-image: url("../img/main_menu_bg.png");
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    height: 64vh;
-    width: 43.2vh;
-    position: fixed;
-    top: 14vh;
     font-family: "Amiri", serif;
     z-index: 19;
 }
@@ -173,8 +204,6 @@ button {
     top: 0;
     right: 0.4vh;
 }
-
-ul.main-menu {margin: 5px auto;}
 
 .credits .col-3 {
     background-image: url("../img/Divider_line_01.png");

@@ -1,0 +1,1281 @@
+@font-face {
+  font-family: "Kalam-Regular";
+  src: url("font/kalam-regular/Kalam-Regular.eot");
+  src: url("font/kalam-regular/Kalam-Regular-.eot#iefix")
+      format("embedded-opentype"),
+    url("font/kalam-regular/Kalam-Regular.woff") format("woff"),
+    url("font/kalam-regular/Kalam-Regular.ttf") format("truetype"),
+    url("font/kalam-regular/Kalam-Regular.svg#Kalam-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.site-wrap {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height: 100vh;
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
+.body--wreck-diver {
+  background: none;
+}
+
+.body--wreck-diver .sidebar--popup.learn-popup {
+  width: auto;
+  max-width: 52vh;
+}
+
+.learn-popup .close-menu,
+.body--wreck-diver .sidebar--popup .btn-dive-now {
+  border-radius: 1vh;
+  width: 5vh;
+  height: 5vh;
+  min-width: 45px;
+  min-height: 45px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+
+.sidebar--popup.learn-popup .table .tr:after {
+  content: "";
+  display: block;
+  clear: none;
+}
+
+.sidebar--popup.learn-popup .table,
+.sidebar--popup.help-popup .table {
+  margin-bottom: 0;
+}
+
+.page--wreck-diver #main-content > section > div > button.help {
+  display: none;
+  top: 0;
+  position: absolute;
+  border-radius: 0 0 5px 0;
+  text-transform: uppercase;
+  font-size: 18px;
+  height: 5vh;
+  width: 18vh;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  background: #0b391a;
+  background-image: none;
+  padding: 0;
+  z-index: 0;
+}
+
+.page--wreck-diver #main-content > section > div > button.help.active {
+  background-color: #0b391a;
+  color: #fff;
+  display: inline-block;
+}
+
+.page--wreck-diver #main-content > section > div > section {
+  top: 5vh;
+  position: absolute;
+  max-width: 52vh;
+  width: auto;
+}
+.page--wreck-diver #main-content > section > div > section > h3 {
+  padding: 2vh 2vh 0;
+}
+
+.page--wreck-diver .adventure .part .video .skip-video {
+  position: absolute;
+  bottom: 0;
+  font-size: 20px;
+}
+
+.page--wreck-diver .adventure .continue {
+    opacity: 0;
+    position: absolute;
+    border: 1px solid #6bbc45;
+    background-color: #093216;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.continue.continue-normal {
+    left: 25vw;
+    font-size: 18px;
+    text-shadow: 1px 1px 3px #000;
+    font-weight: 700;
+    z-index: 1;
+    bottom: 4.5vh;
+    width: 230px;
+    height: auto;
+    border-radius: 15px;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.page--wreck-diver .adventure .continue.continue-normal:hover {background: #6bbc45;}
+
+.page--wreck-diver .adventure .continue .clickable {
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform: none;
+    display: block;
+}
+
+.page--wreck-diver .adventure .continue-normal .clickable {
+    padding: 1vh;
+    box-sizing: border-box;
+}
+
+.page--wreck-diver .adventure .continue a {-webkit-text-fill-color: #fff;}
+
+/*swim buttons and skip buttons*/
+
+.head-to-surface, .head-to-surface-anytime, .skip-video {
+    background: #093216;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px #000;
+    top: auto;
+    opacity: 1;
+    position: absolute;
+    bottom: 4.5vh;
+    border: 1px solid #6bbc45;
+    border-radius: 15px;
+    width: 230px;
+    height: auto;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.head-to-surface:hover, .head-to-surface-anytime:hover, .skip-video:hover {background: #6bbc45;}
+            
+            /* position - reflex swim to next location button*/
+            .head-to-surface, .head-to-surface-anytime {right: 25vw;}
+            
+            .skip-video {left: calc(50% - 115px);}
+
+.dive-two-button, .dive-one-button {
+    background: #093216;
+    color: #fff;
+    top: auto;
+    min-height: 9vh;
+    right: 1vw;
+    opacity: 1;
+    position: fixed;
+    bottom: 8vh;
+    border: 1px solid #6bbc45;
+    width: 16vh;
+    height: auto;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 1vh;
+}
+
+.resume-dive {
+    background: #093216;
+    color: #fff;
+    top: auto;
+    min-height: 9vh;
+    left: 1vw;
+    opacity: 1;
+    position: fixed;
+    bottom: 8vh;
+    border: 1px solid #6bbc45;
+    width: 16vh;
+    height: auto;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 1vh ;
+}
+
+.dive-two-button,
+.dive-one-button,
+.head-to-surface,
+.head-to-surface-anytime,
+.resume-dive,
+.skip-video,
+.continue {
+  z-index: 10;
+}
+
+.head-to-surface,
+.head-to-surface-anytime,
+.skip-video {
+  display: none;
+  font-size: 18px;
+}
+
+@media (max-width: 1275px) {
+    .page--wreck-diver .adventure .continue-normal{left:15vw;}
+
+    .head-to-surface, .head-to-surface-anytime {right: 15vw;}
+
+    body.landscape .page--wreck-diver .video-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 675px) {
+    .page--wreck-diver .adventure .continue-normal {left:5vw;}
+
+    .head-to-surface, .head-to-surface-anytime {right: 5vw;}
+}
+
+@media (max-width: 580px) {
+    .page--wreck-diver .adventure .continue-normal {left:3vw;}
+
+    .head-to-surface, .head-to-surface-anytime {right: 3vw;}
+}
+
+ @media (max-width: 550px) {
+    .page--wreck-diver .adventure .continue-normal {width: 180px;}
+
+    .head-to-surface, .head-to-surface-anytime {width: 180px;}
+}
+
+@media (max-width: 400px) {
+
+    .head-to-surface span, .head-to-surface-anytime span, .resume-dive p, .skip-video span {font-size: 16px;}
+
+    .page--wreck-diver .adventure .continue-normal {width: 160px; font-size: 16px;}
+
+    .head-to-surface, .head-to-surface-anytime {width: 160px;}
+}
+
+.dive-two-button,
+.dive-one-button,
+.resume-dive {
+  font-size: 18px;
+}
+
+.page--wreck-diver .adventure .part-journal .head-to-surface {
+  display: none;
+}
+
+.head-to-surface span,
+.head-to-surface-anytime span,
+.resume-dive p,
+.skip-video span {
+  display: block;
+  padding: 1vh;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.head-to-surface .confirm {
+  height: auto;
+  display: none;
+}
+
+.head-to-surface .confirm > .text {
+  line-height: 2vh;
+}
+
+.head-to-surface .confirm .button {
+  line-height: 4vh;
+  margin: 0.4em;
+}
+
+.head-to-surface .confirm .button > span {
+  background: #02591a;
+  border: 1px solid #6bbc45;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin: 0.4em;
+}
+
+.page--wreck-diver .adventure .control .head-to-surface .confirm {
+  right: 8.5vw;
+}
+
+#add-on-help {
+  display: block;
+  font-weight: 700;
+}
+
+.body--wreck-diver .sidebar--popup .btn-dive-now {
+  background: rgba(2, 95, 27, 0.9)
+    url("../img/wreck-diver/button_begin_dive_icon.png") no-repeat center 80%;
+  background-size: 30% auto;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 1vh;
+}
+
+.body--wreck-diver .learn-popup {
+  display: block;
+}
+
+.body--wreck-diver .learn-popup .learn-content {
+  display: none;
+}
+
+.body--wreck-diver .learn-popup .learn-content.active {
+  display: block;
+}
+
+.page--wreck-diver .adventure {
+  position: relative;
+}
+
+.page--wreck-diver {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.page--wreck-diver .adventure .part {
+  top: 0;
+  left: 0;
+  background: #0b391a;
+  display: none;
+}
+.page--wreck-diver .adventure .part {
+  display: none;
+}
+.page--wreck-diver .adventure .part.active {
+  opacity: 1;
+  display: block;
+  animation-name: twinkles;
+  animation-duration: 1s;
+}
+
+.page--wreck-diver .adventure .part .video .part-video {
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  background-size: cover;
+}
+
+.page--wreck-diver .adventure .part .video .skip-video {
+  background: #0b391a;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  top: auto;
+  border: 1px solid #6bbc45;
+  border-bottom: none;
+  width: 16vh;
+  height: 9vh;
+  font-size: 18px;
+  right: 2vw;
+  z-index: 19;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px 5px 0 0;
+  display: none;
+}
+
+.page--wreck-diver .adventure .part .video .skip-video img {
+  width: 35%;
+  margin-top: 5px;
+}
+
+.part-item {
+  position: absolute;
+  height: auto;
+  display: none;
+}
+
+.part-item.active {
+  animation-name: fade-in;
+  animation-duration: 1s;
+  display: block;
+}
+
+.part-item .twinkles {
+  width: 5vw;
+  height: auto;
+  cursor: pointer;
+  margin: 0 auto;
+  max-width: 80px;
+}
+
+.part-item.active .twinkles {
+  animation-name: twinkles;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+  width: 100%;
+  height: 100%;
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.part-item .twinkles img {
+  display: none;
+  width: 100%;
+}
+
+.part-item .twinkles {
+  background: url("../img/wreck-diver/Object--button---Bowsprit.png") no-repeat center center;
+  background-size: contain;
+}
+
+.part-item .description {
+  visibility: hidden;
+  border: 2px solid #0b391a;
+  font-size: 16px;
+  position: relative;
+  margin-bottom: 1.7vh;
+  width: 25vh;
+}
+
+
+.part-item .description.onleft {
+  transform: translate(calc(-50% - 7vh), calc(50% + 6.5vh));
+}
+
+.part-item .description.onright {
+  transform: translate(calc(50% + 7vh), calc(50% + 6.5vh));
+}
+
+.part-item .description .arrow {
+  position: absolute;
+  bottom: -4vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border: 2vh solid #0b391a;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.part-item .description.onleft .arrow {
+  left: calc(100% + 2.3vh);
+  bottom: calc(50%);
+  transform: translate(-50%, 50%);
+  border-left-color: inherit;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+}
+
+.part-item .description.onright .arrow {
+  right: calc(100% + -2vh);
+  left: unset;
+  bottom: calc(50%);
+  transform: translate(-50%, 50%);
+  border-right-color: inherit;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+}
+
+.part-item .description .title {
+  background: #0b391a;
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.part-item .description .explain {
+  background: #fff;
+  padding: 15px 10px;
+
+}
+
+.part-item .description .explain > div {
+  display: table-cell;
+  padding: 0.5vh;
+  vertical-align: top;
+  line-height: 2vh;
+}
+
+.part-item .description .explain > div img {
+  height: auto;
+}
+
+.part-item .description .explain > div:first-child {
+  border-right: 1px solid #0b391a;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.part-item .description .explain > div:last-child {
+  width: 60%;
+}
+
+.page--wreck-diver .adventure .control .location {
+  width: 14vw;
+  height: 100%;
+  background: url("../img/wreck-diver/position.png") no-repeat center 10vh;
+  background-size: contain;
+  transform: translateX(55vw);
+  padding-top: 2vh;
+}
+
+.page--wreck-diver .adventure .control .location img {
+  position: absolute;
+  right: 0;
+  top: 5vh;
+}
+
+.page--wreck-diver .adventure .control .head-to-surface {
+  right: 2vw;
+  bottom: 0;
+}
+
+.page--wreck-diver .adventure .control .head-to-surface img {
+  display: block;
+  width: 17vh;
+  height: 10vh;
+  cursor: pointer;
+}
+
+.page--wreck-diver .adventure .control .head-to-surface .confirm,
+.oxy-bar .confirm {
+  padding: 10px;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  border: 2px solid #02591a;
+  display: none;
+  position: absolute;
+  bottom: 13vh;
+  right: -1vw;
+  color: #000;
+}
+
+.oxy-bar .confirm {
+  bottom: 14vh;
+  right: -11vh;
+}
+
+.page--wreck-diver .adventure .control .head-to-surface .confirm:after,
+.oxy-bar .confirm:after {
+  content: "";
+  position: absolute;
+  bottom: -5.5vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border: 3vh solid #fff;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.page--wreck-diver .adventure .control .head-to-surface .confirm .text,
+.oxy-bar .confirm .text {
+  width: 20vh;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.page--wreck-diver .adventure .control .head-to-surface .confirm .button > span,
+.oxy-bar .confirm .button > span {
+  background: #02591a;
+  border: 1px solid #6bbc45;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.page--wreck-diver .collection {
+  position: fixed;
+  top: 19vh;
+  right: 0;
+  background: transparent;
+  width: 14vw;
+  border-left: 1px solid #fff;
+  border-top: 1px solid #fff;
+  visibility: hidden;
+}
+
+.page--wreck-diver .collection.active {
+  visibility: visible;
+  height: 95%;
+  z-index: 99;
+}
+
+.page--wreck-diver .collection .title {
+  font-size: 20px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  padding: 1vh 1vw;
+  text-transform: uppercase;
+}
+
+.collection .bag-wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100%;
+}
+
+.bag-scroll {
+    height: 100%;
+    background: #0b391b;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-bottom: 1px solid #6bbc45;
+    border-left: 1px solid #6bbc45;
+}
+
+.page--wreck-diver .collection .bag > div {
+  position: absolute;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.page--wreck-diver .collection .bag > div[discover="true"] {
+  pointer-events: auto;
+}
+
+.page--wreck-diver .collection .bag > div.active[discover="true"] {
+  opacity: 1;
+  animation-name: twinkles;
+  animation-duration: 0.7s;
+  animation-iteration-count: 4;
+  background-color: #0b391a;
+}
+
+.page--wreck-diver .collection .bag > div img {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.page--wreck-diver .collection .bag .bag__item--image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 3vh;
+  -webkit-filter: invert(0);
+  filter: invert(0);
+}
+
+.page--wreck-diver .collection .bag > div[data-dive="1"] {
+  z-index: 1;
+}
+
+.dive-one-button,
+.dive-two-button {
+  background: rgba(2, 95, 27, 0.9)
+    url("../img/wreck-diver/button_begin_dive_icon.png") no-repeat 10px center;
+  background-size: 30% auto;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  padding: 2vh 2vh 2vh 8vh;
+  cursor: pointer;
+  border-radius: 1vh;
+  width: 128px;
+  height: 85px;
+  position: absolute;
+  bottom: 0;
+  right: 2px;
+  font-size: 18px;
+  z-index: 1;
+}
+
+.resume-dive {
+  background: rgba(95, 8, 23, 0.9)
+  url("../img/wreck-diver/button_begin_dive_icon.png") no-repeat 10px center;
+  background-size: 30% auto;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  padding: 2vh 2vh 2vh 8vh;
+  cursor: pointer;
+  border-radius: 1vh;
+  width: 128px;
+  height: 85px;
+  position: absolute;
+  bottom: 0;
+  left: 2px;
+  font-size: 18px;
+  z-index: 1;
+}
+
+.page--wreck-diver .adventure .still-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/wreck-diver/Wreck_Diver_onDeck_BG.jpg") no-repeat 0 0;
+  background-size: cover;
+}
+
+.dive-complete-message,
+.dive-incomplete-message {
+  width: 40vh;
+  padding: 10px;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  border: 2px solid #02591a;
+  display: none;
+  position: relative;
+  bottom: 52vh;
+  left: -20vw;
+  color: #000;
+}
+}
+
+@keyframes twinkles {
+  from {
+    opacity: 0.3;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.journal {
+  display: none;
+  height: 68vh;
+  width: 60vw;
+}
+
+.journal p {
+  margin-bottom: 10px;
+}
+
+.journal.active {
+  display: block;
+}
+
+.journal .book .right-page .item-image__text {
+  position: absolute;
+  text-shadow: 1px 1px 1px #000;
+  font-weight: normal;
+  font-variant: small-caps;
+  color: #ffbe00;
+  font-size: 18px;
+  text-align: center;
+}
+
+/*--- MBWX edit ---*/
+
+.page--wreck-diver .col-12, .adventure {
+    height: 100%;
+}
+
+.portrait .page--wreck-diver .col-12, .adventure {max-height: 810px;}
+
+.page--wreck-diver .adventure {overflow: visible;}
+
+.page--wreck-diver .adventure .part {
+  position: relative;
+  text-align: center;
+  height: 100%;
+}
+.page--wreck-diver .adventure::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+.video-wrap {
+    height: 90%;
+    max-height: 720px;
+    position: relative;
+    display: block;
+    border-bottom: 6px solid #6bbc45;
+}
+
+.video {
+    max-width: 1280px;
+    width: auto;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    object-fit: contain;
+}
+.portrait .video {
+  margin-top: 60px;
+}
+.page--wreck-diver .adventure .part .video .part-video {
+  min-width: unset;
+  min-height: unset;
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+.part-item {
+  height: 5vw;
+  width: 5vw;
+}
+@media only screen and (min-device-width: 1440px) and (orientation: landscape) {
+  .part-item {
+    height: 5.5vw;
+    width: 5.5vw;
+  }
+}
+.part-item .description {
+  display: none;
+  z-index: auto;
+}
+#main-content span.shimmering-stars > img {
+  filter: invert(1);
+  height: 2vh;
+}
+
+/* collection bag*/
+
+.page--wreck-diver .collection {
+  position: absolute;
+  top: 0;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  border: 0;
+  z-index: 99;
+}
+
+.showCollection {
+  right: 0 !important;
+}
+
+.collectionTab {
+    display: flex;
+    margin-top: 0;
+    position: absolute;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+    background: #0b391a;
+    border-radius: 0 0 0 15px;
+    border: 1px solid #6bbc45;
+    border-right: none;
+    cursor: pointer;
+    height: 50px;
+    align-items: center;
+}
+
+.collectionTab div {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700; 
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px #000;
+  font-family: "opensans", "sans-serif", Arial, Tahoma;
+  color: #fff;
+  padding: 1vh 1vw;
+  line-height: unset;
+  width: 100%
+}
+
+/*landscape collection tab icon*/
+
+
+[class*="discover-icon"]:before {
+    font-family: "foundation-icons";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    text-decoration: inherit;
+}
+
+.collection:not(.showCollection) .discover-icon:before {    
+    content: "\f219";
+    font-size: 25px;
+    position: relative;
+    top: 2px;
+    transition: 0.3s;
+    margin-left: 5px;
+}
+
+.collection.showCollection .discover-icon:before {    
+    content: "\f21a";
+    font-size: 25px;
+    position: relative;
+    top: 2px;
+    margin-left: 5px;
+}
+
+.page--wreck-diver .collection .title {
+    border-bottom: 1px solid #6bbc45;
+    border-left: 1px solid #6bbc45;
+    border-top: none;
+    text-transform: inherit;
+    height: 50px;
+    background: #0b391b;
+    text-align: center;
+}
+
+
+/*landscape Collection Menu*/
+
+@media (min-width: 1250px) {
+
+    body.landscape .page--wreck-diver .collection {
+          width: 35%;
+          right: -35%;
+    }
+
+    body.landscape .collectionTab {
+        left: -210px;
+        top: 0;
+        width: 210px;
+    }
+}
+
+/*middle size*/
+
+    body.portrait-bb .video {
+        max-width: 90%;
+        height: auto;
+    }
+
+/* Portriat Collection Menu */
+
+    .page--wreck-diver .collection {
+        visibility: hidden;
+        position: absolute;
+        top: calc(-100% + 50px);
+        width: 100%;
+    }
+
+    .page--wreck-diver .collection.active {
+        visibility: visible;
+        height: calc(100% - 50px);
+    }    
+
+    .collection.active.showCollection {top: 0!important;}
+
+    .collectionTab {
+        border-radius: 0 0 15px 15px;
+        border: 1px solid #6bbc45;
+        border-top: 1px solid #0b3a1a;
+        left: calc(50% - 105px);
+        bottom: -49px;
+        width: 210px;
+        box-shadow: 0 8px 8px rgb(0 0 0 / 50%);
+    }
+
+    .page--wreck-diver .collection .title {
+        border-right: 1px solid #6bbc45;
+        border-left: 1px solid #6bbc45;
+        border-top: none;
+        border-bottom: none;
+    }
+
+    .bag-scroll {
+        border: 1px solid #6bbc45;
+        border-top: 0;
+    }
+
+    .collection .bag-wrap {
+        box-shadow: 0 5px 15px rgb(0 0 0 / 50%)
+    }
+
+
+.b-t1, .b-t2 {
+    text-align: left!important;
+}
+
+.b-t2 {
+    margin-top: 30px;
+    border-top: 1px dotted #768d5e;
+    padding: 3vmin 1vmin 1vmin!important;
+}
+
+.boat-item {border: 4px solid transparent;}
+
+@media (min-width: 1366.01px) {
+
+body.body--wreck-diver .page--wreck-diver .collection .bag {
+  position: relative;
+  margin: 1vmax;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto repeat(5, 1fr) auto repeat(2, 1fr);
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
+  align-items: center;
+  text-align: center;
+}
+
+.b-t1 { grid-area: 1 / 1 / 2 / 5; }
+.boat-item { grid-area: 2 / 1 / 3 / 2; }
+.item11 { grid-area: 2 / 2 / 3 / 3; }
+.item12 { grid-area: 2 / 3 / 3 / 4; }
+.item21 { grid-area: 2 / 4 / 3 / 5; }
+.item22 { grid-area: 3 / 1 / 4 / 2; }
+.item23 { grid-area: 3 / 2 / 4 / 3; }
+.item24 { grid-area: 3 / 3 / 4 / 4; }
+.item31 { grid-area: 3 / 4 / 4 / 5; }
+.item32 { grid-area: 4 / 1 / 5 / 2; }
+.item33 { grid-area: 4 / 2 / 5 / 3; }
+.item42 { grid-area: 4 / 3 / 5 / 4; }
+.item43 { grid-area: 4 / 4 / 5 / 5; }
+.item51 { grid-area: 5 / 1 / 6 / 2; }
+.item52 { grid-area: 5 / 2 / 6 / 3; }
+.item62 { grid-area: 5 / 3 / 6 / 4; }
+.item63 { grid-area: 5 / 4 / 6 / 5; }
+.item64 { grid-area: 6 / 1 / 7 / 2; }
+.item71 { grid-area: 6 / 2 / 7 / 3; }
+.item73 { grid-area: 6 / 3 / 7 / 4; }
+.b-t2 { grid-area: 7 / 1 / 8 / 5; }
+.item81 { grid-area: 8 / 1 / 9 / 2; }
+.item92 { grid-area: 8 / 2 / 9 / 3; }
+.item131 { grid-area: 8 / 3 / 9 / 4; }
+.item132 { grid-area: 8 / 4 / 9 / 5; }
+.item133 { grid-area: 9 / 1 / 10 / 2; }
+.item141 { grid-area: 9 / 2 / 10 / 3; }
+}
+
+/* laptop + portriate view */
+@media (max-width: 1366px) {
+    .bag, body.portrait .bag {
+        margin: 1vmax;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto repeat(6, 1fr) auto auto repeat(2, 1fr);
+        grid-column-gap: 1px;
+        grid-row-gap: 1px;
+    }
+
+    .b-t1, body.portrait .b-t1 { grid-area: 1 / 1 / 2 / 4; }
+    .boat-item, body.portrait .boat-item { grid-area: 2 / 1 / 3 / 2; }
+    .item11, body.portrait.item11 { grid-area: 2 / 2 / 3 / 3; }
+    .item12, body.portrait.item12 { grid-area: 2 / 3 / 3 / 4; }
+    .item21, body.portrait.item21 { grid-area: 3 / 1 / 4 / 2; }
+    .item22, body.portrait.item22 { grid-area: 3 / 2 / 4 / 3; }
+    .item23, body.portrait.item23 { grid-area: 3 / 3 / 4 / 4; }
+    .item24, body.portrait.item24 { grid-area: 4 / 1 / 5 / 2; }
+    .item31, body.portrait.item31 { grid-area: 4 / 2 / 5 / 3; }
+    .item32, body.portrait.item32 { grid-area: 4 / 3 / 5 / 4; }
+    .item33, body.portrait.item33 { grid-area: 5 / 1 / 6 / 2; }
+    .item42, body.portrait.item42 { grid-area: 5 / 2 / 6 / 3; }
+    .item43, body.portrait.item43 { grid-area: 5 / 3 / 6 / 4; }
+    .item51, body.portrait.item51 { grid-area: 6 / 1 / 7 / 2; }
+    .item52, body.portrait.item52 { grid-area: 6 / 2 / 7 / 3; }
+    .item62, body.portrait.item62 { grid-area: 6 / 3 / 7 / 4; }
+    .item63, body.portrait.item63 { grid-area: 7 / 1 / 8 / 2; }
+    .item64, body.portrait.item64 { grid-area: 7 / 2 / 8 / 3; }
+    .item71, body.portrait.item71 { grid-area: 7 / 3 / 8 / 4; }
+    .item73, body.portrait.item73 { grid-area: 8 / 1 / 9 / 2; }
+    .b-t2, body.portrait.b-t2 { grid-area: 9 / 1 / 10 / 4; }
+    .item81, body.portrait.item81 { grid-area: 10 / 1 / 11 / 2; }
+    .item92, body.portrait.item92 { grid-area: 10 / 2 / 11 / 3; }
+    .item131, body.portrait.item131 { grid-area: 10 / 3 / 11 / 4; }
+    .item132, body.portrait.item132 { grid-area: 11 / 1 / 12 / 2; }
+    .item133, body.portrait.item133 { grid-area: 11 / 2 / 12 / 3; }
+    .item141, body.portrait.item141 { grid-area: 11 / 3 / 12 / 4; }
+
+}
+
+
+@media (max-width: 900px) {
+    
+    body.landscape .bag {
+        margin: .75vmax;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto repeat(10, 1fr) auto repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    body.landscape .b-t1 { grid-area: 1 / 1 / 2 / 3; }
+    body.landscape .boat-item { grid-area: 2 / 1 / 3 / 2; }
+    body.landscape .item11 { grid-area: 2 / 2 / 3 / 3; }
+    body.landscape .item12 { grid-area: 3 / 1 / 4 / 2; }
+    body.landscape .item21 { grid-area: 3 / 2 / 4 / 3; }
+    body.landscape .item22 { grid-area: 4 / 1 / 5 / 2; }
+    body.landscape .item23 { grid-area: 4 / 2 / 5 / 3; }
+    body.landscape .item24 { grid-area: 5 / 1 / 6 / 2; }
+    body.landscape .item31 { grid-area: 5 / 2 / 6 / 3; }
+    body.landscape .item32 { grid-area: 6 / 1 / 7 / 2; }
+    body.landscape .item33 { grid-area: 6 / 2 / 7 / 3; }
+    body.landscape .item42 { grid-area: 7 / 1 / 8 / 2; }
+    body.landscape .item43 { grid-area: 7 / 2 / 8 / 3; }
+    body.landscape .item51 { grid-area: 8 / 1 / 9 / 2; }
+    body.landscape .item52 { grid-area: 8 / 2 / 9 / 3; }
+    body.landscape .item62 { grid-area: 9 / 1 / 10 / 2; }
+    body.landscape .item63 { grid-area: 9 / 2 / 10 / 3; }
+    body.landscape .item64 { grid-area: 10 / 1 / 11 / 2; }
+    body.landscape .item71 { grid-area: 10 / 2 / 11 / 3; }
+    body.landscape .item73 { grid-area: 11 / 1 / 12 / 2; }
+    body.landscape .b-t2 { grid-area: 12 / 1 / 13 / 3; }
+    body.landscape .item81 { grid-area: 13 / 1 / 14 / 2; }
+    body.landscape .item92 { grid-area: 13 / 2 / 14 / 3; }
+    body.landscape .item131 { grid-area: 14 / 1 / 15 / 2; }
+    body.landscape .item132 { grid-area: 14 / 2 / 15 / 3; }
+    body.landscape .item133 { grid-area: 15 / 1 / 16 / 2; }
+    body.landscape .item141 { grid-area: 15 / 2 / 16 / 3; }
+}
+
+
+@media (max-width: 550px) {
+    
+    body.portrait .bag {
+        margin: .75vmax;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto repeat(10, 1fr) auto repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    body.portrait .b-t1 { grid-area: 1 / 1 / 2 / 3; }
+    body.portrait .boat-item { grid-area: 2 / 1 / 3 / 2; }
+    body.portrait .item11 { grid-area: 2 / 2 / 3 / 3; }
+    body.portrait .item12 { grid-area: 3 / 1 / 4 / 2; }
+    body.portrait .item21 { grid-area: 3 / 2 / 4 / 3; }
+    body.portrait .item22 { grid-area: 4 / 1 / 5 / 2; }
+    body.portrait .item23 { grid-area: 4 / 2 / 5 / 3; }
+    body.portrait .item24 { grid-area: 5 / 1 / 6 / 2; }
+    body.portrait .item31 { grid-area: 5 / 2 / 6 / 3; }
+    body.portrait .item32 { grid-area: 6 / 1 / 7 / 2; }
+    body.portrait .item33 { grid-area: 6 / 2 / 7 / 3; }
+    body.portrait .item42 { grid-area: 7 / 1 / 8 / 2; }
+    body.portrait .item43 { grid-area: 7 / 2 / 8 / 3; }
+    body.portrait .item51 { grid-area: 8 / 1 / 9 / 2; }
+    body.portrait .item52 { grid-area: 8 / 2 / 9 / 3; }
+    body.portrait .item62 { grid-area: 9 / 1 / 10 / 2; }
+    body.portrait .item63 { grid-area: 9 / 2 / 10 / 3; }
+    body.portrait .item64 { grid-area: 10 / 1 / 11 / 2; }
+    body.portrait .item71 { grid-area: 10 / 2 / 11 / 3; }
+    body.portrait .item73 { grid-area: 11 / 1 / 12 / 2; }
+    body.portrait .b-t2 { grid-area: 12 / 1 / 13 / 3; }
+    body.portrait .item81 { grid-area: 13 / 1 / 14 / 2; }
+    body.portrait .item92 { grid-area: 13 / 2 / 14 / 3; }
+    body.portrait .item131 { grid-area: 14 / 1 / 15 / 2; }
+    body.portrait .item132 { grid-area: 14 / 2 / 15 / 3; }
+    body.portrait .item133 { grid-area: 15 / 1 / 16 / 2; }
+    body.portrait .item141 { grid-area: 15 / 2 / 16 / 3; }
+}
+
+
+div.bagItem {
+  position: relative !important;
+  padding: 1vmin;
+}
+.diveNum {
+  color: #fff8b6;
+  font-size: 18px;
+  opacity: 0.5 !important;
+  text-align: center;
+}
+.page--wreck-diver .collection .bag > div img {
+    max-height: 40px;
+    width: auto;
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+.page--wreck-diver .collection .bag > div.active[discover="true"] {
+  animation-iteration-count: 16;
+}
+.page--wreck-diver .collection .bag > div[discover="true"] {
+  opacity: 1;
+  text-align: right;
+}
+b.checkmark {
+  width: 100%;
+}
+.page--wreck-diver .collection .bag > div[discover="true"] b.checkmark:after {
+  content: "\2713";
+  font-weight: bold;
+  color: white;
+  display: block;
+}
+div.active[discover="true"] b.checkmark:after {
+  opacity: 1;
+  animation-name: twinkles;
+  animation-duration: 0.7s;
+}
+.dive-complete-message,
+.dive-incomplete-message {
+  right: 43vh;
+  bottom: 38vh;
+  left: unset;
+}
+
+@media (max-height:740px){
+.dive-complete-message, .dive-incomplete-message {
+    right: 43vh;
+    bottom: 68vh;
+}
+
+}
+
+/* Journal */
+
+.journal {
+    position: relative;
+    top: 1vh;
+    right: unset;
+    margin: auto;
+}
+.journal.active:hover {
+  z-index: 20;
+}
+html.page-tablet .journal,
+body.portrait-bb .journal {
+  height: 60vh;
+  width: calc(60vh * 2.1207386363636362);
+}
+.page--wreck-diver .adventure .part-journal {
+  height: 100%;
+  padding-bottom: unset;
+}
+#main-content > section > div > button.learn.page--custom--learn-address-book.active {z-index: unset;}
+
+.full-width-bg {
+  background: url("../img/wreck-diver/wreck_diver_bg.PNG") no-repeat center center;
+  height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
