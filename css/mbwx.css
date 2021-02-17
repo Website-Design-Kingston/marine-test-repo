@@ -13,7 +13,7 @@ body {
 }
 .page--exploring-hms-lawrence .content {
   background: url("../img/explore-hms/Explore_St_Lawrence_BG.jpg") no-repeat
-    center center;
+  center center;
   background-size: cover;
   height: 100%;
   position: relative;
@@ -28,7 +28,7 @@ body {
 }
 .exploring-hms--transcript {
   margin-top: 2vh;
-  padding: 0 3%; 
+  padding: 0 3%;
 }
 
 .page--wreck-diver {
@@ -49,32 +49,15 @@ body {
 .sidebar--popup.learn-popup,
 .sidebar--popup.help-popup {
   overflow-y: auto;
-  min-height: auto;
 }
 .sidebar--popup.learn-popup {
-	max-height: 90%; }
+  max-height: 90%; }
 .sidebar--popup.help-popup {
-	max-height: 60%; }
+  max-height: 60%; }
 
 .sidebar--popup.learn-popup,
 .sidebar--popup.help-popup {
   border-radius: 0 1vh 1vh;
-}
-
-header {
-  flex: 0 0 auto;
-}
-
-header .header {
-  height: auto;
-  padding: 1vh 0;
-}
-
-header .header .title {
-  flex: auto;
-  line-height: 4vh;
-  align-self: center;
-  order: 1;
 }
 
 @media screen and (max-width: 1200px) {
@@ -89,46 +72,11 @@ header .header .title {
   }
 }
 
-.header .left-logo {
-  max-width: 20%;
-  margin-left: 1%;
-  flex: auto;
-  order: 0;
-  align-items: flex-start;
-}
-
 .header .left-logo img {
   filter: invert(1);
   width: 100%;
   max-width: 182px;
 }
-
-.header .right-logo {
-  max-width: 20%;
-  margin-right: 1%;
-  flex: 1 1 0;
-  order: 2;
-}
-
-.header .right-logo img {
-  width: 100%;
-  max-width: 139px;
-}
-header a img {
-  content: unset;
-}
-.header .left-logo,
-.header .right-logo {
-  display: flex;
-}
-.header .left-logo a,
-.header .right-logo a {
-  display: block;
-  margin: auto;
-  line-height: normal;
-  align-items: center;
-}
-
 .fi-list:before {
   content: "\f169";
   font-size: 20px;
@@ -181,7 +129,7 @@ header .sub-title {
 
 main.page--mysteries section.content {
   background: url("../img/mysteries-depths/mysteries_bg.jpg") no-repeat center
-    center;
+  center;
   background-size: cover;
 }
 
@@ -193,18 +141,13 @@ main.index > div.content {
 
 main.page--explore-charts .content {
   background: url("../img/explore-charts/background-explore-charts.jpg") no-repeat
-    center center;
+  center center;
   background-size: cover;
 }
 
 
 p.break {
   margin-top: 1.5em;
-}
-
-.learn, .sidebar--popup.learn-popup {
-	top: 40px !important;
-	position: absolute;
 }
 
 .help-popup p {
@@ -216,17 +159,17 @@ p.break {
   grid-template-columns: 33% 0.9fr 1fr 1.1fr 34%;
 }
 .explore-charts--modal-content > .map-wrap div.wreck {
-    cursor: pointer;
-    font-size: 1.75em;
-    color: #790b00;
-    transition: 0.4s;
+  cursor: pointer;
+  font-size: 1.75em;
+  color: #790b00;
+  transition: 0.4s;
 }
 
 .explore-charts--modal-content > .map-wrap  div.wreck:hover {
-    cursor: pointer;
-    color: yellow;
-    transform: scale(1.5);
-    text-shadow: 2px 2px rgba(0,0,0,0.3)
+  cursor: pointer;
+  color: yellow;
+  transform: scale(1.5);
+  text-shadow: 2px 2px rgba(0,0,0,0.3)
 }
 
 .boat-transform-on-menu-hover{
@@ -238,6 +181,9 @@ p.break {
 @media (max-width: 767px) and (orientation: portrait) {
   .explore-charts--modal-content > div.wreck {
     display: none;
+  }
+
+  .mysteries-depths--slider-information h3 { text-align: left!important; /*Tina added this too*/
   }
 }
 
@@ -338,7 +284,7 @@ a.book-three::before {
 
 a.book-three::after {
   background: url("../img/mysteries-depths/btn_bannockburn_rollover.png")
-    no-repeat;
+  no-repeat;
 }
 
 a.book-three::after,
@@ -442,21 +388,16 @@ div.explore-charts--header-left p.field img {
 .explore-charts--modal-content a.close-modal,
 [class*="-map-location-modal"] a.close-modal,
 [class*="-slider-content"] a.close-modal {
-  width: 4.5vmax;
-  height: 4.5vmax;
-  border-radius: 20%;
+  width: 4vh;
+  height: 4vh;
+  max-height: 45px;
+  max-width: 45px;
+  text-align: center;
 }
 
 @media (min-width: 1025px) {
   .explore-charts--modal-content > .map-wrap > div {display: inline-block;}
 
-  .explore-charts--modal-content a.close-modal,
-  [class*="-map-location-modal"] a.close-modal,
-  [class*="-slider-content"] a.close-modal {
-    width: 4vh;
-    height: 4vh;
-    border-radius: 20%;
-  }
 }
 
 [class*="-slider-information"] [class*="-header-right"] p {
@@ -479,13 +420,15 @@ div.explore-charts--header-left p.field img {
 
 .content-popup .close-modal,
 .sidebar--popup .close-menu {
-  border-radius: 20%;
   background-color: #035c1b !important;
   background-image: none !important;
   border: 1px solid #409233;
   color: #fff;
   font-size: 0;
   text-indent: 0 !important;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .content-popup .close-modal:active,
@@ -519,18 +462,14 @@ span.sp-buttons:focus-within {
 }
 
 .image--caption {
-    font-size: 16px;
-    line-height: 20px;
-    padding: 0.5vmax 0;
-    text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0.5vmax 0;
+  text-align: center;
 }
 
 header .sub-header .menu > ul:active > li + li:before {
   border-left: none;
-}
-
-.page--copyright--inner {
-  all: unset;
 }
 
 .page--explore-charts .left-box {
@@ -597,93 +536,93 @@ section.page--explore-charts:focus {
 }
 
 #enlarged-great-lakes > .map-wrap > div.one {
-    top: 9.37%;
-    left: 25%;
+  top: 9.37%;
+  left: 25%;
 }
 
 #enlarged-great-lakes > .map-wrap div.two {
-    top: 12.8%;
-    left: 21%;
+  top: 12.8%;
+  left: 21%;
 }
 
 #enlarged-great-lakes > .map-wrap div.three {
-    left: 13%;
-    top: 19%;
+  left: 13%;
+  top: 19%;
 }
 
 #enlarged-great-lakes > .map-wrap div.four {
-    top: 22%;
-    left: 7.5%;
+  top: 22%;
+  left: 7.5%;
 }
 
 #enlarged-great-lakes > .map-wrap div.five {
-    top: 43%;
-    left: 35%;
+  top: 43%;
+  left: 35%;
 }
 
 #enlarged-great-lakes > .map-wrap div.six {
-    top: 44.22%;
-    left: 28.5%;
+  top: 44.22%;
+  left: 28.5%;
 }
 
 #enlarged-great-lakes > .map-wrap div.seven {
-    top: 47.8%;
-    left: 31.25%;
+  top: 47.8%;
+  left: 31.25%;
 }
 
 #enlarged-great-lakes > .map-wrap div.eight {
-    top: 47.3%;
-    left: 71%;
+  top: 47.3%;
+  left: 71%;
 }
 
 #enlarged-great-lakes > .map-wrap div.nine {
-    top: 56%;
-    left: 55%;
+  top: 56%;
+  left: 55%;
 }
 
 #enlarged-great-lakes > .map-wrap div.ten {
-    top: 67.5%;
-    left: 58%;
+  top: 67.5%;
+  left: 58%;
 }
 
 #enlarged-great-lakes > .map-wrap div.eleven {
-    left: 78.6%;
-    top: 64.04%;
+  left: 78.6%;
+  top: 64.04%;
 }
 
 #enlarged-great-lakes > .map-wrap div.twelve {
-    top: 63%;
-    left: 83%;
+  top: 63%;
+  left: 83%;
 }
 
 #enlarged-great-lakes > .map-wrap div.thirteen {
-    top: 62.5%;
-    left: 89%;
+  top: 62.5%;
+  left: 89%;
 }
 
 #enlarged-great-lakes > .map-wrap div.fourteen {
-    top: 61%;
-    left: 91.3%;
+  top: 61%;
+  left: 91.3%;
 }
 
 #enlarged-great-lakes > .map-wrap div.fifteen {
-    top: 80%;
-    left: 60.5%;
+  top: 80%;
+  left: 60.5%;
 }
 
 #enlarged-great-lakes > .map-wrap div.sixteen {
-    top: 83.5%;
-    left: 64%;
+  top: 83.5%;
+  left: 64%;
 }
 
 #enlarged-great-lakes > .map-wrap div.seventeen {
-    top: 86%;
-    left: 60.5%;
+  top: 86%;
+  left: 60.5%;
 }
 
 #enlarged-great-lakes > .map-wrap div.eighteen {
-    top: 87%;
-    left: 56.5%;
+  top: 87%;
+  left: 56.5%;
 }
 
 #enlarged-kingston > .map-wrap div.one {
@@ -800,9 +739,9 @@ p.amiri {
 }
 
 .mysteries-depths--slider-information p{
-    text-align: left;
-    font-size: 18px;
-    line-height: 22px;
+  text-align: left;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .ol.menu-wrecks {
@@ -843,8 +782,8 @@ li.wreck-single:hover {
 body.body--explore-charts .mysteries-titlepage {color: #fff;}
 
 .map-enlarged
-  .mysteries-depths--slider-information
-  .mysteries-depths--slider-title::after {
+.mysteries-depths--slider-information
+.mysteries-depths--slider-title::after {
   right: -100vw !important;
 }
 
@@ -918,357 +857,6 @@ body.page--about .contact-us--form {
   margin-top: 1vmax;
 }
 
-.body--wreck-diver .sidebar--popup.learn-popup {
-  width: auto;
-  max-width: 52vh;
-}
-
-.learn-popup .close-menu,
-.body--wreck-diver .sidebar--popup .btn-dive-now {
-  border-radius: 1vh;
-  width: 5vh;
-  height: 5vh;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 10;
-}
-
-
-.sidebar--popup.learn-popup .table .tr:after {
-  content: "";
-  display: block;
-  clear: none;
-}
-
-.sidebar--popup.learn-popup .table,
-.sidebar--popup.help-popup .table {
-  margin-bottom: 0;
-}
-
-.page--wreck-diver #main-content > section > div > button.help {
-  display: none;
-  top: 0;
-  position: absolute;
-  border-radius: 0 0 5px 0;
-  text-transform: uppercase;
-  font-size: 18px;
-  height: 5vh;
-  width: 18vh;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  background: #0b391a;
-  background-image: none;
-  padding: 0;
-  z-index: 0;
-}
-
-.page--wreck-diver #main-content > section > div > button.help.active {
-  background-color: #0b391a;
-  color: #fff;
-  display: inline-block;
-}
-
-.page--wreck-diver #main-content > section > div > section {
-  top: 5vh;
-  position: absolute;
-  max-width: 52vh;
-  width: auto;
-}
-.page--wreck-diver #main-content > section > div > section > h3 {
-  padding: 2vh 2vh 0;
-}
-
-.page--wreck-diver .adventure .part .video .skip-video {
-  position: absolute;
-  bottom: 0;
-  font-size: 20px;
-}
-
-#control-bar,
-#control-bar-journal {
-  bottom: -14vh;
-  height: 18vh;
-}
-
-.page--wreck-diver .adventure .control {
-  background-color: #488e34;
-  width: 100vw;
-  font-size: 16px;
-  color: #fff;
-  border-top: 1px solid #fff;
-  z-index: 1;
-  transition-property: all;
-  transition-duration: 0.5s;
-  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-}
-
-.control-grid,
-.control-grid-journal {
-  display: grid;
-  align-content: center;
-  justify-content: stretch;
-  align-items: center;
-  grid-template-columns: 1fr 40% 1fr;
-  grid-row: 1;
-}
-
-.controlTab div,
-.page--wreck-diver .adventure .control > div {
-  position: relative;
-}
-
-.page--wreck-diver .adventure .continue {
-  	all: unset;
-    left: calc(50% - 13vh);
-    opacity: 0;
-    position: absolute;
-    bottom: 2vh;
-    border: 1px solid #6bbc45;
-    background-color: #093216;
-    width: 26vh;
-    height: auto;
-    z-index: 1;
-    text-align: center;
-    text-transform: uppercase;
-    border-radius: 5px;
-    padding: 1vh;
-}
-
-.page--wreck-diver .adventure .continue a {
-    all: unset;
-    display: block;
-    color: #fff;
-    font-size: 18px;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 0;
-    border: 4px solid transparent;
-}
-
-
-.page--wreck-diver .adventure .continue a:focus { border: 4px solid #FFBE00;}
-
-.page--wreck-diver .adventure .continue .clickable {
-  all: unset;
-  cursor: pointer;
-  position: relative;
-  width: auto;
-  height: auto;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  transform: none;
-}
-
-.head-to-surface, .head-to-surface-anytime, .skip-video {
-    background: #093216;
-    color: #fff;
-    top: auto;
-    min-height: 9vh;
-    right: 1vw;
-    opacity: 1;
-    position: absolute;
-    bottom: 2vh;
-    border: 1px solid #6bbc45;
-    width: 16vh;
-    height: auto;
-    text-align: center;
-    text-transform: uppercase;
-    border-radius: 5px;
-    padding: 1vh;
-}
-
-.dive-two-button, .dive-one-button {
-    background: #093216;
-    color: #fff;
-    top: auto;
-    min-height: 9vh;
-    right: 1vw;
-    opacity: 1;
-    position: fixed;
-    bottom: 8vh;
-    border: 1px solid #6bbc45;
-    width: 16vh;
-    height: auto;
-    text-align: center;
-    text-transform: uppercase;
-    border-radius: 5px;
-    padding: 1vh;
-}
-
-.resume-dive {
-    background: #093216;
-    color: #fff;
-    top: auto;
-    min-height: 9vh;
-    left: 1vw;
-    opacity: 1;
-    position: fixed;
-    bottom: 8vh;
-    border: 1px solid #6bbc45;
-    width: 16vh;
-    height: auto;
-    text-align: center;
-    text-transform: uppercase;
-    border-radius: 5px;
-    padding: 1vh ;
-}
-
-.dive-two-button,
-.dive-one-button,
-.head-to-surface,
-.head-to-surface-anytime,
-.resume-dive,
-.skip-video,
-.continue {
-  z-index: 1;
-}
-
-.head-to-surface,
-.head-to-surface-anytime,
-.skip-video {
-  display: none;
-  font-size: 18px;
-}
-
-.dive-two-button,
-.dive-one-button,
-.resume-dive {
-  font-size: 18x;
-}
-
-.page--wreck-diver .adventure .continue a img,
-.page--wreck-diver .adventure .part-journal .head-to-surface {
-  display: none;
-}
-
-.head-to-surface span,
-.head-to-surface-anytime span,
-.resume-dive p,
-.skip-video span {
-  all: unset;
-  font-size: 18px;
-  display: block;
-}
-
-.head-to-surface .confirm {
-  height: auto;
-  display: none;
-}
-
-.head-to-surface .confirm > .text {
-  line-height: 2vh;
-}
-
-.head-to-surface .confirm .button {
-  line-height: 4vh;
-  margin: 0.4em;
-}
-
-.head-to-surface .confirm .button > span {
-  background: #02591a;
-  border: 1px solid #6bbc45;
-  padding: 5px 10px;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  margin: 0.4em;
-}
-
-.showControl,
-.showControlJournal {
-  bottom: 4vh !important;
-}
-
-.controlTab {
-  display: flex;
-  bottom: 4vh;
-  position: absolute;
-  height: 4vh;
-  width: 15vh;
-  box-shadow: 0 0 -15px 0 rgba(0, 0, 0, 0.5);
-  background: #141414;
-  border-radius: 15px 15px 0 0;
-}
-
-.controlTab div {
-  flex: auto;
-  margin: auto;
-  text-align: center;
-  color: #fff;
-  font-weight: 400;
-  font-family: "opensans", "sans-serif", Arial, Tahoma;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  text-transform: uppercase;
-}
-
-.page--wreck-diver .adventure .control .head-to-surface .confirm {
-  right: 8.5vw;
-}
-
-.page--wreck-diver .collection {
-  position: absolute;
-  top: 0;
-  width: 24%;
-  right: -24%;
-  transition-property: all;
-  transition-duration: 0.5s;
-  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-  border: 0;
-  z-index: 1;
-}
-
-.showCollection {
-  right: 0 !important;
-}
-
-.collectionTab {
-  display: flex;
-  margin-top: 0;
-  position: absolute;
-  left: -26vh;
-  top: 0;
-  height: 5vh;
-  width: 26vh;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  background: #0b391a;
-  border-radius: 0 0 0 5px;
-  border: 1px solid #6bbc45;
-  border-right: none;
-  cursor: pointer;
-}
-
-.collectionTab div {
-  font-size: 18px;
-  color: #fff;
-  padding: 1vh 1vw;
-  line-height: unset;
-}
-
-.collectionTab div {
-  flex: auto;
-  text-align: center;
-  position: relative;
-  font-weight: 400;
-  font-family: "opensans", "sans-serif", Arial, Tahoma;
-  text-transform: uppercase;
-}
-
-.page--wreck-diver .collection .title {
-border-bottom: 1px solid #6bbc45;
-border-left: 1px solid #6bbc45;
-border-top: none;
-text-transform: inherit;
-height: 5vh;
-background: #0b391b;
-}
-
-#add-on-help {
-  display: block;
-  font-weight: 700;
-}
-
 #main-content > section > div > aside > div {
   overflow: visible;
 }
@@ -1303,8 +891,6 @@ background: #0b391b;
 .explore-charts--map-menu ul li a:hover {
   color: #555;
 }
-
-.page--wreck-diver .adventure .continue a {-webkit-text-fill-color: #fff;}
 
 /* SHIFT */
 nav.shift ul li a {
@@ -1341,6 +927,45 @@ nav.shift ul li a:hover:after {
 
 /*Tina, paragraph align*/
 .body--explore-charts .mysteries-depths--slider-information p {
-    text-align: center;
+  text-align: center;
 }
 
+/*Tina new submenu style class*/
+.lake-submenu {
+  background: #fff !important;
+  border-top: 2px solid #6bbc45;
+  border-bottom: 2px solid #6bbc45;
+  min-height: 45px;
+  height: auto;
+  display: block;
+}
+
+.lake-submenu ul > li {
+  display: inline-block;
+  color: #000;
+  position: relative;
+  font-family: "Amiri", serif;
+  padding: 4px 8px;
+  line-height: 28px;
+}
+
+.lake-submenu > ul > li > a {
+  text-decoration: none;
+  color: #000;
+}
+
+.lake-submenu > ul > li::before {
+  color: #6bbc45;
+  content: "[";
+  padding-right: 7px;
+}
+.lake-submenu > ul > li::after {
+  color: #6bbc45;
+  content: "]";
+  padding-left: 7px;
+}
+.lake-submenu > ul {
+  text-align: center;
+  list-style: none;
+  margin: 6px auto;
+}/*submenu style end*/

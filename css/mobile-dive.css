@@ -1,0 +1,361 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Custom CSS For Wrek Diver mobile devices */
+
+.item-button-wrap {display:none;}
+
+/* ADDED DESIGN ELEMENTS*/
+    
+       /*Icon*/
+
+        [class$="-icon"]:before {
+            font-family: "foundation-icons";
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            display: inline-block;
+            text-decoration: inherit;
+        }
+    
+        .skip-icon:before {
+            content: "\f10b";
+            font-size: 38px;
+            line-height: 38px;
+            position: relative;
+            transition: 0.3s;
+        }
+
+/*general mobile window sizing*/
+@media (min-device-width: 320px) and (max-device-width: 480px) and (max-device-height: 896px) and (orientation: portrait) {
+    
+    /*mobile remove*/
+    .skip-to-content-link, .dive-info, .collection-button:not(.mobile-continue) {display: none;}
+    
+    
+    /*Global Game Styling */
+    
+    body.body--wreck-diver main:focus {border: none;}
+    
+    .body--wreck-diver .sidebar--popup.learn-popup {
+        width: auto;
+        width: calc(100% - 95px);
+        left: unset;
+        right: 2px;
+    }
+    
+    .help {
+        width: 80px;
+        height: 80px;
+        top: 40px;
+        left: 0px;
+    }
+    
+    .help-icon {
+        display: block;
+        content: '';
+        height: 25px;
+        width: 25px;
+        margin: 3px auto 0;
+    }
+    
+    .sidebar--popup.learn-popup {
+        height: 95%!important;
+        width: auto;
+        max-width: 75%;
+        top: 0;
+        left: 14%;
+    }
+    
+    .sidebar--popup.help-popup {
+        width: calc(100% - 82px);
+        right: 0;
+        left: unset;
+    }
+    
+    .video-wrap {
+        height: 95%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .portrait .video {margin-top: 60px;}
+
+    .video {
+        width: 85%;
+        height: auto;
+    }
+
+    .item-button-wrap {
+        display:block;
+        height: 100%;
+        width: 100%;
+        overflow-x: auto;
+        padding: 2vmax;
+    }
+   
+    .mobile-button-layout {
+        display: inline-grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 0px;
+        align-items: center;
+        padding: 1.2vmax 2vmax;
+        border: 1px solid #6bbc45;
+        border-radius: 2vh;
+        text-align: left;
+        color: #fff;
+        font-family: "opensans", "sans-serif", Arial, Tahoma;
+        width: 80%;
+    }
+    
+    .mobile-button-layout img {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+    }
+    
+    .mobile-button-layout h3 {
+        font-family: "opensans", "sans-serif", Arial, Tahoma;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    .mobile-button-layout p {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    
+    .mobile-item:not(:last-child) {margin-bottom: 20px;}
+    
+    .page--wreck-diver .adventure .continue-normal, .head-to-surface-anytime { bottom: 2%;}
+    
+    /*skip button*/
+
+    .continue-mobile {
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        min-height: fit-content;
+        min-width: fit-content;
+        color: #fff;
+        background: #0b3a1a;
+        border: 1px solid #6bbc45;
+        border-radius: 50%;
+        z-index: 10;
+        right: 0;
+        top: 38px;
+    }
+
+    .continue-mobile .clickable {padding-top: 10px;}
+
+    .continue-mobile .skip-icon {
+        display: block;
+        position: relative;
+        margin-top: -5px;
+        height: auto;
+    }
+    
+    /*Journal Styling*/
+    
+    .journal {
+        display: none;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        padding-top:58px;
+    }
+    
+    .log-book.book-2 {height: 98%;}
+    
+    .paper {
+        position: relative;
+        max-width: 98%;
+        margin: -3px auto;
+        height: 100%;
+    }
+    
+    .main-side {overflow-x: auto;}
+    
+    .journal-nojs .title-note {
+        width: 100%;
+        position: relative;
+        height: auto;
+        top: 0;
+        left: 0;
+    }
+    
+    .journal-nojs .title-note:before {display: none;}
+    
+    .conditions {padding-top: 15px;}
+    
+}
+
+@media (min-device-width: 736px) and (max-device-width: 896px) and (max-device-height: 480px) and (orientation: landscape) {
+    
+    html, body, .body--wreck-diver {
+        height: auto;
+        overflow-x: auto!important;
+    }
+    
+    .site-wrap {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        width: 100%;
+        height: auto;
+        overflow-x: auto;
+    }
+    
+    body.body--wreck-diver main {
+        display: grid!important;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 100vh;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    
+    .help {
+        width: 80px;
+        height: 80px;
+        top: 10px;
+        left: 5px;
+        z-index: 99;
+    }
+    
+    body.landscape .learn {
+        top: 5px !important;
+        position: absolute;
+    }
+    
+    /*skip button*/
+
+    .continue-mobile {
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        min-height: fit-content;
+        min-width: fit-content;
+        color: #fff;
+        background: #0b3a1a;
+        border: 1px solid #6bbc45;
+        border-radius: 50%;
+        z-index: 10;
+        right: 5px;
+        top: 5px;
+    }
+
+    .continue-mobile .clickable {padding-top: 10px;}
+
+    .continue-mobile .skip-icon {
+        display: block;
+        position: relative;
+        margin-top: -5px;
+        height: auto;
+    }
+    
+    body.landscape .sidebar--popup.learn-popup, body.landscape .sidebar--popup.help-popup {
+        height: 95%!important;
+        width: auto;
+        max-width: 75%;
+        top: 0;
+        left: 20%;
+    }
+    
+    .video {
+        max-width: 1280px;
+        width: auto;
+        height: 100%;
+    }
+    
+    .item-button-wrap {display: none;}
+}
+
+@media (min-device-width: 320px) and (max-device-width: 375px) and (max-device-height: 740px) and (orientation: portrait) {
+    
+    /*mobile remove*/
+    .skip-to-content-link, .dive-info, .collection-button:not(.mobile-continue) {display: none;}
+    
+    html, body, .body--wreck-diver {
+        height: auto;
+        overflow-x: auto!important;
+    }
+    
+    .site-wrap {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        width: 100%;
+        height: auto;
+        overflow-x: auto;
+    }
+    
+    body.body--wreck-diver main {
+        display: grid!important;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 100vh;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    
+    .page--wreck-diver .adventure .continue-normal {
+        width: 120px;
+        font-size: 16px;
+    }
+    
+    .head-to-surface, .head-to-surface-anytime {
+        width: 100px;
+    }
+    
+}
+
+@media (min-device-width: 568px) and (max-device-width: 740px) and (max-device-height: 375px) and (orientation: landscape) {
+    
+    /*mobile remove*/
+    .skip-to-content-link, .dive-info, .collection-button:not(.mobile-continue) {display: none;}
+    
+    html, body, .body--wreck-diver {
+        height: auto;
+        overflow-x: auto!important;
+    }
+    
+    .site-wrap {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        width: 100%;
+        height: auto;
+        overflow-x: auto;
+    }
+    
+    body.body--wreck-diver main {
+        display: grid!important;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 100vh;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    
+    .body--wreck-diver .sidebar--popup.learn-popup {
+        width: auto;
+        max-width: 60%;
+    }
+    
+    .sidebar--popup.learn-popup, .sidebar--popup.help-popup {left: 20%;}
+}
