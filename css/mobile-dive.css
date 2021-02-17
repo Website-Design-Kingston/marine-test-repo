@@ -62,7 +62,7 @@
         margin: 3px auto 0;
     }
     
-    .sidebar--popup.learn-popup, {
+    .sidebar--popup.learn-popup {
         height: 95%!important;
         width: auto;
         max-width: 75%;

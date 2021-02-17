@@ -22,7 +22,7 @@
         width: 100%;
         max-width: 1920px;
         margin: 0 auto;
-    }
+}
 
 .body--wreck-diver {
   background: none;
@@ -751,7 +751,7 @@
   left: -20vw;
   color: #000;
 }
-}
+
 
 @keyframes twinkles {
   from {

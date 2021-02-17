@@ -274,7 +274,7 @@ $(document).ready(function () {
       setActiveDive(parseInt(activeDive)); //stay in the current dive
 
 
-      if (isOneTwinkleInDiveWasOpened) { //if at least one twickle was opened
+      if (isOneTwinkleInDiveWasOpened) { //if at least one twikle was opened
         activeControlAndCollection();
         $('.resume-dive').removeAttr('style');
         activatePart('.part-journal');
@@ -328,16 +328,7 @@ $(document).ready(function () {
   });
   navigationKeyBoardSupport();
   $('.page--wreck-diver .adventure').on('click', '.part.active .continue .clickable', function () {
-    $('.part .continue .clickable').css('pointer-events', 'none');
-    $('.help-popup > button.close-menu').click();
-    $('.adventure').scrollTop(0);
-    $(".collection").removeClass('showCollection');
-    disableAllDescription();
-    var nextPartSelector = '.' + $('.part.active').next().attr('name');
-    currentPart = $('.part.active').next().attr('name');
-    var nextPartName = $('.part.active').next().attr('name');
-    activatePart(nextPartSelector);
-    playPart(nextPartName);
+    toNextLocation(); // on skip or next location click
   });
   $('.body--wreck-diver .btn-view-journal').click(function (event) {
     MainService.activeJournal();
@@ -366,26 +357,36 @@ function playPart(partName) {
   video.play();
   isVideoStopped = false;
   video.addEventListener("timeupdate", function () {
+
     setTimeout(function () {
       $('button.help').show();
     }, 500);
+
+    console.log("nous somme au:", partSelector)
+
     if (this.currentTime >= videoEndShot[partName] && !isVideoStopped) {
       this.pause();
+      console.log("on est au niveau:", partName)
+
+      $('button.help').click(); // open help popup on each part of the dive to give indications
+
       if (!(partName == 'part7' || partName == 'part14')) {
-        //make clickable "SWIM TO NEXT LOCATION"
+
+        //make clickable "NEXT LOCATION" button
         $('.page--wreck-diver .adventure .part.active .continue').css({
           'opacity': 1,
           'color': '#fff'
         });
         $('.page--wreck-diver .adventure .part.active .continue .clickable').css('pointer-events', 'auto');
 
-        //make clickable the button "HEAD TO SURFACE"
+        //make clickable the button "TO SURFACE"
         $('.head-to-surface-anytime').css('opacity', 1);
         $('.head-to-surface-anytime').css('pointer-events', 'auto');
       } else {
+        // hide "next location" and "skip" buttons
         $('.page--wreck-diver .adventure .part.active .continue').hide();
 
-        //new change ::  Display the "HEAD TO SURFACE" button anyway even if we are on part7 or part14 and all twinkles of the last active part are selected or not.
+        //new change ::  Display the "TO SURFACE" button anyway even if we are on part7 or part14 and all twinkles of the last active part are selected or not.
         $('button.head-to-surface-anytime').show();
         $('.head-to-surface-anytime').css('opacity', 1);
         $('.head-to-surface-anytime').css('pointer-events', 'auto');
@@ -499,7 +500,7 @@ function handleEndOfFirstVideo(video) {
       $('.part.active .continue .clickable').css('pointer-events', 'auto');
 
       $('.skip-video').hide();
-      $('.skip-video').css('opacity', 0);
+      //$('.skip-video').css('opacity', 0);
 
       $('.head-to-surface-anytime').show(); //show the "HEAD TO SURFACE" button.
       $('.head-to-surface-anytime').css('opacity', 1);
@@ -520,6 +521,8 @@ function handleEndOfFirstVideo(video) {
 
 function setupCollectingEvent() {
 
+
+  // collect all items accessibility button
   $('.collection-button').on('keypress',function(event) {
     if(event.which == 13) {
       event.stopPropagation();
@@ -532,9 +535,11 @@ function setupCollectingEvent() {
       $('img', '.part-item.active .twinkles').trigger('click');
 
       $('.show-desc').css("visibility", "visible")
+
     }
   });
 
+  // collect all items accessibility button
   $('.collection-button').on('click', function (event) {
     event.stopPropagation();
     $('.part-item.active .twinkles').css({
@@ -546,6 +551,47 @@ function setupCollectingEvent() {
     $('img', '.part-item.active .twinkles').trigger('click');
 
     $('.show-desc').css("visibility", "visible")
+
+  });
+
+
+  // collect all twikles of the current dive part if "Skip" button is pressed and move to next location
+ /* $('.skip-collect').on('keypress',function(event) {
+    if(event.which == 13) {
+      event.stopPropagation();
+      $('.part-item.active .twinkles').css({
+        'animation-name': 'stop-it',
+        background: 'none'
+      });
+      $('img', '.part-item.active .twinkles').show();
+
+      $('img', '.part-item.active .twinkles').trigger('click');
+
+      $('.show-desc').css("visibility", "visible")
+
+      setTimeout(function () {
+        toNextLocation();
+      }, 500);
+    }
+  });*/
+
+  // collect all twikles of the current dive part if "Skip" button is clicked and move to next location
+  $('.skip-collect').on('click', function (event) {
+    event.stopPropagation();
+    $('.part-item.active .twinkles').css({
+      'animation-name': 'stop-it',
+      background: 'none'
+    });
+    $('img', '.part-item.active .twinkles').show();
+
+    $('img', '.part-item.active .twinkles').trigger('click');
+
+    $('.show-desc').css("visibility", "visible")
+
+    setTimeout(function () {
+      toNextLocation();
+    }, 500);
+
   });
 
   $('.part-item.active .twinkles').on('click', function (event) {
@@ -558,30 +604,38 @@ function setupCollectingEvent() {
     $('img', event.target).trigger('click');
   });
 
+  $('.mobile-item.active').on('click', function (event) {
+    var mobileButton = $(this);
+
+    disableAllDescription();
+
+    // todo :: grab the corresponding twikle for the selection animation
+
+   $('.description').css({ //show the description of the image selected inside part-item
+      visibility: 'visible',
+      display: 'inline-block',
+      'z-index': 0
+    });
+
+    var itemInCollectionClass = $(mobileButton).data('target'); //get the item number of the selected element
+
+    handleSelectedItems(itemInCollectionClass);
+
+  });
+
+
+
   $('.part-item.active .twinkles img').on('click', function (event) {
     var parentContext = $(this).parent().parent(); //this is the div element with class part-item
-    disableAllDescription()
-    $('.description', parentContext).css({ //show the description of the image selected inside part-item
+    disableAllDescription();
+    $('.description', $(this).parent().parent()).css({ //show the description of the image selected inside part-item
       visibility: 'visible',
       display: 'inline-block',
       'z-index': 0
     });
     var itemInCollectionClass = $('.twinkles', parentContext).data('target'); //get the item number of the selected element
-    $('.' + itemInCollectionClass, '.collection').attr('discover', true); //change on true the discover attribute's value  for the element where class = item number of the selected element
-    var duplicateItems = getAllDuplicateItems(itemInCollectionClass); //array of element with discover attribute on true
-    duplicateItems.forEach(function (item) {
-      $(item).removeClass('active');
-    });
-    $(duplicateItems[duplicateItems.length - 1]).addClass('active');
-    if (isLastStillOfEachDiveActive()) {//check if we are on the part7 or part14
-      checkAllTwinklesInLastStillOpened(); //update isAllTwinklesInLastActiveStillOpened value to true or false
 
-      if (isAllItemInActiveDiveFound()) {
-        $('.collection .dive-complete-message').show();
-      } else {
-        $('.collection .dive-incomplete-message').show();
-      }
-    }
+    handleSelectedItems(itemInCollectionClass);
 
    /* DONT REMOVE THIS COMMENT PLEASE IT CAN BE HELPFULL
     if (isAllTwinklesInLastActiveStillOpened) { //show "HEAD TO SURFACE" button if all twinkles of the last active part are selected
@@ -613,8 +667,36 @@ function nonactiveControlAndCollection() {
   $('.page--wreck-diver .collection').removeClass('active');
 }
 
+function toNextLocation() { // handle the next location action. Used by "Next Location" and "Skip button"
+  $('.part .continue .clickable').css('pointer-events', 'none');
+  $('.help-popup > button.close-menu').click();
+  $('.adventure').scrollTop(0);
+  $(".collection").removeClass('showCollection');
+  disableAllDescription();
+  var nextPartSelector = '.' + $('.part.active').next().attr('name');
+  currentPart = $('.part.active').next().attr('name');
+  var nextPartName = $('.part.active').next().attr('name');
+  activatePart(nextPartSelector);
+  playPart(nextPartName);
+}
 
+function handleSelectedItems(itemInCollectionClass){ // handle the collected element action. Called when select an item during the dive
+  $('.' + itemInCollectionClass, '.collection').attr('discover', true); //change on true the discover attribute's value  for the element where class = item number of the selected element
+  var duplicateItems = getAllDuplicateItems(itemInCollectionClass); //array of element with discover attribute on true
+  duplicateItems.forEach(function (item) {
+    $(item).removeClass('active');
+  });
+  $(duplicateItems[duplicateItems.length - 1]).addClass('active');
+  if (isLastStillOfEachDiveActive()) {//check if we are on the part7 or part14
+    checkAllTwinklesInLastStillOpened(); //update isAllTwinklesInLastActiveStillOpened value to true or false
 
+    if (isAllItemInActiveDiveFound()) {
+      $('.collection .dive-complete-message').show();
+    } else {
+      $('.collection .dive-incomplete-message').show();
+    }
+  }
+}
 function navigationKeyBoardSupport() {
   document.onkeydown = function (e) {
     switch (e.keyCode) {
@@ -737,9 +819,13 @@ function setVideoCurrentTime(videoId, certainSecond) {
   video.currentTime = certainSecond;
 }
 
-function activeItemsInAnActivatedPart() {
+function activeItemsInAnActivatedPart() { // remove the active class from current part and add it to next part
   $('.part-item').removeClass('active');
+  $('.mobile-item').removeClass('active');
+
   $('.part.active .video .part-item').addClass('active');
+  $('.part.active .item-button-wrap .mobile-item').addClass('active');
+
   $('.part.active .video .part-item').each(function (index, element) {
     handlePopUpVerticalPosition(parseInt($(element).css('top')), element);
   });
