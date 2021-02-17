@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Amiri:400,700");
 /*added by WDK*/
 
-	/* Journal */
+/* Journal */
 .journal-nojs .book {
     font-family: Kalam-Regular;
 }
@@ -26,33 +26,33 @@
 }
 
 .paper {
-	position: relative;
-	max-width: 60vw;
-	margin: 0 auto;
-	height: 68vh;
+    position: relative;
+    max-width: 60vw;
+    margin: 0 auto;
+    height: 68vh;
     z-index: 1;
 }
 .paper:before,
 .paper:after {
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background-color: #d8d3b1;
-	border-radius: 9px;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #d8d3b1;
+    border-radius: 9px;
 }
 
 /* Second sheet of paper */
 .paper:before {
-	left: 3px;
-	top: 2px;
-	z-index: 2;
-	box-shadow: 2px 1px 1px rgba(0,0,0,0.15)
+    left: 3px;
+    top: 2px;
+    z-index: 2;
+    box-shadow: 2px 1px 1px rgba(0,0,0,0.15)
 }
 
 /* Third sheet of paper */
 .paper:after {
-	left: 6px;
+    left: 6px;
     top: 4px;
     z-index: 1;
     box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
@@ -85,7 +85,7 @@
 }
 
 .journal-nojs .title-note {
-	max-width: 400px;
+    max-width: 400px;
     position: relative;
     height: auto;
     top: -14px;
@@ -133,7 +133,7 @@
     background-position: center center;
     width: 100%;
     height: 25vh;
-	max-height: 150px;
+    max-height: 150px;
     position: relative;
 }
 
@@ -175,7 +175,7 @@
 }
 
 .journal-nojs .book .right-page .item-title .item-sketch {
-	position: absolute;
+    position: absolute;
     right: -25px;
     top: -32px;
     padding: 20px 15px;
@@ -204,7 +204,7 @@
     content: url(../img/wreck-diver/staple.png);
     position: absolute;
     display: block;
-	bottom: -8px;
+    bottom: -8px;
     right: -11px;
     transform: scale(0.4) rotate(18deg);
     z-index: 9999;
@@ -212,8 +212,8 @@
 
 .journal-nojs .book .right-page .item-image {
     text-align: center;
-	margin-top:15px;
-	margin-bottom: 20px;
+    margin-top:15px;
+    margin-bottom: 20px;
 }
 
 .journal-nojs .book .right-page .item-image img {
@@ -224,57 +224,57 @@
 .journal-nojs span.fi-anchor {margin: 2vw auto 0;}
 
 @media (max-width: 1022px) {
-	.block--no-js-content .container {display:block;}
+    .block--no-js-content .container {display:block;}
 }
 
 @media (max-width: 610px) {
-	
-	.journal-nojs .main-side {
-		background: none;
-		background-color: #dcd8bc;
-		padding: 15px;
-	}
-	
-	.journal-nojs .book .left-page, .journal-nojs .book .right-page {
-		float:none; 
-		width: 100%;
-	}
-	
-	
-	.journal-nojs .book .left-page {
-		padding-bottom: 15px;
-		margin-bottom: 15px;
-		border-bottom: 1px dotted;
-	}
-	
-	.journal-nojs .title-note:before {
-    	top: -37px;
-    	left: -15px;
-	}
-	
-	.journal-nojs .title-note {
-		top: -16px;
-		left: -44px;
-	}
-	
-	.item-detail-label {margin-left: 25px;}
-	
-	.journal-nojs .book .left-page .location {margin-bottom: 10px;}
-	
-	.journal-nojs .book .left-page .location-footer {bottom: -20px;}
-	
-	.journal-nojs .book .right-page .item-title .item-sketch {
-    	right: 0px;
-    	top: -32px;
-		transform: rotate(2deg);
-	}
+
+    .journal-nojs .main-side {
+        background: none;
+        background-color: #dcd8bc;
+        padding: 15px;
+    }
+
+    .journal-nojs .book .left-page, .journal-nojs .book .right-page {
+        float:none;
+        width: 100%;
+    }
+
+
+    .journal-nojs .book .left-page {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 1px dotted;
+    }
+
+    .journal-nojs .title-note:before {
+        top: -37px;
+        left: -15px;
+    }
+
+    .journal-nojs .title-note {
+        top: -16px;
+        left: -44px;
+    }
+
+    .item-detail-label {margin-left: 25px;}
+
+    .journal-nojs .book .left-page .location {margin-bottom: 10px;}
+
+    .journal-nojs .book .left-page .location-footer {bottom: -20px;}
+
+    .journal-nojs .book .right-page .item-title .item-sketch {
+        right: 0px;
+        top: -32px;
+        transform: rotate(2deg);
+    }
 }
 
 @media (max-width: 480px) {
-	.journal-nojs .book .right-page .item-title .item-sketch {
-		position: relative;
-		top: -15px;
-		text-align: center;
-	}
+    .journal-nojs .book .right-page .item-title .item-sketch {
+        position: relative;
+        top: -15px;
+        text-align: center;
+    }
 }
 

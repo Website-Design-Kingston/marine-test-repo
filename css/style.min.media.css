@@ -53,12 +53,12 @@
         right: 0;
         z-index: 10
     }
-	
-	/* Mobile-Menu Sub */
-	
-	ul.sub-menu li {margin-bottom: 15px!important;}
-	ul.sub-menu li:last-child {margin-bottom: 0px!important;}
-	
+
+    /* Mobile-Menu Sub */
+
+    ul.sub-menu li {margin-bottom: 15px!important;}
+    ul.sub-menu li:last-child {margin-bottom: 0px!important;}
+
     .page--custom--container {
         max-width: 1920px;
         margin: auto;
@@ -76,9 +76,13 @@
     header .sub-header .menu a {
         font-size: 18px;
     }
-	.sub-header .lang {
-		width: 160px;
-	}
+    .sub-header .lang {
+        width: 160px;
+    }
+}
+
+@media (min-width: 1260px) {
+    header .sub-header .menu ul {padding: 5px 0 5px 4vw;}
 }
 
 @media (min-width: 1200.01px) {
@@ -121,10 +125,15 @@
         bottom: 10%;
         z-index: 20
     }
-	header .sub-header .menu {display:none;}
-	
+    header .sub-header .menu {display:none;}
+
     header .sub-header .menu ul {
-        text-align: center
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 0 5px 0;
+        transition: 0.3s;
     }
     header .sub-header .menu>ul>li {
         display: inline-block;
@@ -142,86 +151,61 @@
     header .sub-header .menu>ul>li+li {
         position: relative
     }
-    header .sub-header .menu>ul>li+li a {
-        border: none
-    }
-    header .sub-header .menu>ul>li+li:before {
+
+    header .sub-header .menu>ul>li:not(:first-child) {padding-left: 1px;}
+
+    header .sub-header .menu>ul>li:not(:first-child):before {
         content: '';
         border-left: 1px solid #0b391a;
         position: absolute;
+        display: block;
         left: 0;
         bottom: 25%;
-        top: 25%
-    }
-	
-    header .header {
-        display: flex;
-        position: relative
-    }
-    header .header .page--title a {
-        -o-transform: translateX(-50%) translateY(-50%);
-        -ms-transform: translateX(-50%) translateY(-50%);
-        -moz-transform: translateX(-50%) translateY(-50%);
-        -webkit-transform: translateX(-50%) translateY(-50%);
-        transform: translateX(-50%) translateY(-50%);
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        font-size: 40px;
-        line-height: 45px;
+        top: 25%;
     }
 
-header .sub-header .home-menu {
-
-    padding-left: 0.5%;
-    flex: initial;
-}
     header .sub-header .lang {
         z-index: 6
     }
-    header .sub-header>.menu {
-		flex: inherit;
-		align-content: center;
-    }
-	 .page--exploring-hms-lawrence .three {
+    .page--exploring-hms-lawrence .three {
         top: 32vh;
         left: 29.12vw;
         width: 19.1vw;
         height: 17.1vw
     }
-	.page--exploring-hms-lawrence .four {
+    .page--exploring-hms-lawrence .four {
         top: 40vh;
         left: 7.84vw;
         width: 30.6vw;
         height: 21.2vw
-    } 
-	.page--exploring-hms-lawrence .six {
+    }
+    .page--exploring-hms-lawrence .six {
         top: 40vh;
         left: 39.84vw;
         width: 30.6vw;
         height: 21.2vw
-    } 
-	.page--exploring-hms-lawrence .two {
+    }
+    .page--exploring-hms-lawrence .two {
         top: 0vh;
         left: 23.52vw;
         width: 43.78vw;
         height: 17.15vw
     }
-	
-	/*WDK Add-on*/
-	/*mobile button*/
-	nav span {display: none;}
-	.page--exploring-hms-lawrence .one {
+
+    /*WDK Add-on*/
+    /*mobile button*/
+    nav span {display: none;}
+    .page--exploring-hms-lawrence .one {
         left: 5.6%;
         top: 11%;
         width: 23.94vw;
         height: 21.654vw
-	}
-/****  END min 1201 px ****/
+    }
+    /****  END min 1201 px ****/
 }
 
 @media (max-width: 1200px) {
-	
+
     .navi-area__wreck-dive .tooltip {
         right: 60%
     }
@@ -234,38 +218,42 @@ header .sub-header .home-menu {
     }
     .content {
         padding-bottom: 0
-	}
-    
+    }
+
     .col-6 {float:none; width: 100%; max-width: none;}
-    
+
     .content .col-6:not(:last-child) {margin-bottom: 5vh;}
-    
-    
+
+
     .contact-us .col-6:first-child {
         float:none;
         width: 100%;
         max-width: none;
     }
- 
+
     header .header {
-        display: flex;
-        justify-content: space-between
+        display: grid;
+        grid-template-columns: 20% 1fr 20%;
+        grid-template-rows: 1fr;
+        grid-column-gap: 5px;
+        padding: .5vh 1vw;
+        align-items: center;
     }
 
-	header .header  .left-logo a img, header .header .right-logo a img {
-    width: auto;
-}
+    header .header  .left-logo a img, header .header .right-logo a img {
+        width: auto;
+    }
     header .header .title a {
         font-size: 30px
     }
-    
+
     .page--sub-title {font-size: 35px;}
-    
-	.page--exploring-hms-lawrence .three {
+
+    .page--exploring-hms-lawrence .three {
     }
-	.page--exploring-hms-lawrence .four {
+    .page--exploring-hms-lawrence .four {
         left: 5vh;
-		top: 45vh;
+        top: 45vh;
     }
     .page--exploring-hms-lawrence .six {
         right: 22vh
@@ -312,18 +300,18 @@ header .sub-header .home-menu {
         line-height: 40px;
         text-align: center;
     }
-	header .sub-header .menu {display:none;}
+    header .sub-header .menu {display:none;}
 
-	header .sub-header .menu {
+    header .sub-header .menu {
         width: 55px;
         text-align: center;
-	}
-    
+    }
+
     header .sub-header .menu span {
-    border: 4px solid transparent;
-    padding: 0 4px 8px;
-}
-	
+        border: 4px solid transparent;
+        display:block;
+    }
+
     header .sub-header .menu ul {
         height: auto;
         width: max-content;
@@ -333,7 +321,7 @@ header .sub-header .home-menu {
         padding: 2vh
     }
     header .sub-header .menu > ul { max-width: 350px;}
-    
+
     header .sub-header .menu>ul {
         display: none
     }
@@ -396,10 +384,10 @@ header .sub-header .home-menu {
         font-size: 22px;
         padding: 2vh 2vh 2vh 8vh
     }
-	.sidebar--popup.help-popup h3 {
-		background: url(../img/img_icon_help_small.png) no-repeat 2vh 1.25vh;
-		background-size: 36px;
-	}
+    .sidebar--popup.help-popup h3 {
+        background: url(../img/img_icon_help_small.png) no-repeat 2vh 1.25vh;
+        background-size: 36px;
+    }
     .sidebar--popup.learn-popup .table .td,
     .sidebar--popup.help-popup .table .td {
         float: none;
@@ -413,7 +401,7 @@ header .sub-header .home-menu {
     .sitemap .container {
         padding-left: 5%;
     }
-	
+
     .page--about--content .container {
         margin-left: 10%
     }
@@ -430,18 +418,11 @@ header .sub-header .home-menu {
     .body--index .sidebar--popup.learn-popup:after {
         height: 84vh
     }
-    header .header {
-        display: flex;
-        justify-content: space-between
-    }
     .learn,
     .sidebar--popup.learn-popup {
         top: 40px !important;
     }
 
-	.help, .sidebar--popup.help-popup {
-    	top: 43vh;
-	}
     .mysteries-depths--link.first {
         height: calc(100vw * 0.1533);
         width: 100vw
@@ -458,41 +439,41 @@ header .sub-header .home-menu {
         height: calc(100vw * 0.201125);
         width: 100vw
     }
-		
-	nav span:focus, nav span:focus-within { border: 4px solid #FFBE00; }
-	
-	.menu .menu-toggle {
-		border: none;
-		width: 34px;
-		height: 44px;
-		text-indent: 100%;
-		font-size: 0;
-		line-height: 0;
-		overflow: hidden;
-		position: relative;
-		cursor: pointer;
-		outline: none;
-		background: transparent;
-		padding: 0;
-		margin: 0 auto;
-	}
 
-	.menu .menu-toggle:after {
-    	content: '';
-    	position: absolute;
-    	width: 100%;
-    	height: 4px;
-    	top: 10px;
-    	left: 0;
-    	-moz-border-radius: 2px;
-    	-webkit-border-radius: 2px;
-		border-radius: 2px;
-	}
-		
-	.menu .menu-toggle:after {
-    	background: #0b391a;
-    	box-shadow: 0 10px 0 0 #0b391a, 0 20px 0 0 #0b391a;
-	}
+    nav span:focus, nav span:focus-within { border: 4px solid #FFBE00; }
+
+    .menu .menu-toggle {
+        border: none;
+        width: 34px;
+        height: 44px;
+        text-indent: 100%;
+        font-size: 0;
+        line-height: 0;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        outline: none;
+        background: transparent;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .menu .menu-toggle:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        top: 10px;
+        left: 0;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+    }
+
+    .menu .menu-toggle:after {
+        background: #0b391a;
+        box-shadow: 0 10px 0 0 #0b391a, 0 20px 0 0 #0b391a;
+    }
 }
 
 @media (min-width: 1023px) {
@@ -522,49 +503,49 @@ header .sub-header .home-menu {
 @media (max-width: 1000px) {
     /*wreck diver accesibilty functions*/
     .dive-info {left: calc(50% - 22.5vh); bottom: 10vh;}
-    
+
     .collection-button {left: 8px;}
 }
 
 @media (min-width: 456px) and (max-width: 924px) {
 
     .landscape .page--exploring-hms-lawrence .two {
-        top: 1vh; 
-        right: 20vh; 
-		z-index: 1;
+        top: 1vh;
+        right: 20vh;
+        z-index: 1;
     }
     .landscape .page--exploring-hms-lawrence .three {
         left: 12vw;
         top: 35vw
     }
     .landscape .page--exploring-hms-lawrence .four {
-        left: 15vh; 
-        top: 45vh 
-	}	
-	.page--exploring-hms-lawrence .two {
+        left: 15vh;
+        top: 45vh
+    }
+    .page--exploring-hms-lawrence .two {
         left: 23.5%;
         width: 48.78vw;
-		height: 21.15vw;
+        height: 21.15vw;
     }
-	.page--exploring-hms-lawrence .four {
+    .page--exploring-hms-lawrence .four {
         top: 55vh;
         left: 12vw;
-		width: 27vh;
+        width: 27vh;
         height: 17vh
     }
     .page--exploring-hms-lawrence .five {
         top: 15vh;
         right: 24vh;
-		width: 47.18vh;
-		height: 20.54vh;
+        width: 47.18vh;
+        height: 20.54vh;
     }
     .page--exploring-hms-lawrence .six {
         top: 45vh;
         left: 20vw;
-		width: 27vh;
+        width: 27vh;
         height: 17vh
     }
-	.landscape .page--exploring-hms-lawrence .four {
+    .landscape .page--exploring-hms-lawrence .four {
         bottom: 5vh;
         left: 4vh;
         width: 27vw;
@@ -573,7 +554,7 @@ header .sub-header .home-menu {
     .landscape .page--exploring-hms-lawrence .six {
         right: 48vh;
         top: 52vh;
-		width: 27vw;
+        width: 27vw;
         height: 17vw
     }
     .landscape .page--exploring-hms-lawrence .seven {
@@ -598,19 +579,19 @@ header .sub-header .home-menu {
 }
 
 @media (max-width: 850px) {
-	header .header .title a {
-		font-size: 25px;
-		line-height: 1;
-	}
+    header .header .title a {
+        font-size: 25px;
+        line-height: 1;
+    }
 
-	header .sub-title {font-size: 20px;}
+    header .sub-title {font-size: 20px;}
 }
 
 @media (max-width: 768px) {
     .no-border-xs {
         border-width: 0
     }
-	  .padding {
+    .padding {
         padding: 8px 8px
     }
     .padding-out {
@@ -627,10 +608,10 @@ header .sub-header .home-menu {
         left: 40vh;
         top: 35vh
     }
-	.page--exploring-hms-lawrence .three {
-		left: 5vw
-	}
-	.body--mysteries {
+    .page--exploring-hms-lawrence .three {
+        left: 5vw
+    }
+    .body--mysteries {
         overflow: hidden
     }
     .mysteries-depths--link {
@@ -699,9 +680,9 @@ header .sub-header .home-menu {
     .item-list li+li {
         margin-top: 0
     }
-	
-	/*WDK add-on*/.page--about--content h3 {color:#1b4729;}
-	
+
+    /*WDK add-on*/.page--about--content h3 {color:#1b4729;}
+
     .portrait.body--exploring-hms-lawrence .exploring-hms--slider-content .sp-button {
         position: relative;
         bottom: 1.5vh
@@ -714,11 +695,11 @@ header .sub-header .home-menu {
         left: 55%;
         margin-top: 0.5vh
     }
-	.portrait .page--exploring-hms-lawrence .one {
+    .portrait .page--exploring-hms-lawrence .one {
         width: 26.6vw;
         height: 24.06vw
     }
-    .page--exploring-hms-lawrence .one {  
+    .page--exploring-hms-lawrence .one {
         width: 26.6vw!important;
         height: 24.06vw!important;
     }
@@ -765,19 +746,19 @@ header .sub-header .home-menu {
 }
 
 @media (max-width: 500px) {
-	header .header .title a {
-		font-size: 18px;
-		line-height: 1;
-	}
+    header .header .title a {
+        font-size: 18px!important;
+        line-height: 1;
+    }
 
-	header .sub-title {font-size: 18px;}
+    .page--sub-title {font-size: 24px;}
 }
 
 @media (max-width: 481px) {
-    
-	.explore-charts-map-location-modal .sp-buttons {
+
+    .explore-charts-map-location-modal .sp-buttons {
         margin-top: 0;
-    }	
+    }
     .exploring-hms--slider-content .sp-buttons {
         margin-top: 0;
     }
@@ -799,7 +780,7 @@ header .sub-header .home-menu {
 }
 
 @media (max-width: 480px) {
-    
+
     .sidebar--popup.learn-popup .table.two-column .td,
     .sidebar--popup.help-popup .table.two-column .td {
         float: none;
@@ -808,22 +789,22 @@ header .sub-header .home-menu {
 }
 
 @media (min-width: 479px) {
-	main.index > div.content {
-		background: url("../img/home-background.png") no-repeat center;
-		background-size: cover;
-		background-color: #0a3718;
-	}	
-	
+    main.index > div.content {
+        background: url("../img/home-background.png") no-repeat center;
+        background-size: cover;
+        background-color: #0a3718;
+    }
+
     .page--exploring-hms-lawrence-modal {
         max-width: 124vh
     }
 }
 
 @media (max-width: 478px) {
-	.portrait .navi-area {
-		background: url("../img/background/home/background--navi-area--mobile.png") no-repeat center;
-		background-size: cover;
-	}
+    .portrait .navi-area {
+        background: url("../img/background/home/background--navi-area--mobile.png") no-repeat center;
+        background-size: cover;
+    }
 }
 
 @media (orientation: portrait) {
@@ -831,7 +812,7 @@ header .sub-header .home-menu {
         transform: rotate(-90deg);
         transform-origin: left top;
         height: 100vw;
-		max-width: 100vw;
+        max-width: 100vw;
         overflow-x: hidden;
         position: absolute;
         top: 100%;
@@ -842,251 +823,190 @@ header .sub-header .home-menu {
 /*Height Based Media Queries*/
 
 @media (max-height: 768px) {
-    .sidebar--popup.learn-popup, .sidebar--popup.help-popup {max-height: 60%!important;}
-    .sidebar--popup.help-popup { top: 26vh;}
+    .sidebar--popup.learn-popup, .sidebar--popup.help-popup {max-height: 85%!important;}
+    .sidebar--popup.help-popup { top: 10px;}
 }
 
 @media (max-height: 705px) {
     .sidebar--popup.learn-popup h2, .sidebar--popup.help-popup h3 {
-    padding: 2vh 2vh 2vh 65px;
+        padding: 2vh 48px 2vh 60px;
     }
     .sidebar--popup.help-popup h3 {
-    background: url(../img/img_icon_help_small.png) no-repeat 2vh .4vh;
-    background-size: 5%;
+        background: url(../img/img_icon_help_small.png) no-repeat 2vh .1.5vh;
+        background-size: 28px;
     }
-    .sidebar--popup.learn-popup, .sidebar--popup.help-popup {width: 60vw!important; z-index: 50;}   
 }
 
 /* Modals Fixes */
 
 @media (max-width: 400px) {
 
-	/*portrait mode*/body.portrait .blocker {padding: 20px 0;}
+    /*portrait mode*/body.portrait .blocker {padding: 20px 0;}
 
 }
 
 /*Explore Charats Modals*/
 
 @media (max-width: 400px) {
-	/*portrait mode*/body.portrait #mysteries-one, body.portrait #mysteries-two, body.portrait #mysteries-three {width: 100%;}
+    /*portrait mode*/body.portrait #mysteries-one, body.portrait #mysteries-two, body.portrait #mysteries-three {width: 100%;}
 }
 
 /* Map Modals*/
 @media (max-width: 1024px) {
-	/* Map Modals */
-	.explore-charts--modal-content {max-width: initial;}
+    /* Map Modals */
+    .explore-charts--modal-content {max-width: initial;}
 
-	/*map modals - Landscape */
+    /*map modals - Landscape */
 
-	body.landscape .explore-charts--modal-content > .map-wrap {width: 65%;}
+    body.landscape .explore-charts--modal-content > .map-wrap {width: 65%;}
 
-	/* Ship Modals */
-	#enlarged-great-lakes-location-madeira, #enlarged-great-lakes-location-monarch, #enlarged-great-lakes-location-hesper, #enlarged-great-lakes-location-kamloops, #enlarged-great-lakes-location-alvinclark, #enlarged-great-lakes-location-frankoconnor, #enlarged-great-lakes-location-carldbradley, #enlarged-kingston-kph, #enlarged-kingston-effie, #enlarged-kingston-lawrence, #enlarged-kingston-aloha, #enlarged-kingston-comet, #enlarged-kingston-george, #enlarged-kingston-taber, #enlarged-kingston-prince, #enlarged-kingston-wolfe, #enlarged-great-lakes-location-danieljmorrell, #enlarged-great-lakes-location-waubuno, #enlarged-great-lakes-location-charlesprice, #enlarged-great-lakes-location-admiral, #enlarged-great-lakes-location-argo, #enlarged-great-lakes-location-colgate, #enlarged-great-lakes-location-gpgriffith, #enlarged-great-lakes-location-hmsontario, #enlarged-great-lakes-location-brothers, #enlarged-great-lakes-location-milan, #enlarged-great-lakes-location-roberval {
-		max-width: initial;
-	}
+    /* Ship Modals */
+    #enlarged-great-lakes-location-madeira, #enlarged-great-lakes-location-monarch, #enlarged-great-lakes-location-hesper, #enlarged-great-lakes-location-kamloops, #enlarged-great-lakes-location-alvinclark, #enlarged-great-lakes-location-frankoconnor, #enlarged-great-lakes-location-carldbradley, #enlarged-kingston-kph, #enlarged-kingston-effie, #enlarged-kingston-lawrence, #enlarged-kingston-aloha, #enlarged-kingston-comet, #enlarged-kingston-george, #enlarged-kingston-taber, #enlarged-kingston-prince, #enlarged-kingston-wolfe, #enlarged-great-lakes-location-danieljmorrell, #enlarged-great-lakes-location-waubuno, #enlarged-great-lakes-location-charlesprice, #enlarged-great-lakes-location-admiral, #enlarged-great-lakes-location-argo, #enlarged-great-lakes-location-colgate, #enlarged-great-lakes-location-gpgriffith, #enlarged-great-lakes-location-hmsontario, #enlarged-great-lakes-location-brothers, #enlarged-great-lakes-location-milan, #enlarged-great-lakes-location-roberval {
+        max-width: initial;
+    }
 }
 
 /*Sidebar fixes */
 
 @media (max-width: 820px) {
-			
-	body.landscape .learn, body.landscape .sidebar--popup.learn-popup {
-		top: 0 !important;
-		position: absolute;
-	}
 
-	body.landscape:not(.body--wreck-diver) .sidebar--popup.learn-popup, body.landscape:not(.body--wreck-diver) .sidebar--popup.help-popup {
-		width: 80%!important;
-		max-width: 70vw;
-		z-index: 60;
-	}
+    body.landscape .learn, body.landscape .sidebar--popup.learn-popup {
+        top: 0 !important;
+        position: absolute;
+    }
 
-	.explore, .learn, .help {z-index: 55;}
+    body.landscape:not(.body--wreck-diver) .sidebar--popup.learn-popup, body.landscape:not(.body--wreck-diver) .sidebar--popup.help-popup {
+        width: 80%!important;
+        max-width: 70vw;
+        z-index: 60;
+    }
 
-	body.landscape:not(.body--wreck-diver) .sidebar--popup.learn-popup, body.landscape:not(.body--wreck-diver) .sidebar--popup.help-popup { max-height: 40vh!important;}
+    .explore, .learn, .help {z-index: 55;}
+
+    body.landscape:not(.body--wreck-diver) .sidebar--popup.learn-popup, body.landscape:not(.body--wreck-diver) .sidebar--popup.help-popup { max-height: 40vh!important;}
 }
 
 /* Mysteries of the Depths Fix */
 
 @media (max-width: 850px) {
-	/*portrait mode*/body.landscape .blocker {padding: 0;}
-	body.body--mysteries-depths .content-popup { padding: 0;}
+    /*portrait mode*/body.landscape .blocker {padding: 0;}
+    body.body--mysteries-depths .content-popup { padding: 0;}
 }
 
 @media (max-width: 768px) {
-	/*portrait mode*/ body.portrait #mysteries-one, body.portrait #mysteries-two, body.portrait #mysteries-three {width: 80vw;}
+    /*portrait mode*/ body.portrait #mysteries-one, body.portrait #mysteries-two, body.portrait #mysteries-three {width: 80vw;}
 }
 
 /*Exploring HMS Modal Fixes*/
 
 @media (max-width: 768px) {
-	#page--exploring-hms-one, #page--exploring-hms-two, #page--exploring-hms-three, #page--exploring-hms-four, #page--exploring-hms-five, #page--exploring-hms-six, #page--exploring-hms-seven {
-			max-width: 100%;
-			width: 100vw;
-			height: 90%;
-			overflow-y: auto;
-			overflow-x: hidden;
-		}
+    #page--exploring-hms-one, #page--exploring-hms-two, #page--exploring-hms-three, #page--exploring-hms-four, #page--exploring-hms-five, #page--exploring-hms-six, #page--exploring-hms-seven {
+        max-width: 100%;
+        width: 100vw;
+        height: 90%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
 
-	div#page--exploring-video-player {
-		max-width: 100%!important;
-		width: 100%;
-	}
+    div#page--exploring-video-player {
+        max-width: 100%!important;
+        width: 100%;
+    }
 
-	.modal-info, .slider-box {
-		position: relative;
-		width: 100%;
-		float: none;
-	}
+    .modal-info, .slider-box {
+        position: relative;
+        width: 100%;
+        float: none;
+    }
 
-	.image--caption {text-align: left;}
+    .image--caption {text-align: left;}
 }
 
 /* Wreck Diver Fixes */
 
 @media (max-width: 900px) {
-		
-/*wreck diver page layout*/
 
-	body.body--wreck-diver.landscape {
-		height: auto!important;
-		overflow-y: auto;
-	}
-	
-	body.body--wreck-diver.landscape .page--wreck-diver {
-		height: auto;
-	}
+    /*wreck diver page layout*/
 
+    /*buttons*/
 
-	body.body--wreck-diver.landscape .content {
-		width: 100%;
-		height: 100%;
-		overflow: initial;
-		position: absolute;
-	}
+    body.body--wreck-diver.landscape .dive-two-button, body.body--wreck-diver.landscape .dive-one-button {
+        min-height: 12vh;
+        bottom: 18vh;
+        width: 20vw;
+    }
 
-	body.body--wreck-diver.landscape .page--copyright {position: absolute;}
+    body.body--wreck-diver.landscape .resume-dive {
+        min-height: 12vh;
+        bottom: 18vh;
+        width: auto;
+    }
 
-	/*buttons*/
+    /* Journal Modal - Mobile (Landscape)*/
 
-	body.body--wreck-diver.landscape .head-to-surface, body.body--wreck-diver.landscape .head-to-surface-anytime, body.body--wreck-diver.landscape .skip-video {
-		width: auto;
-	}
+    /*right page*/
+    html.page-tablet body.body--wreck-diver.landscape .still-image.part.part-journal.active {overflow-y: auto;}
 
-	body.body--wreck-diver.landscape .dive-two-button, body.body--wreck-diver.landscape .dive-one-button {
-		min-height: 12vh;
-		bottom: 18vh;
-		width: 20vw;
-	}
+    html.page-tablet .journal, body.portrait-bb .journal {height: 100%;}
 
-	body.body--wreck-diver.landscape .resume-dive {
-		min-height: 12vh;
-		bottom: 18vh;
-		width: auto;
-	}
-	
-	.page--wreck-diver .adventure .continue {
-    width: 65vh;
-    left: calc(50% - 32.5vh);
-	}
+    html.page-tablet body.body--wreck-diver.landscape .col-12 { height: 100%;}
 
-/* Journal Modal - Mobile (Landscape)*/
+    html.page-tablet body.body--wreck-diver.landscape .journal-nojs .main-side {
+        width: 100%;
+        height: 100%;
+        background: url(../img/wreck-diver/journal-bg.jpg) repeat-y center top;
+        background-size: contain;
+    }
 
-	/*right page*/
-	html.page-tablet body.body--wreck-diver.landscape .still-image.part.part-journal.active {overflow-y: auto;}
+    /*left page*/
+    html.page-tablet body.body--wreck-diver.landscape .journal-nojs .title-note {width: calc(100% + 8vw);}
 
-	html.page-tablet .journal, body.portrait-bb .journal {height: 100%;}
+    html.page-tablet body.body--wreck-diver.landscape .journal-nojs .title-note:before {
+        content: url(../img/wreck-diver/paper-clip.png);
+        position: absolute;
+        display: block;
+        top: -39px;
+        left: 0;
+        transform: scale(0.5);
+    }
 
-	html.page-tablet body.body--wreck-diver.landscape .col-12 { height: 100%;}
+    html.page-tablet body.body--wreck-diver.landscape .journal-nojs .title-note .item-detail-label {
+        margin-left: 40px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
 
-	html.page-tablet body.body--wreck-diver.landscape .journal-nojs .main-side {
-		width: 100%;
-		height: 100%;
-		background: url(../img/wreck-diver/journal-bg.jpg) repeat-y center top;
-		background-size: contain;		
-	}
+    /*right page*/
+    html.page-tablet body.body--wreck-diver.landscape .journal-nojs .book .right-page .item-title .item-sketch {
+        max-height: 80px;
+        text-align: center;
+        vertical-align: middle;
+    }
 
-		/*left page*/
-	html.page-tablet body.body--wreck-diver.landscape .journal-nojs .title-note {width: calc(100% + 8vw);}
+    html.page-tablet body.body--wreck-diver.landscape .item-sketch img {
+        height: 60px;
+        width: auto;
+    }
 
-	html.page-tablet body.body--wreck-diver.landscape .journal-nojs .title-note:before {
-		content: url(../img/wreck-diver/paper-clip.png);
-		position: absolute;
-		display: block;
-		top: -39px;
-		left: 0;
-		transform: scale(0.5);
-	}
+    html.page-tablet body.body--wreck-diver.landscape .journal-nojs .book .right-page .item-title .item-sketch:before, html.page-tablet body.body--wreck-diver.landscape .journal-nojs .book .right-page .item-title .item-sketch:after {display:none;}
 
-	html.page-tablet body.body--wreck-diver.landscape .journal-nojs .title-note .item-detail-label {
-		margin-left: 40px;
-		margin-top: 20px;
-		margin-bottom: 10px;
-	}
+    html.page-tablet body.body--wreck-diver.landscape .journal-nojs .book .right-page .item-title {
+        position: relative;
+        padding-top: 60px;
+    }
 
-		/*right page*/
-	html.page-tablet body.body--wreck-diver.landscape .journal-nojs .book .right-page .item-title .item-sketch {
-		max-height: 80px;
-		text-align: center;
-		vertical-align: middle;
-	}
-
-	html.page-tablet body.body--wreck-diver.landscape .item-sketch img {
-		height: 60px;
-		width: auto;
-	}
-
-	html.page-tablet body.body--wreck-diver.landscape .journal-nojs .book .right-page .item-title .item-sketch:before, html.page-tablet body.body--wreck-diver.landscape .journal-nojs .book .right-page .item-title .item-sketch:after {display:none;}
-
-	html.page-tablet body.body--wreck-diver.landscape .journal-nojs .book .right-page .item-title {
-		position: relative;
-		padding-top: 60px;
-	}
-
-	/*Discoveries Menu*/
-
-	html.page-tablet body.body--wreck-diver.landscape .collection {z-index: 99999;}
-
-	html.page-tablet body.body--wreck-diver.landscape .collectionTab {
-		left: -42vh;
-		height: 25px;
-		width: 42vh;
-	}
-
-	html.page-tablet body.body--wreck-diver.landscape .collection .title {
-		height: 25px;
-		font-size: 16px;
-	}
-
-	html.page-tablet body.body--wreck-diver.landscape .bag-scroll {height: 65vh;}
-
-	html.page-tablet body.body--wreck-diver.landscape .bag {
-		margin: .75vmax;
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: auto repeat(10, auto) auto repeat(3, auto);
-		grid-column-gap: 5px;
-		grid-row-gap: 10px;
-	}
-
-	html.page-tablet body.body--wreck-diver.landscape .collection .bag > div img {
-		max-height: 40px;
-		width: auto;
-		max-width: 80%;
-		display: block;
-		margin: 0 auto;
-	}
+    /*Discoveries Menu*/
 }
 
 @media (max-width: 500px) {
-	.blocker {padding: 20px 0;}
+    .blocker {padding: 20px 0;}
 }
 
 /* smaller screen sizes and no js media quearies */
 
 @media (min-width: 768.01px) {
-	div.no-script {display:none;}
-    
+    div.no-script {display:none;}
+
     .site-wrap {
         display: grid;
         grid-template-columns: 1fr;
@@ -1099,7 +1019,7 @@ header .sub-header .home-menu {
         margin: 0 auto;
     }
 
-    main#main-content, main { overflow: hidden;}
+    main#main-content, main {overflow: hidden; position: relative;}
 
     main:not(.index), .content-body {
         display: grid!important;
@@ -1109,13 +1029,13 @@ header .sub-header .home-menu {
         grid-row-gap: 0px;
         height: 100%
     }
-    
+
     .content-wrap {position: relative;}
 
     .content {height: 100%;}
-    
+
     .no-script-header {display:none;}
-    
+
     .content-wrap > .no-js {height: 100%;}
 }
 
@@ -1126,7 +1046,7 @@ header .sub-header .home-menu {
         position: relative;
         overflow: hidden;
     }
-    
+
     body.body-index .site-wrap {
         display: grid;
         grid-template-columns: 1fr;
@@ -1138,7 +1058,7 @@ header .sub-header .home-menu {
         max-width: 1920px;
         margin: 0 auto;
     }
-    
+
     main.index > div.content {height: 100%;}
-    
+
 }
