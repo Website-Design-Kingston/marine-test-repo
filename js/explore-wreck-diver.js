@@ -1018,15 +1018,23 @@ function checkOneTwinkleInDiveWasOpened() {
 this.$slideOut = $('.collection');
 
 // Collection Slideout show
-this.$slideOut.find('.collectionTab').on('click', function () {
+
+function toggleCollectionTab(){
   let result = $(".collection").toggleClass('showCollection');
   if (result.hasClass('showCollection')){
     $(".journal").animate({right: '+=150px'});
   }else {
     $(".journal").animate({right: '-=150px'});
   }
+}
+
+this.$slideOut.find('.collectionTab').on('click', function () {
+  toggleCollectionTab()
 });
 
+this.$slideOut.find('.bag-wrap').on('click', function () {
+  toggleCollectionTab()
+});
 
 $(".collection").click(function (e) {
   e.preventDefault();
