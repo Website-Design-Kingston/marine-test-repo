@@ -1,7 +1,7 @@
 /*if (window.innerHeight > window.innerWidth) {
   alert("Please use Landscape!");
 }*/
-
+var i = 1;
 var isVideoStopped = false;
 var isAllTwinklesInLastActiveStillOpened = false;
 var isOneTwinkleInDiveWasOpened = false;
@@ -357,17 +357,20 @@ function playPart(partName) {
   video.currentTime = 0;
   video.play();
   isVideoStopped = false;
+
+    console.log("on est au niveau:", partName)
+
   video.addEventListener("timeupdate", function () {
 
     setTimeout(function () {
       $('button.help').show();
     }, 500);
 
-    console.log("nous somme au:", partSelector)
+    console.log("video ", partName, " | curent time ", this.currentTime, " | video is stopped ", isVideoStopped, " |video end shot ", videoEndShot[partName])
+
 
     if (this.currentTime >= videoEndShot[partName] && !isVideoStopped) {
       this.pause();
-      console.log("on est au niveau:", partName)
 
       $('button.help').click(); // open help popup on each part of the dive to give indications
 
@@ -522,8 +525,7 @@ function handleEndOfFirstVideo(video) {
 
 function setupCollectingEvent() {
 
-
-  // collect all items accessibility button
+   // collect all items accessibility button
   $('.collection-button').on('keypress',function(event) {
     if(event.which == 13) {
       event.stopPropagation();
@@ -555,30 +557,11 @@ function setupCollectingEvent() {
 
   });
 
-
-  // collect all twikles of the current dive part if "Skip" button is pressed and move to next location
- /* $('.skip-collect').on('keypress',function(event) {
-    if(event.which == 13) {
-      event.stopPropagation();
-      $('.part-item.active .twinkles').css({
-        'animation-name': 'stop-it',
-        background: 'none'
-      });
-      $('img', '.part-item.active .twinkles').show();
-
-      $('img', '.part-item.active .twinkles').trigger('click');
-
-      $('.show-desc').css("visibility", "visible")
-
-      setTimeout(function () {
-        toNextLocation();
-      }, 500);
-    }
-  });*/
-
   // collect all twikles of the current dive part if "Skip" button is clicked and move to next location
   $('.skip-collect').on('click', function (event) {
-    event.stopPropagation();
+    event.preventDefault()
+    event.stopImmediatePropagation()
+
     $('.part-item.active .twinkles').css({
       'animation-name': 'stop-it',
       background: 'none'
@@ -589,9 +572,12 @@ function setupCollectingEvent() {
 
     $('.show-desc').css("visibility", "visible")
 
-    setTimeout(function () {
-      toNextLocation();
-    }, 500);
+    i++
+
+   setTimeout(function () {
+     toNextLocation();
+    }, 800);
+
 
   });
 
@@ -618,7 +604,6 @@ function setupCollectingEvent() {
       $('.twinkles[data-target=' + itemInCollectionClass + ']').addClass("selected");
 
       $('.selected').click(); // this will trigger a click as 'twikles' click
-
 
   });
 
@@ -666,6 +651,7 @@ function nonactiveControlAndCollection() {
 }
 
 function toNextLocation() { // handle the next location action. Used by "Next Location" and "Skip button"
+
   $('.part .continue .clickable').css('pointer-events', 'none');
   $('.help-popup > button.close-menu').click();
   $('.adventure').scrollTop(0);
