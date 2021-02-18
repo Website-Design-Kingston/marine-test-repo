@@ -309,9 +309,10 @@ $(document).ready(function () {
   }
   /* WDK Custom "HEAD TO SURFACE ANYTIME " button - End */
 
-  $(document).click(function (event) {
+ /* $(document).click(function (event) {
     disableAllDescription();
-  });
+  });*/
+
   var flag = true;
   $('.navigation > div, .navigation > div img').on('mousedown touchstart', function (event) {
     if (!flag) return;
@@ -605,24 +606,21 @@ function setupCollectingEvent() {
   });
 
   $('.mobile-item.active').on('click', function (event) {
+
     var mobileButton = $(this);
 
-    disableAllDescription();
+    var itemInCollectionClass = $(mobileButton).data('target'); // get the item number of the selected element
 
-    // todo :: grab the corresponding twikle for the selection animation
+      // Remove existing selected class from the twikles
+      $(".twinkles").removeClass("selected");
 
-   $('.description').css({ //show the description of the image selected inside part-item
-      visibility: 'visible',
-      display: 'inline-block',
-      'z-index': 0
-    });
+      // Select twinkle element based on its data-target attribute value
+      $('.twinkles[data-target=' + itemInCollectionClass + ']').addClass("selected");
 
-    var itemInCollectionClass = $(mobileButton).data('target'); //get the item number of the selected element
+      $('.selected').click(); // this will trigger a click as 'twikles' click
 
-    handleSelectedItems(itemInCollectionClass);
 
   });
-
 
 
   $('.part-item.active .twinkles img').on('click', function (event) {
