@@ -352,22 +352,22 @@ function playPart(partName) {
   $('.head-to-surface-anytime').css('pointer-events', 'none');
 
 
+  $('.skip-collect').css('opacity', 0.5);
+  $('.skip-collect').css('pointer-events', 'none');
+
   var video = document.getElementById($('.part-video', partSelector).attr('id'));
   isVideoStopped = false;
   video.currentTime = 0;
   video.play();
   isVideoStopped = false;
 
-    console.log("on est au niveau:", partName)
+
 
   video.addEventListener("timeupdate", function () {
 
     setTimeout(function () {
       $('button.help').show();
     }, 500);
-
-    console.log("video ", partName, " | curent time ", this.currentTime, " | video is stopped ", isVideoStopped, " |video end shot ", videoEndShot[partName])
-
 
     if (this.currentTime >= videoEndShot[partName] && !isVideoStopped) {
       this.pause();
