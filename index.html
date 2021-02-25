@@ -44,7 +44,7 @@
 				</a>
 			</div>
 			<div class="title page--title">
-				<a href="index.html" title="Homepage" tabindex="10" class="">
+				<a href="index.html" title="Homepage" tabindex="10">
 					Great Lakes Shipwrecks
 				</a>
 			</div>
@@ -106,10 +106,10 @@
 	</header><!-- Content --><!-- Note from WDK For ease of acess and future updates we recomend doing tabindex in increments of 10 -->
 	<main class="index bypass-block-target" id="main-content">
 		<h1 class="outliner-hide">Great Lakes Shipwrecks (Home)</h1><!-- Sidebar popup toggle -->
-		<button class="learn page--custom--learn-address-book active" href="#" tabindex="80">Welcome to<br>
+		<button class="learn page--custom--learn-address-book active" href="#" id="home-learn-open" tabindex="80">Welcome to<br>
 			Shipwrecks</button>
-		<aside class="learn-popup sidebar--popup" style="display: block">
-			<button aria-label="Close Welcome to Shipwrecks popup" class="close-menu btn-close" tabindex="90"></button>
+		<aside class="learn-popup sidebar--popup" style="display: block" id="home-learn-aside">
+			<button aria-label="Close Welcome to Shipwrecks popup" id="home-learn-close" class="close-menu btn-close" tabindex="90"></button>
 			<h2 class="page--custom--address-book">Welcome to Shipwrecks</h2>
 			<div class="table">
 				<div class="tr">
@@ -189,6 +189,9 @@
 
 <script src="js/focus-within.js">
 </script> <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script src="js/jquery.blockUI.min.js">
+</script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-22372114-4">
 </script>

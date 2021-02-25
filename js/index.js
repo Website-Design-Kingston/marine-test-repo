@@ -31,7 +31,7 @@
 
   /* Avoid click on main-content until learn box popup is closed*/
   Index.prototype.blockView = function(){
-    $('#home-main-content').block({
+    $('#main-content').block({
       message: null,
       overlayCSS: { opacity: 0, cursor : 'default'}
     });
@@ -40,7 +40,7 @@
     $('#home-learn-aside').css('z-index', '1033');
 
     $('#home-learn-close').click(function() {
-      $('#home-main-content').unblock();
+      $('#main-content').unblock();
     });
 
   }
