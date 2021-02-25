@@ -365,14 +365,14 @@ function playPart(partName) {
 
   video.addEventListener("timeupdate", function () {
 
-    /*setTimeout(function () {
+    setTimeout(function () {
       $('button.help').show();
-    }, 500);*/
+    }, 500);
 
     if (this.currentTime >= videoEndShot[partName] && !isVideoStopped) {
       this.pause();
 
-      $('button.help').click(); // open help popup on each part of the dive to give indications
+      //$('button.help').click(); // open help popup on each part of the dive to give indications
 
       if (!(partName == 'part7' || partName == 'part14')) {
 
