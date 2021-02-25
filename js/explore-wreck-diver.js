@@ -365,9 +365,9 @@ function playPart(partName) {
 
   video.addEventListener("timeupdate", function () {
 
-    setTimeout(function () {
+    /*setTimeout(function () {
       $('button.help').show();
-    }, 500);
+    }, 500);*/
 
     if (this.currentTime >= videoEndShot[partName] && !isVideoStopped) {
       this.pause();

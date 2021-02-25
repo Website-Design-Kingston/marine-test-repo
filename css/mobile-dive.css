@@ -3,7 +3,13 @@
 
 /* Custom CSS For Wrek Diver mobile devices */
 
+/*mobile only features -------------------*/
+
+.continue-mobile {display: none;}
+
 .item-button-wrap {display:none;}
+
+/*mobile only features END----------------*/
 
 /* ADDED DESIGN ELEMENTS*/
     
@@ -138,11 +144,16 @@
     
     .mobile-item:not(:last-child) {margin-bottom: 20px;}
     
+    .mobile-button-layout:last-child {margin-bottom: 50px;}
+    
     .page--wreck-diver .adventure .continue-normal, .head-to-surface-anytime { bottom: 2%;}
+    
+    .part-item .description.show-desc {display: none!important;}
     
     /*skip button*/
 
     .continue-mobile {
+        display:block;
         position: absolute;
         height: 80px;
         width: 80px;
@@ -243,6 +254,7 @@
     /*skip button*/
 
     .continue-mobile {
+        display:block;
         position: absolute;
         height: 80px;
         width: 80px;
@@ -265,6 +277,8 @@
         margin-top: -5px;
         height: auto;
     }
+    
+    .part-item .description.show-desc {display: none!important;}
     
     body.landscape .sidebar--popup.learn-popup, body.landscape .sidebar--popup.help-popup {
         height: 95%!important;

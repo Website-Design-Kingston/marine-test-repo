@@ -388,11 +388,12 @@ div.explore-charts--header-left p.field img {
 .explore-charts--modal-content a.close-modal,
 [class*="-map-location-modal"] a.close-modal,
 [class*="-slider-content"] a.close-modal {
-  width: 4vh;
-  height: 4vh;
-  max-height: 45px;
-  max-width: 45px;
-  text-align: center;
+    width: 5vh;
+    height: 5vh;
+    min-width: 50px;
+    min-height: 50px;
+    text-align: center;
+    line-height: 5vh;
 }
 
 @media (min-width: 1025px) {
@@ -734,12 +735,10 @@ p.amiri {
   margin-top: 1vw;
 }
 
-.mysteries-depths--slider-information h3{
-  text-align: center;
-}
+.mysteries-depths--slider-information h3 {text-align: center;}
 
 .mysteries-depths--slider-information p{
-  text-align: left;
+  text-align: left!important;
   font-size: 18px;
   line-height: 22px;
 }

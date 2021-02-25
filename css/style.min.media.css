@@ -752,6 +752,13 @@
     }
 
     .page--sub-title {font-size: 24px;}
+    
+    body.page--about .page--about--content .container {
+        background: transparent;
+        margin-left: 0;
+        width: 100%;
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 481px) {
@@ -842,6 +849,10 @@
 @media (max-width: 400px) {
 
     /*portrait mode*/body.portrait .blocker {padding: 20px 0;}
+    
+    header .sub-header .menu > ul {left: -70px; overflow-x: hidden;}
+    
+    header .sub-header .menu a {font-size: 20px;}
 
 }
 
@@ -881,7 +892,7 @@
         z-index: 60;
     }
 
-    .explore, .learn, .help {z-index: 55;}
+    .explore, .learn, .help {z-index: 10;}
 
     body.landscape:not(.body--wreck-diver) .sidebar--popup.learn-popup, body.landscape:not(.body--wreck-diver) .sidebar--popup.help-popup { max-height: 40vh!important;}
 }
@@ -995,7 +1006,6 @@
         padding-top: 60px;
     }
 
-    /*Discoveries Menu*/
 }
 
 @media (max-width: 500px) {
@@ -1004,7 +1014,7 @@
 
 /* smaller screen sizes and no js media quearies */
 
-@media (min-width: 768.01px) {
+@media (min-width: 1281px) {
     div.no-script {display:none;}
 
     .site-wrap {
@@ -1039,10 +1049,9 @@
     .content-wrap > .no-js {height: 100%;}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
 
     .page--custom--container {
-        min-height: 100vh;
         position: relative;
         overflow: hidden;
     }

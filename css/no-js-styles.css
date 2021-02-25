@@ -1644,11 +1644,11 @@ video {
 
 /* smaller screen css fix*/
 
-@media (min-width: 768.01px){
+@media (min-width: 1281px) {
 	div.no-script {display:none;}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
 
 	body:not(.body--wreck-diver) {
 		overflow-y: auto;

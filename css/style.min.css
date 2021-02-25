@@ -2211,6 +2211,7 @@ body.body--wreck-diver main {
 	grid-row-gap: 0px;
 	height: 100%;
 	overflow: hidden;
+    z-index: 1;
 }
 
 .sub-header .lang>div a.active {
@@ -2571,15 +2572,12 @@ main.index .navi-area .tooltip span, .navi-area .tooltip a p {font-size: 20px; l
 /*custom css for sp-slider elements => a.close-modal, sp-buttons, sp-button, sp-selected-button, etc.. */
 .mysteries-depths--slider-content a.close-modal {
 	border-radius: 2vh;
-	background: rgba(2, 95, 27, 0.9) url("../img/background/btn-close.png") no-repeat center center;
-	background-size: cover;
+	background: rgba(2, 95, 27, 0.9);
 	border: 1px solid #6bbc45;
 	position: absolute;
 	right: 0;
 	top: 0;
-	width: 8vh;
-	height: 7.5vh;
-	bottom: auto;
+    bottom: auto;
 	z-index: 20;
 }
 .mysteries-depths--slider-content a.close-modal:hover {
@@ -2930,7 +2928,6 @@ header .sub-title {
 	background: url("../img/img_icon_learn_small.png") no-repeat 2vh 2vh;
 	background-size: 5vh;
 	min-height: 7vh;
-	line-height: 5vh;
 	padding: 2vh 6vh 2vh 9vh;
 	margin: 0;
 	font-size: 26px;
@@ -2960,9 +2957,7 @@ header .sub-title {
 	float: left;
 	width: 50%;
 }
-.sidebar--popup.help-popup {
-	top: 25vh;
-}
+
 .coming-soon {
 	color: #fff;
 	font-size: 40px;
@@ -3001,7 +2996,7 @@ header .sub-title {
 	background-size: 50%;
 	background-repeat: no-repeat;
 	background-position: center 85%;
-	top: 20vh;
+	top: 55px;
 	bottom: unset;
 	border: 1px solid #6bbc45;
 	border-left: none;
@@ -3051,9 +3046,6 @@ header .sub-title {
 	opacity: 1;
 }
 
-.page--exploring-hms-lawrence .learn, .page--exploring-hms-lawrence .sidebar--popup.learn-popup {
-	top: 0;
-}
 a.close-modal:focus, a.close-modal:hover, .content-popup .btn-close:focus, .content-popup .btn-close:hover, .sidebar--popup .btn-close:focus, .sidebar--popup .btn-close:hover {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity =85)";
 	filter: alpha(opacity=85);
@@ -3281,9 +3273,10 @@ body.body--exploring-hms-lawrence, body.body--index {
 	left: calc(25% - 13vh);
 	position: absolute;
 	top: 8vh;
-	width: 45vh;
+    width: 18vw;
+    min-width: 180px;
 	height: auto;
-	z-index: 10;
+	z-index: 1;
 	border-radius: 5px;
 	padding: 1vh;
 }
