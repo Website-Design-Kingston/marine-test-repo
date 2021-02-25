@@ -20,7 +20,7 @@
     /* Avoid click on map-menu and main-content until learn box popup is closed*/
     ExploreHmsLawrence.prototype.blockView = function(){
 
-        $('#exploring-hms-content').block({
+        $('#main-content').block({
             message: null,
             overlayCSS: { opacity: 0, cursor : 'default'}
         });
@@ -35,7 +35,7 @@
 
         $('#exploring-hms-learn-close').click(function() {
             $('#map-menu').unblock();
-            $('#exploring-hms-content').unblock();
+            $('#main-content').unblock();
         });
 
     }
