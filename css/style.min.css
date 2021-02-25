@@ -1791,8 +1791,8 @@ span.sp-arrow:focus, span.sp-arrow:focus-within, a.close-modal:focus, a.close-mo
 }
 .page--exploring-hms-lawrence .three {
 	background-size: 100% 100%;
-	left: 15vw;
-	top: 30vh;
+	top: 50%;
+	left: 30%;
 	width: 22.45vh;
 	height: 21vh;
 	z-index: 2;
@@ -1805,6 +1805,8 @@ span.sp-arrow:focus, span.sp-arrow:focus-within, a.close-modal:focus, a.close-mo
 }
 .page--exploring-hms-lawrence .four {
 	background-size: 100% 100%;
+    bottom: -11%;
+	right: 60%;
 	width: 54.63vh;
 	height: 37.82vh;
 	z-index: 3;
@@ -1831,8 +1833,8 @@ span.sp-arrow:focus, span.sp-arrow:focus-within, a.close-modal:focus, a.close-mo
 }
 .page--exploring-hms-lawrence .six {
 	background-size: 100% 100%;
-	top: 40vh;
-	right: 48vh;
+	bottom: -10%;
+	right: 25%;
 	width: 58.27vh;
 	height: 39.45vh;
 	z-index: 3;
@@ -3364,7 +3366,6 @@ body.body--exploring-hms-lawrence, body.body--index {
 }
 .body--explore-charts .sp-slides-container .sp-thumbnail-container, .sp-slides-container .sp-thumbnail-container img {
 	width: auto;
-	/*max-height: 420px;*/
 }
 
 /*HTML Hide Pam WDK*/
