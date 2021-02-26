@@ -594,6 +594,7 @@ function setupCollectingEvent() {
   $('.mobile-item.active').on('click', function (event) {
 
     var mobileButton = $(this);
+    mobileButton.css({"background": "rgba(0, 128, 0, .85)"})
 
     var itemInCollectionClass = $(mobileButton).data('target'); // get the item number of the selected element
 
