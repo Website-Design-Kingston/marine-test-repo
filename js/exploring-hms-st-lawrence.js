@@ -12,7 +12,7 @@
     this.startTextModal();
     this.toggleTranscript();
 	this.toggleClipping(); //toggle for additional function WDK
-      if ($(window).width() > 768) {
+      if ($(window).width() > 1280) {
           this.blockView();
       }
   };
