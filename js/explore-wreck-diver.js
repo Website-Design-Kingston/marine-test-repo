@@ -280,6 +280,10 @@ $(document).ready(function () {
         activatePart('.part-journal');
         $('.learn-popup').show();
         $('.learn-popup .learn-content.to-journal').addClass('active');
+
+        $('.learn').addClass('journal-view');
+        $('.collectionTab').addClass('journal-view');
+
         $('button.learn').addClass('active').css('z-index', 1);
         $('.learn-popup .learn-content.to-restart').removeClass('active');
         $('.learn-popup .to-journal .close-menu').text('');
