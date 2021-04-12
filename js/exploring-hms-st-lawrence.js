@@ -110,7 +110,7 @@
           setTimeout(function() {
 
             // Set focus back to the launcher contorl on close
-            launcher.focus();
+            //launcher.focus();
           }, 100);
           video.pause();
 
@@ -165,7 +165,7 @@
           setTimeout(function() {
 
             // Set focus back to the launcher contorl on close
-            launcher.focus();
+            //launcher.focus();
           }, 100);
         });
 
@@ -173,6 +173,7 @@
           $(target).on($.modal.AFTER_CLOSE, function(event, modal) {
               $('#one-menu').css('border', 'medium none');
               $('#one-menu').css('text-decoration', 'none');
+              //$('.one').focusout();
 
               $('#two-menu').css('border', 'medium none');
               $('#two-menu').css('text-decoration', 'none');
@@ -270,7 +271,7 @@ if (window.matchMedia("(max-width: 767px)").matches) {
 		exploreHms.init();
 	});
 	
-	$(document).ready(function() {  /*WDK added for submenu hover */
+	$(document).ready(function() {  /* WDK added for submenu hover */
 
         /*start one*/
 		$('#one-menu').hover(function() {
@@ -283,6 +284,7 @@ if (window.matchMedia("(max-width: 767px)").matches) {
 		}, function() {
 			$('#one-menu').css('text-decoration', 'none');
 		});
+
 
         $('#one-menu').focus(function() {
             $('.one').addClass("change");

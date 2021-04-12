@@ -89,7 +89,7 @@
                     // Wait for inert to finish…
                     setTimeout(function () {
                         // Set focus back to the launcher control on close
-                        launcher.focus();
+                       // launcher.focus();
                     }, 100);
                 });
 
