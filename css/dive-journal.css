@@ -447,7 +447,8 @@
   font-size: 16px;
   position: relative;
   margin-bottom: 1.7vh;
-  width: 25vh;
+  width: 25vw;
+  max-width: 150px;
 }
 
 
@@ -499,7 +500,7 @@
   font-size: 20px;
   position: relative;
   width: 100%;
-  padding-left: 10px;
+  padding-left: 0 6px;
 }
 
 .part-item .description .explain {
@@ -741,7 +742,7 @@
 
 .dive-complete-message,
 .dive-incomplete-message {
-  width: 40vh;
+  width: 25vw;
   padding: 10px;
   text-align: center;
   background: #fff;
@@ -949,7 +950,7 @@
 
 .bagItem:not(.diveNum) {border: 4px solid transparent;}
 
-@media (min-width: 1366.01px) {
+@media (min-width: 1367px) {
     
     
     body.landscape .page--wreck-diver .collection {
@@ -1127,7 +1128,15 @@ body.body--wreck-diver .page--wreck-diver .collection .bag {
         display: inline-block;
         object-fit: contain;
     }
+    
+    body.portrait-bb .video {height: 98%;}
+    
+    body.portrait .video {height: auto;}
 
+}
+
+@media (min-height: 899px) { 
+    .video { height: 100%;}
 }
 
 @media (max-width: 900px) {
@@ -1252,17 +1261,19 @@ div.active[discover="true"] b.checkmark:after {
 }
 .dive-complete-message,
 .dive-incomplete-message {
-  right: 43vh;
-  bottom: 38vh;
+  top: 7vh;
   left: unset;
+  margin-left: 74vw;
 }
 
-@media (max-height:740px){
-.dive-complete-message, .dive-incomplete-message {
-    right: 43vh;
-    bottom: 68vh;
-}
-
+@media (max-width: 700px) {
+    .dive-complete-message,
+    .dive-incomplete-message {
+      width: 38vw;
+      top: 6vh;
+      left: unset;
+      margin-left: 60vw;
+    }
 }
 
 /* Journal */
